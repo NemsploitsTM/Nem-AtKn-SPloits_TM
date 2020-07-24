@@ -1,0 +1,6 @@
+game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+Text = "Gui made by Nem&AtKn Sploits™";
+Color = Color3.fromRGB(255, 255, 255);
+Font = Enum.Font.SourceSansBold;
+TextSize = 18
+})
