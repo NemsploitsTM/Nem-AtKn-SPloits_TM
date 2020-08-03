@@ -1,6 +1,16 @@
-game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
-Text = "Gui made by Nem&AtKn Sploits™";
-Color = Color3.fromRGB(255, 255, 255);
-Font = Enum.Font.SourceSansBold;
-TextSize = 18
-})
+local guiService = game:GetService("StarterGui")
+
+event.OnClientEvent:Connect(function()
+	
+	wait(2.5)
+
+	guiService:SetCore("SendNotification", {
+				
+		Title = "Thank You!";
+		Text = "Gui made by Nem&AtKn Sploits™";
+		Icon = "rbxassetid://4833960080";
+		Duration = 7;
+				
+	})
+		
+end)
