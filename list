@@ -1,0 +1,86 @@
+
+--Converted with ttyyuu12345's model to script plugin v4
+function sandbox(var,func)
+	local env = getfenv(func)
+	local newenv = setmetatable({},{
+		__index = function(self,k)
+			if k=="script" then
+				return var
+			else
+				return env[k]
+			end
+		end,
+	})
+	setfenv(func,newenv)
+	return func
+end
+cors = {}
+mas = Instance.new("Model",game:GetService("Lighting"))
+ScreenGui0 = Instance.new("ScreenGui")
+Frame1 = Instance.new("Frame")
+TextLabel2 = Instance.new("TextLabel")
+LocalScript3 = Instance.new("LocalScript")
+ScreenGui0.Parent = mas
+ScreenGui0.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Frame1.Parent = ScreenGui0
+Frame1.Position = UDim2.new(0.319665909, 0, 0.278546721, 0)
+Frame1.Size = UDim2.new(0, 474, 0, 68)
+Frame1.BackgroundColor = BrickColor.new("Black metallic")
+Frame1.BackgroundColor3 = Color3.new(0.133333, 0.133333, 0.133333)
+Frame1.BorderColor = BrickColor.new("Really black")
+Frame1.BorderColor3 = Color3.new(0, 0, 0)
+Frame1.BorderSizePixel = 2
+TextLabel2.Parent = Frame1
+TextLabel2.Position = UDim2.new(0, 0, 0.12134923, 0)
+TextLabel2.Size = UDim2.new(0, 474, 0, 50)
+TextLabel2.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel2.BackgroundTransparency = 1
+TextLabel2.Font = Enum.Font.Code
+TextLabel2.FontSize = Enum.FontSize.Size14
+TextLabel2.Text = "functions have been printed"
+TextLabel2.TextColor = BrickColor.new("Earth green")
+TextLabel2.TextColor3 = Color3.new(0.207843, 0.231373, 0.227451)
+TextLabel2.TextScaled = true
+TextLabel2.TextSize = 14
+TextLabel2.TextStrokeColor3 = Color3.new(0.917647, 0.917647, 0.917647)
+TextLabel2.TextStrokeTransparency = 0
+TextLabel2.TextWrap = true
+TextLabel2.TextWrapped = true
+LocalScript3.Parent = ScreenGui0
+table.insert(cors,sandbox(LocalScript3,function()
+print('Function List (not chathook)')
+print('---------------')
+print('to run functions type .functionnamehere')
+print('r6  <run this before anything else')
+print('neko')
+print('nekov1')
+print('gun <you need Type-49 Abomindation hat')
+print('skibidi')
+print('smug')
+print('krystal')
+print('drone <needs ro-drone hat to work')
+print('n5  <needs corrupt demonic (purple) sword')
+print('n5-2 <needs void lords blade')
+print('situps')
+print('charleston')
+print('boogie')
+print('fr < dance in second video')
+print('TerrorRun < case sensitive')
+print('shuffle')
+print("---------------------------------------------")
+
+wait(5)
+script.Parent:Destroy()
+
+end))
+for i,v in pairs(mas:GetChildren()) do
+	v.Parent = game:GetService("Players").LocalPlayer.PlayerGui
+	pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+	spawn(function()
+		pcall(v)
+	end)
+end
