@@ -1,0 +1,2381 @@
+--neko v1
+--Converted with ttyyuu12345's model to script plugin v4
+function sandbox(var,func)
+	local env = getfenv(func)
+	local newenv = setmetatable({},{
+		__index = function(self,k)
+			if k=="script" then
+				return var
+			else
+				return env[k]
+			end
+		end,
+	})
+	setfenv(func,newenv)
+	return func
+end
+cors = {}
+mas = Instance.new("Model",game:GetService("Lighting"))
+Folder0 = Instance.new("Folder")
+Pants1 = Instance.new("Pants")
+Accessory2 = Instance.new("Accessory")
+Part3 = Instance.new("Part")
+SpecialMesh4 = Instance.new("SpecialMesh")
+Vector3Value5 = Instance.new("Vector3Value")
+Weld6 = Instance.new("Weld")
+StringValue7 = Instance.new("StringValue")
+Decal8 = Instance.new("Decal")
+Decal9 = Instance.new("Decal")
+Decal10 = Instance.new("Decal")
+Folder0.Name = "Catshint"
+Folder0.Parent = mas
+Pants1.Name = "Pants"
+Pants1.Parent = Folder0
+Pants1.PantsTemplate = "rbxassetid://2523505941"
+Accessory2.Name = "Tail"
+Accessory2.Parent = Folder0
+Accessory2.AttachmentPoint = CFrame.new(-0.200000003, 2.0999999, -1.79999995, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Accessory2.AttachmentPos = Vector3.new(-0.200000003, 2.0999999, -1.79999995)
+Part3.Name = "Handle"
+Part3.Parent = Accessory2
+Part3.CFrame = CFrame.new(-2.25498724, 1.01499975, 1.67499793, -1.00000024, -1.66042554e-07, 1.1920929e-07, -1.7790066e-07, 1, 4.26325641e-14, -1.49011612e-07, -1.94256629e-08, -1.00000012)
+Part3.Orientation = Vector3.new(0, 180, 0)
+Part3.Position = Vector3.new(-2.25498724, 1.01499975, 1.67499793)
+Part3.Rotation = Vector3.new(-180, 0, 180)
+Part3.Size = Vector3.new(0.990025878, 2.02999926, 2.45000172)
+Part3.BottomSurface = Enum.SurfaceType.Smooth
+Part3.CanCollide = false
+Part3.TopSurface = Enum.SurfaceType.Smooth
+Part3.FormFactor = Enum.FormFactor.Custom
+Part3.formFactor = Enum.FormFactor.Custom
+SpecialMesh4.Parent = Part3
+SpecialMesh4.MeshId = "http://www.roblox.com/asset/?id=170939831"
+SpecialMesh4.TextureId = "http://www.roblox.com/asset/?id=170939093"
+SpecialMesh4.MeshType = Enum.MeshType.FileMesh
+Vector3Value5.Name = "OriginalSize"
+Vector3Value5.Parent = Part3
+Vector3Value5.Value = Vector3.new(0.990025878, 2.02999926, 2.45000172)
+Weld6.Name = "AccessoryWeld"
+Weld6.Parent = Part3
+Weld6.C0 = CFrame.new(-0.199999884, -0.900000334, -2.30027223, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Weld6.C1 = CFrame.new(-1.32219867e-07, -0.199972257, -0.50000006, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Weld6.Part0 = Part3
+StringValue7.Name = "owner"
+StringValue7.Parent = Folder0
+Decal8.Name = "Blush"
+Decal8.Parent = Folder0
+Decal9.Name = "Eyes"
+Decal9.Parent = Folder0
+Decal9.Texture = "rbxassetid://3656713670"
+Decal10.Name = "Mouth"
+Decal10.Parent = Folder0
+Decal10.Texture = "rbxassetid://2801594973"
+for i,v in pairs(mas:GetChildren()) do
+	v.Parent = game:GetService("Players").LocalPlayer.Backpack
+	pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+	spawn(function()
+		pcall(v)
+	end)
+end
+    RemoteEvent = Instance.new("RemoteEvent")
+RemoteEvent.Name = "PlayerWaiting.."
+RemoteEvent.Parent = game.ReplicatedStorage
+local ids = {12222152, 1540443426, 1043479800, 610726103}
+local a = Instance.new("Sound", workspace)
+a.Volume = 0
+for i,v in pairs(ids) do
+	a.SoundId = "rbxassetid://"..v
+	while a.TimeLength == 0 do
+		wait()
+	end
+end
+a:Destroy()
+Debris = game:GetService("Debris")
+PhysicsService = game:GetService("PhysicsService")
+TweenService = game:GetService("TweenService")
+success, failure = pcall(function()
+	PhysicsService:CreateCollisionGroup("TopLimbs")
+	PhysicsService:CreateCollisionGroup("BottomLimbs")
+	PhysicsService:CreateCollisionGroup("BignSmallLimbs")
+	PhysicsService:CollisionGroupSetCollidable("TopLimbs", "BignSmallLimbs", false)
+	PhysicsService:CollisionGroupSetCollidable("BottomLimbs", "BignSmallLimbs", false)
+end)
+interruptingaction = false
+Character = game.Players.LocalPlayer.Character.Dummy
+Playerr = game.Players.LocalPlayer
+Tail = nil
+
+RShoulder = game.Players.LocalPlayer.Character.Dummy.Torso["Right Shoulder"]
+LShoulder = game.Players.LocalPlayer.Character.Dummy.Torso["Right Shoulder"]
+RHip = game.Players.LocalPlayer.Character.Dummy.Torso["Right Hip"]
+LHip = game.Players.LocalPlayer.Character.Dummy.Torso["Left Hip"]
+Neck = game.Players.LocalPlayer.Character.Dummy.Torso["Neck"]
+RJoint = game.Players.LocalPlayer.Character.Dummy.HumanoidRootPart["RootJoint"]
+timesraped = 0
+slave = nil
+
+shiftdown = false
+walking = false
+running = false
+action = false
+enabled = false
+shotavailable = true
+GunEquipped = false
+shoutplaying = false
+shooting = false
+music = false
+freefall = false
+grabbed = false
+song = nil
+aro = false
+on = "true"
+
+Orange = Color3.new(244 / 255, 119 / 255, 70 / 255)
+
+Gun = Instance.new("Part")
+Gun.Size = Vector3.new(1, 0.4, 1)
+Gun.CanCollide = false
+
+GunMesh = Instance.new("SpecialMesh")
+GunMesh.MeshId = "http://www.roblox.com/asset/?id=4372594"
+GunMesh.Scale = Vector3.new(1.2, 1.2, 1.2)
+GunMesh.VertexColor = Vector3.new(1, 1, 1)
+
+GunGradient = Instance.new("Decal")
+GunGradient.Color3 = Color3.new(1, 1, 1)
+GunGradient.Texture = "http://www.roblox.com/asset/?id=156579757"
+GunGradient.Face = "Top"
+
+GunWeld = Instance.new("Weld")
+GunWeld.C1 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+GunWeld.C0 = CFrame.new(0.00025177002, -1.30018997, 4.76837158e-05, 1.00000012, -4.7326088e-05, 8.3854422e-05, -8.38935375e-05, 9.13441181e-06, 1, -4.73186374e-05, -1, 9.13441181e-06)
+
+GunMesh.Parent = Gun
+GunGradient.Parent = Gun
+GunWeld.Parent = Gun
+
+Explosion1 = Instance.new("Part")
+Explosion1.Shape = "Ball"
+Explosion1.Transparency = 0.4
+Explosion1.Color = Color3.new(226/255, 155/255, 64/255)
+Explosion1.Size = Vector3.new(20.65, 20.65, 20.65)
+Explosion1.CanCollide = false
+Explosion1.Material = "SmoothPlastic"
+Explosion1.Anchored = true
+Explosion2 = Instance.new("Part")
+Explosion2.Shape = "Ball"
+Explosion2.Transparency = 0.5
+Explosion2.Color = Color3.new(140/255, 140/255, 22/255)
+Explosion2.Size = Vector3.new(15.05, 15.05, 15.05)
+Explosion2.CanCollide = false
+Explosion2.Material = "SmoothPlastic"
+Explosion2.Anchored = true
+
+SightModel = Instance.new("Model")
+SightModel.Name = "LaserSight"
+
+GunHole = Instance.new("Part")
+GunHole.Shape = "Cylinder"
+GunHole.Material = "SmoothPlastic"
+GunHole.Size = Vector3.new(0.15, 0.1, 0.1)
+GunHole.CanCollide = false
+GunHole.Anchored = false
+GunHole.Color = Color3.new(17/255, 17/255, 17/255)
+GunHole.Parent = SightModel
+GunSightBall = Instance.new("Part")
+GunSightBall.Shape = "Ball"
+GunSightBall.Material = "SmoothPlastic"
+GunSightBall.Size = Vector3.new(0.35, 0.35, 0.35)
+GunSightBall.CanCollide = false
+GunSightBall.Anchored = false
+GunSightBall.Color = Color3.new(99/255, 95/255, 98/255)
+GunSightBall.Parent = SightModel
+
+GunSightCylinder = Instance.new("Part")
+GunSightCylinder.Shape = "Cylinder"
+GunSightCylinder.Material = "SmoothPlastic"
+GunSightCylinder.Size = Vector3.new(0.35, 0.35, 0.35)
+GunSightCylinder.CanCollide = false
+GunSightCylinder.Anchored = false
+GunSightCylinder.Color = Color3.new(99/255, 95/255, 98/255)
+GunSightCylinder.Parent = SightModel
+
+GunLaser1 = Instance.new("Part")
+GunLaser1.Shape = "Cylinder"
+GunLaser1.Material = "SmoothPlastic"
+GunLaser1.Size = Vector3.new(2.8, 0.05, 0.05)
+GunLaser1.CanCollide = false
+GunLaser1.Anchored = false
+GunLaser1.Color = Color3.new(1, 0, 0)
+GunLaser1.Transparency = 1
+GunLaser1.Parent = SightModel
+
+GunLaser2 = Instance.new("Part")
+GunLaser2.Shape = "Cylinder"
+GunLaser2.Material = "SmoothPlastic"
+GunLaser2.Size = Vector3.new(0.975, 0.05, 0.05)
+GunLaser2.CanCollide = false
+GunLaser2.Anchored = false
+GunLaser2.Color = Color3.new(1, 0, 0)
+GunLaser2.Transparency = 1
+GunLaser2.Parent = SightModel
+
+GunLaser3 = Instance.new("Part")
+GunLaser3.Shape = "Cylinder"
+GunLaser3.Material = "SmoothPlastic"
+GunLaser3.Size = Vector3.new(0.975, 0.05, 0.05)
+GunLaser3.CanCollide = false
+GunLaser3.Anchored = false
+GunLaser3.Color = Color3.new(1, 0, 0)
+GunLaser3.Transparency = 1
+GunLaser3.Parent = SightModel
+
+Laser1Weld = Instance.new("Weld")
+Laser1Weld.C0 = CFrame.new(1.36249876, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Laser1Weld.Part0 = GunHole
+Laser1Weld.Part1 = GunLaser1
+Laser1Weld.Parent = SightModel
+
+Laser2Weld = Instance.new("Weld")
+Laser2Weld.C0 = CFrame.new(1.88750744, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Laser2Weld.Part0 = GunLaser1
+Laser2Weld.Part1 = GunLaser2
+Laser2Weld.Parent = SightModel
+
+Laser3Weld = Instance.new("Weld")
+Laser3Weld.C0 = CFrame.new(0.975002289, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Laser3Weld.Part0 = GunLaser2
+Laser3Weld.Part1 = GunLaser3
+Laser3Weld.Parent = SightModel
+
+HoleWeld = Instance.new("Weld")
+HoleWeld.C0 = CFrame.new(0.125, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+HoleWeld.Part0 = GunSightCylinder
+HoleWeld.Part1 = GunHole
+HoleWeld.Parent = SightModel
+
+SightBallWeld = Instance.new("Weld")
+SightBallWeld.C0 = CFrame.new(-0.175001144, 5.96046448e-08, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+SightBallWeld.Part0 = GunSightCylinder
+SightBallWeld.Part1 = GunSightBall
+SightBallWeld.Parent = SightModel
+
+CylinderToGunWeld = Instance.new("Weld")
+CylinderToGunWeld.C0 = CFrame.new(0.0250000954, 0.0750001669, -0.712492466, -8.6274035e-08, 1.75032611e-07, 1, 3.56865471e-08, 1, -1.75032596e-07, -1, 3.56865257e-08, -8.62740421e-08)
+CylinderToGunWeld.Part1 = GunSightCylinder
+CylinderToGunWeld.Parent = SightModel
+
+TailWeld = Instance.new("Weld")
+TailWeld.C1 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+Ring = Instance.new("Part")
+Ring.Name = "Ring"
+Ring.Transparency = 0.5
+Ring.Anchored = true
+Ring.CanCollide = false
+Ring.Size = Vector3.new(0.01, 0.01, 0.01)
+
+RingMesh = Instance.new("SpecialMesh")
+RingMesh.MeshId = "rbxassetid://3270017"
+RingMesh.Scale = Vector3.new(2, 2, 1)
+RingMesh.Parent = Ring
+
+possibleshotnoise = {"rbxassetid://71526392", "rbxassetid://71526597", "rbxassetid://78407890", "rbxassetid://84318179", "rbxassetid://19112123"}
+possiblefannoise = {"ahh~ soft~", "you're really soft owo", "squishy.. eee..", "squishy~", 	
+"this is fun~", "so fluffy..", "you're a nice stress reliever..", "please..?",
+"i have a lot of feelings now >w<", "aaahhhhhhh!", "i don't want to let go..!", "you're so cute!", "aaaaaaaaaaahhhhh~",
+"soft owo", "i can't stop >w<", "i love you!", "fluffy owo"}
+gunraycastignorelist = {}
+walksound = Instance.new("Sound")
+walksound.SoundId = "rbxassetid://510932495"
+walksound.Name = "Walk"
+walksound.Volume = 3
+brushsound = Instance.new("Sound")
+brushsound.SoundId = "rbxassetid://131245944"
+brushsound.Name = "Brush"
+brushsound.Volume = 0.5
+purring = Instance.new("Sound")
+purring.SoundId = "rbxassetid://2046502717"
+purring.Name = "c-cat_noises"
+purring.Volume = 2
+purring.Looped = true
+cocksound = Instance.new("Sound")
+cocksound.SoundId = "rbxassetid://361550324"
+cocksound.Name = "GunSlide"
+cocksound.Volume = 2
+masksound = Instance.new("Sound")
+masksound.SoundId = "rbxassetid://2706199011"
+masksound.Name = "Mask"
+masksound.Volume = 2
+equipsound = Instance.new("Sound")
+equipsound.SoundId = "rbxassetid://1498950813"
+equipsound.Name = "Equip"
+equipsound.Volume = 2
+explosionsound = Instance.new("Sound")
+explosionsound.SoundId = "rbxassetid://1776706665"
+explosionsound.Volume = 4
+explosionsound.PlayOnRemove = true
+ShotMarker = Instance.new("Sound")
+ShotMarker.Name = "ShotMarker"
+ShotMarker.SoundId = "rbxassetid://296102734"
+ShotMarker.Volume = 3
+ShotMarker.PlayOnRemove = true
+Useless = Instance.new("Sound")
+Useless.Name = "Useless"
+Useless.SoundId = "rbxassetid://3034338716"
+Useless.Volume = 3
+Useless.PlayOnRemove = true
+Kill1 = Instance.new("Sound")
+Kill1.Name = "Kill1"
+Kill1.SoundId = "rbxassetid://449759304"
+Kill1.Volume = 0
+Kill2 = Instance.new("Sound")
+Kill2.Name = "Kill2"
+Kill2.SoundId = "rbxassetid://1854510736"
+Kill2.Volume = 0
+Kill3 = Instance.new("Sound")
+Kill3.Name = "Kill3"
+Kill3.SoundId = "rbxassetid://1278706842"
+Kill3.Volume = 0
+DashJump = Instance.new("Sound")
+DashJump.Name = "DashJump"
+DashJump.SoundId = "rbxassetid://1295417556"
+DashJump.Volume = 2
+SmallSquish = Instance.new("Sound")
+SmallSquish.Name = "SmallSquish"
+SmallSquish.SoundId = "rbxassetid://162180713"
+SmallSquish.Volume = 1
+BigSquish = Instance.new("Sound")
+BigSquish.Name = "BigSquish"
+BigSquish.SoundId = "rbxassetid://1139819274"
+BigSquish.Volume = 0.5
+BodyFall = Instance.new("Sound")
+BodyFall.Name = "BodyFall"
+BodyFall.SoundId = "rbxassetid://178646271"
+BodyFall.Volume = 2
+Grab = Instance.new("Sound")
+Grab.Name = "Grab"
+Grab.SoundId = "rbxassetid://260411131"
+Grab.Volume = 1.5
+FlashlightClick = Instance.new("Sound")
+FlashlightClick.Name = "FlashClick"
+FlashlightClick.SoundId = "rbxassetid://242135745"
+FlashlightClick.Volume = 4
+YoshisIsland = Instance.new("Sound")
+YoshisIsland.Name = "YoshisIsland"
+YoshisIsland.SoundId = "rbxassetid://916843842"
+YoshisIsland.Volume = 6
+YoshisIsland.Pitch = 3
+YoshisIsland.Looped = true
+
+lerpintensity = 0.4
+gunshotdamage = 10
+headshotdamage = 21
+explosionshotdamage = 41
+jumppower = 60
+localfunc2 = (function(player, contact)
+		if enabled == false then
+				Playerr = player
+				repeat
+					wait()
+				until player.Character.Dummy ~= nil
+				Character = player.Character.Dummy
+				gunraycastignorelist = {Gun, Character}
+				if Character.Head:FindFirstChild("Typing") == nil then
+					local ClickTyping = Instance.new("Sound")
+					ClickTyping.Name = "Typing"
+					ClickTyping.Parent = Character.Head
+					ClickTyping.SoundId = "rbxassetid://903267862"
+					walksound.Parent = Character.Torso
+					masksound.Parent = Character.Torso
+					equipsound.Parent = Character.Torso
+					Kill1.Parent = Character.Head
+					Kill2.Parent = Character.Head
+					Kill3.Parent = Character.Head
+					YoshisIsland.Parent = Character.Torso
+					DashJump.Parent = Character.Torso
+					BigSquish.Parent = Character.Torso
+					SmallSquish.Parent = Character.Torso
+					BodyFall.Parent = Character.Torso
+					Grab.Parent = Character.Torso
+					brushsound.Parent = Character.Head
+					purring.Parent = Character.Head
+					FlashlightClick.Parent = Gun
+					Character.Humanoid.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
+					if Character:FindFirstChildOfClass("Pants") then
+						Character:FindFirstChildOfClass("Pants"):Destroy()
+					else
+					end
+					Folder0.Pants.Parent = Character
+					wait()
+					while wait() do
+						for i, v in pairs(Character.Head:GetChildren()) do
+							if v.ClassName == "Decal" then
+									v:Remove()
+							end
+						end
+						if not Character.Head:FindFirstChild("face") then
+							break
+						end
+					end
+				end
+				wait()
+				Folder0.Blush:Clone().Parent = Character.Head
+				Folder0.Eyes:Clone().Parent = Character.Head
+				Folder0.Mouth:Clone().Parent = Character.Head
+				Folder0.Tail:Clone().Parent = Character
+				if Character:FindFirstChild("Tail") ~= nil then
+					Tail = Character:FindFirstChild("Tail")
+					Tail.Handle.Size = Vector3.new(0.2, 0.2, 0.2)
+					wait()
+					if Tail:FindFirstChildOfClass("Weld") ~= nil then
+						Tail:FindFirstChildOfClass("Weld"):Remove()
+					end
+					Tail.Handle.Mesh.Offset = Vector3.new(0.2, 0.95, 1.3)
+					TailWeld.C0 = CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+					TailWeld.Part0 = Character.Torso
+					TailWeld.Part1 = Tail.Handle
+					Character.Tail:Remove()
+				end
+				Character.Humanoid.BreakJointsOnDeath = false
+				Character.Humanoid.JumpPower = jumppower
+			RemoteEvent.Name = contact
+		RShoulder = Character.Torso["Right Shoulder"]
+		LShoulder = Character.Torso["Left Shoulder"]
+		RHip = Character.Torso["Right Hip"]
+		LHip = Character.Torso["Left Hip"]
+		Neck = Character.Torso.Neck
+		RJoint = Character.HumanoidRootPart.RootJoint
+		GunWeld.Part0 = Character["Right Arm"]
+		GunWeld.Part1 = Gun
+		CylinderToGunWeld.Part0 = Gun
+		SightModel.Parent = Gun
+		
+		Character.Humanoid:ClearAllChildren()
+		
+		for i, v in pairs(Character.Humanoid:GetPlayingAnimationTracks()) do
+			v:Stop()
+		end
+		
+		if Character:FindFirstChild("Animate") then
+			Character.Animate:Destroy()
+		end
+		
+		Character.Humanoid.WalkSpeed = 10
+		print("you're a cat now")
+		enabled = true
+		end
+end)
+function FallingAnimation()
+	lerpintensity = 0.2
+	action = true
+	running = false
+	while true do
+		if freefall == false then
+			action = false
+			wait()
+				if GunEquipped == true then
+					if running == true then
+						spawn(GunRunAnimation)
+					elseif walking == true and running == false then
+						spawn(GunWalkAnimation)
+					elseif walking == false then
+						spawn(GunIdleAnimation)
+					end
+				elseif GunEquipped == false then
+					if walking == true then
+							spawn(WalkAnimation)
+					elseif walking == false then
+							spawn(IdleAnimation)
+					end
+			break
+			end
+		end
+			if freefall == false then
+				action = false
+				return
+			end
+			wait()
+			lerpintensity = 0.3
+			if Character.Torso.Velocity.Y < 0 then
+				--falling
+			      TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, -0.0871549845, 0.99619472, 0, -0.99619472, -0.0871549845), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.400000572, 1.30000114, 9.53674316e-07, -0.022557538, -0.0841860026, 0.996194601, -0.257833898, -0.962250412, -0.0871557221, 0.965926051, -0.258818775, 0), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.399997711, 1.30000305, -3.81469727e-06, -0.0298090354, 0.0818996206, -0.996194601, 0.340718806, -0.936117053, -0.0871557221, -0.939692795, -0.342020392, -0), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 0.926279843, 0.0961994305, 0.0663478896, 0.142828107, 0.987521231, 0.334035039, 0.929415584, -0.156866685, -0.940222502, 0.340274423, 0.0139551731), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.931063533, 0.0745929778, 0.0663478822, -0.142828137, -0.987521231, -0.334034681, 0.929415822, -0.156866714, 0.940222681, 0.340274096, 0.0139552038), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 0.996194661, -0.0871557891, 0, -0.0871557891, -0.996194661), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, -0.545396805, 0.604500771, -0.99999994, 0, 0, 0, -0.866025329, -0.500000298, 0, -0.500000298, 0.866025329), lerpintensity)
+			else
+				 --rising
+				     RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.400000095, 1.30000114, -1.90734863e-06, 0.0225575734, -0.0841859803, 0.99619472, 0.257834256, -0.962250173, -0.087155737, 0.965925813, 0.258819193, 0), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.399998188, 1.30000019, 0, 0.0225575622, 0.0841860026, -0.99619472, -0.257834107, -0.962250233, -0.0871557593, -0.965925813, 0.258818954, -0), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 0.926279843, 0.0961994305, 0.0663478896, 0.142828107, 0.987521231, -0.00768500799, 0.989745677, -0.142633513, -0.997766912, 0.00187429786, 0.0667651743), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.931063533, 0.0745929778, 0.0663478822, -0.142828137, -0.987521231, 0.00768518727, 0.989745855, -0.142633542, 0.997766972, 0.00187411904, 0.0667651817), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 0.939692616, 0.342020094, 0, 0.342020094, -0.939692616), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, -0.0311697274, -0.00833471864, -1, 0, 0, 0, -0.906307936, 0.422617972, 0, 0.422617972, 0.906307936), lerpintensity)
+  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, -0.499999166, 0.866025865, 0, -0.866025865, -0.499999166), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+			end
+	end
+end
+
+function IdleAnimation()
+	lerpintensity = 0.2
+	Character.Humanoid.WalkSpeed = 10
+	while true do
+		if walking == true or action == true or GunEquipped == true or running == true then
+				break
+			end
+		for i = 1, 15 do
+			wait()
+			if walking == true or action == true or GunEquipped == true or running == true then
+				return
+			end
+			if i < 7 then
+				Character.Torso:WaitForChild("Right Shoulder")
+				RShoulder = Character.Torso["Right Shoulder"]
+				pcall(function()
+				   TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.98480767, -0.173648626, 0, 0.173648626, 0.98480767), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.5, 1.20000005, 0, 0, 0, 1, -0.707106888, 0.707106709, 0, -0.707106709, -0.707106888, 0), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499998122, 1.20000148, -1.90734863e-06, 3.70101283e-10, 0, -1, 0.707106888, 0.707106769, 0, 0.707106769, -0.707106888, 0), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 0.126279831, 0.0961994305, 0.0667652041, 0.0560225844, 0.99619472, 0.76312983, 0.640341103, -0.087155737, -0.642787099, 0.766044855, 0), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.131063491, 0.0745929778, 0.0667652115, -0.0560226105, -0.99619472, -0.763129652, 0.640341401, -0.0871557593, 0.642787337, 0.766044736, 0), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 0.422618061, 0.906307876, 0, 0.906307876, -0.422618061), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 1.2688303, 0.591665268, -1, 0, 0, 0, -0.422618449, 0.906307697, 0, 0.906307697, 0.422618449), lerpintensity)
+end)
+			else
+				  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.984807789, 0.173647702, 0, -0.173647702, 0.984807789), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.5, 1.20000005, 0, 0, 0, 1, -0.642787874, 0.766044259, 0, -0.766044259, -0.642787874, 0), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499998122, 1.20000148, -1.90734863e-06, 3.70101283e-10, 0, -1, 0.642787755, 0.766044438, 0, 0.766044438, -0.642787755, 0), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.500001192, 0.126281738, 0.0961997509, 0.0754791126, 0.0435778275, 0.99619472, 0.862730145, 0.498097032, -0.087155737, -0.499999672, 0.866025746, 1.58324838e-08), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.131063461, 0.0745928288, 0.0754791275, -0.0435778424, -0.99619472, -0.862729967, 0.498097211, -0.0871557593, 0.499999851, 0.866025507, 1.62981451e-08), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 0.342020094, 0.939692616, 0, 0.939692616, -0.342020094), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 1.30303288, 0.497695923, -1, 0, 0, 0, -0.342020512, 0.939692497, 0, 0.939692497, 0.342020512), lerpintensity)
+		end
+	end
+	end
+	end
+
+function GunIdleAnimation()
+	lerpintensity = 0.1
+	while true do
+		if walking == true or action == true or GunEquipped == false or running == true then
+				break
+			end
+		for i = 1, 30 do
+			wait()
+			if walking == true or action == true or GunEquipped == false or running == true then
+				return
+			end
+			if i < 15 then
+				 TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+				    RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(-0.199999988, 0.500000119, -0.800000012, 0, 0.087155737, 0.99619472, -8.74227766e-08, -0.99619472, 0.087155737, 1, -8.70901076e-08, 7.61939667e-09), lerpintensity)
+					  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.100001812, 0.691286087, 0.900381088, 0, 1, 2.98023224e-08, 0.0871555507, -2.96889162e-08, 0.99619472, 0.99619472, 2.59743782e-09, -0.0871555507), lerpintensity)
+					  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0), lerpintensity)
+					  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0), lerpintensity)
+					  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 1.71363354e-07, 1.00000012, 0, 1.00000012, -1.71363354e-07), lerpintensity)
+					  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0), lerpintensity)
+			else
+				TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.912786424, 0.408437282, 0, -0.408437282, 0.912786424), lerpintensity)
+ 				 TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+				    RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(-0.182569504, 0.300760746, -0.799999237, -7.61939578e-09, -7.4505806e-09, 1.00000012, -0.0871556401, -0.996194839, -8.08630141e-09, 0.99619472, -0.0871556476, 6.9410433e-09), lerpintensity)
+					  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.100001812, 0.691286087, 0.900381088, -0.00759610627, 0.99619472, -0.086824052, 0.086823903, 0.0871557072, 0.992403924, 0.99619472, 2.59743782e-09, -0.0871555507), lerpintensity)
+					  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 0.899999976, 0.100000001, 0, 0, 1, 0.087155737, 0.99619472, 0, -0.99619472, 0.087155737, 0), lerpintensity)
+					  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.899999976, 0.100000001, 0, 0, -1, -0.0871555507, 0.99619472, 0, 0.99619472, 0.0871555507, 0), lerpintensity)
+					  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, -0.0871553868, 0.99619478, 0, 0.99619478, 0.0871553868), lerpintensity)
+					  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0.100000001, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0), lerpintensity)
+			end
+		end
+	end
+end
+
+function WalkAnimation()
+	lerpintensity = 0.2
+	Character.Humanoid.WalkSpeed = 10
+	while true do
+		if walking == false or action == true or running == true then
+				break
+			end
+		for i = 1, 40 do
+			wait()
+			if walking == false or action == true or running == true then
+				return
+			end
+			if i < 10 then
+				   RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.5, 1.11069298, 0.00284805149, -0.0113444775, -0.0275930464, 0.999554873, -0.995644093, -0.0922008753, -0.0138453478, 0.0925418735, -0.99535799, -0.0264268741), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499998093, 0.914716721, 0.236166, 0, 0, -0.99999994, 0.642787814, 0.766044438, 0, 0.766044438, -0.642787814, 0), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.400000006, 0.826279819, 0.296199441, -0.107509531, 0.0554968752, 0.992653906, -0.990255713, -0.0948712975, -0.10194578, 0.0885166675, -0.993941426, 0.0651556775), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.731063485, 0.174592972, 0.0667652488, -0.0560226068, -0.99619472, 0.500505805, 0.865601063, -0.015134437, 0.863155007, -0.49759084, 0.0858316869), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.499999762, 0, -1, 0, 0, 0, 0.965925813, 0.258818835, 0, 0.258818835, -0.965925813), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(-1.90734863e-06, 0.690120697, 0.826452255, -0.99619472, 0, 0.087155737, 0.0225575455, -0.965925872, 0.257833958, 0.0841859803, 0.258818835, 0.962250233), lerpintensity)
+  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 0.984807789, 0.167731062, -0.0449433662, 0.0868238732, -0.251481235, 0.963959992, 0.150383621, -0.953217447, -0.26222375), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+				if i == 1 then
+					walksound:Play()
+				end
+			elseif i < 20 and i >= 10 then
+				  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.499998093, 1.11069322, 0.00284767151, 0.00104822312, -0.0373455919, 0.99930197, -0.985693932, 0.168385059, 0.00732677151, -0.168541074, -0.985013485, -0.0366348289), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499996185, 1.10000134, 0, -0.00256139738, 0.00549332425, -0.999981701, 0.996196687, 0.0871093869, -0.00207318831, 0.0870963484, -0.996183634, -0.00569554931), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.499996185, 0.726279974, 0.296193689, 0.0230207816, 0.0737333521, 0.997012854, -0.939751029, 0.341840804, -0.00358191691, -0.341083586, -0.936860859, 0.0771604925), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.384763718, 0.632380009, 0.257478714, -0.0835437849, -0.0496501997, -0.995266914, 0.936419606, 0.337650985, -0.0954484046, 0.340791643, -0.939961255, 0.0182848126), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.499999762, 0, -1, 0, 0, 0, 0.965925813, 0.258818835, 0, 0.258818835, -0.965925813), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(-1.90734863e-06, 0.690116882, 0.826450348, -0.99984777, 0, 0.0174524188, 0.00451701321, -0.965925872, 0.258779436, 0.0168577358, 0.258818835, 0.965778768), lerpintensity)
+  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 0.999999881, -0.000320188352, -0.00100398809, 0.000883448869, -0.264579654, 0.964363515, -0.000574578531, -0.964363813, -0.264579356), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+			elseif i > 20 and i <= 30 then
+			  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.5, 1.11069298, 0.00284805149, -0.0113444775, -0.0275930464, 0.999554873, -0.822192252, 0.569173992, 0.006380721, -0.569096625, -0.821753919, -0.0291437767), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499998093, 1.10000169, -1.91479921e-06, 0, 0, -0.99999994, 0.965925753, -0.258819461, 0, -0.258819461, -0.965925753, 0), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 0.726279795, 0.196199447, 0.0667652041, 0.0560225844, 0.99619472, -0.573830307, 0.818938911, -0.00759609137, -0.816248238, -0.571139574, 0.0868240744), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.400000006, 0.831063449, 0.274592996, -0.0969493613, 0.00382048264, -0.995281994, 0.93431288, -0.344288349, -0.0923319981, -0.343016714, -0.938856363, 0.0298090242), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.499999762, 0, -1, 0, 0, 0, 0.965925813, 0.258818835, 0, 0.258818835, -0.965925813), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0.69011879, 0.826451302, -0.99619472, 0, -0.087155737, -0.0225575455, -0.965925872, 0.257833958, -0.0841859803, 0.258818835, 0.962250233), lerpintensity)
+  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 0.939692616, -0.330366075, 0.0885212496, -0.171009839, -0.229692325, 0.958121657, -0.296198249, -0.915477872, -0.272336036), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+				if i == 21 then
+					walksound:Play()
+				end
+			else
+				    RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.499998093, 1.11069322, 0.00284767151, 0.00104822312, -0.0373455919, 0.99930197, -0.985693932, 0.168385059, 0.00732677151, -0.168541074, -0.985013485, -0.0366348289), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499996185, 1.10000134, 0, -0.00256139738, 0.00549332425, -0.999981701, 0.996196687, 0.0871093869, -0.00207318831, 0.0870963484, -0.996183634, -0.00569554931), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.499996185, 0.726279974, 0.296193689, 0.0230207816, 0.0737333521, 0.997012854, -0.939751029, 0.341840804, -0.00358191691, -0.341083586, -0.936860859, 0.0771604925), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.384763718, 0.632380009, 0.257478714, -0.0835437849, -0.0496501997, -0.995266914, 0.936419606, 0.337650985, -0.0954484046, 0.340791643, -0.939961255, 0.0182848126), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.499999762, 0, -1, 0, 0, 0, 0.965925813, 0.258818835, 0, 0.258818835, -0.965925813), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(-1.90734863e-06, 0.690116882, 0.826450348, -0.99984777, 0, 0.0174524188, 0.00451701321, -0.965925872, 0.258779436, 0.0168577358, 0.258818835, 0.965778768), lerpintensity)
+  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 0.999999881, -0.000320188352, -0.00100398809, 0.000883448869, -0.264579654, 0.964363515, -0.000574578531, -0.964363813, -0.264579356), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+			end
+		end
+	end
+end
+function Tackle()
+	local timeout = 1
+	local clocktime = 0
+	grabbed = false
+	running = false
+	local grabbedtorso = nil
+	if action == true or freefall == true then
+		return
+	else
+		action = true
+		lerpintensity = 0.2
+	end
+	Character.Humanoid.JumpPower = 0
+	Character.Humanoid.WalkSpeed = 35
+	local connection
+	local function onTouched(part)
+		if part.Parent:FindFirstChildOfClass("Humanoid") then
+			grabbed = true
+			slave = part.Parent
+			if part.Parent:FindFirstChild("Torso") then
+				grabbedtorso = part.Parent.Torso
+			else
+				grabbedtorso = part.Parent.UpperTorso
+			end
+			connection:Disconnect()
+		end
+	end
+	connection = Character["Left Arm"].Touched:Connect(onTouched)
+	local connection2
+	local function onTouched(part)
+		if part.Parent:FindFirstChildOfClass("Humanoid") then
+			grabbed = true
+			if part.Parent:FindFirstChild("Torso") then
+				grabbedtorso = part.Parent.Torso
+			else
+				grabbedtorso = part.Parent.UpperTorso
+			end
+			connection2:Disconnect()
+		end
+	end
+	connection2 = Character["Right Arm"].Touched:Connect(onTouched)
+	coroutine.resume(coroutine.create(function()
+		repeat
+			wait(0.1)
+			clocktime = clocktime + 0.1
+		until clocktime >= timeout or grabbed == true
+		if clocktime >= timeout then
+			action = false
+			Character.Humanoid.WalkSpeed = 10
+			Character.Humanoid.JumpPower = jumppower
+			connection:Disconnect()
+			connection2:Disconnect()
+			if GunEquipped == true then
+				if running == true then
+					spawn(GunRunAnimation)
+				elseif walking == true and running == false then
+					spawn(GunWalkAnimation)
+				elseif walking == false then
+					spawn(GunIdleAnimation)
+				end
+			elseif GunEquipped == false then
+				if walking == true then
+						spawn(WalkAnimation)
+				elseif walking == false then
+						spawn(IdleAnimation)
+				end
+			end
+		end
+	end))
+	Ring:Clone().Parent = Character.Torso
+	Character.Torso.Ring.CFrame = CFrame.new(Character.Torso.Position.X, Character.Torso.Position.Y, Character.Torso.Position.Z) * CFrame.new(0, -2.3, 0) * CFrame.Angles(math.rad(90), 0, 0)
+	local property = {}
+	property.Scale = Vector3.new(10, 10, 1)
+	local TweenInf = TweenInfo.new(0.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local Tween = TweenService:Create(Character.Torso.Ring.Mesh, TweenInf, property)
+	Character.Torso.Ring.Transparency = 1
+	Tween:Play()
+	property.Scale = nil
+	property.Transparency = 1
+	local TweenL = TweenService:Create(Character.Torso.Ring, TweenInf, property)
+	TweenL:Play()
+	DashJump:Play()
+	TweenL.Completed:Connect(function()
+		pcall(function()
+			Character.Torso.Ring:Destroy()
+		end)
+	end)
+	repeat
+		wait()
+		    RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.5, 1.50000012, 0, 1.29377966e-08, -0.173648164, 0.984807789, 7.33739043e-08, -0.984807789, -0.173648164, 1, 7.4505806e-08, 0), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499998093, 1.50000024, 0, -5.17511856e-09, 0.173648164, -0.984807789, 2.93495592e-08, -0.984807789, -0.173648164, -1, -2.98023224e-08, 0), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 1, 0, 0, 0.087155737, 0.99619472, 0, 0.99619472, -0.087155737, -1, 0, 0), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1, 0, 0, -0.087155737, -0.99619472, 0, 0.99619472, -0.087155737, 1, 0, 0), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.700000048, 0, -1, 0, 0, 0, 1, 4.47034836e-08, 0, 4.47034836e-08, -1), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0, 0, -0.99999994, 0, 0, 0, -0.996194661, 0.0871559232, 0, 0.0871559158, 0.99619472), lerpintensity)
+  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, -0.573576331, 0.819152117, 0, -0.819152117, -0.573576331), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+	until action == false or grabbed == true
+	if action == false then
+		return
+	end
+	if grabbed == true then
+		Grab:Play()
+		local Motor = Instance.new("Motor6D")
+		Motor.Name = "Hugging"
+		Motor.C1 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		Motor.C0 = CFrame.new(-0.0495090485, 2.10305977, -0.770607471, -1, 0, 0, 0, 0.25881806, 0.965925753, 0, 0.965921581, -0.258819163)
+		Motor.Part0 = Character.Torso
+		Motor.Part1 = grabbedtorso
+		Motor.Parent = Character.Torso
+		grabbedtorso.Parent:FindFirstChildOfClass("Humanoid").PlatformStand = true
+		Character.Humanoid.WalkSpeed = 10
+		for i = 1, 5 do
+				wait()
+				    RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.5, 1.30000007, 0, -0.0713938177, 0.0499904528, 0.99619472, -0.573576093, -0.819152355, 1.11758709e-08, 0.816035211, -0.571393609, 0.0871557295), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499998122, 1.3000015, -1.90734863e-06, -0.0713938028, -0.0499904826, -0.99619472, 0.573576033, -0.819152415, 5.58793545e-08, -0.816035271, -0.571393549, 0.087155737), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.500001192, 0.826281726, 0.0961997509, -0.0113969073, 0.0511440039, 0.998626411, 0.0852660537, 0.995103419, -0.0499904603, -0.996293128, 0.0845791027, -0.0157019645), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.831063509, 0.0745928288, -0.0113969073, -0.0511439741, -0.998626411, -0.0852655172, 0.995103478, -0.0499904566, 0.996293187, 0.0845785663, -0.015701957), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 0.819152117, 0.573576331, 0, 0.573576331, -0.819152117), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0.645248413, 0.258281708, -1, 0, 0, 0, -0.984807611, -0.173649192, 0, -0.173649192, 0.984807611), lerpintensity)
+  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.0871561915, 0.996194601, 0, -0.996194601, 0.0871561915), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+		end
+		Motor.C0 = CFrame.new(-0.0495090485, 2.10305977, -0.770607471, -1, 0, 0, 0, 0.25881806, 0.965925753, 0, 0.965921581, -0.258819163)
+		BodyFall:Play()
+		for i = 1, 5 do
+			wait()
+			if i <= 3 then
+				Motor.C0 = CFrame.new(-0.0495090485, 2.10305977, -0.770607471, -1, 0, 0, 0, 0.25881806, 0.965925753, 0, 0.965921581, -0.258819163)
+				  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.5, 1.30000007, 0, -0.0713938177, 0.0499904528, 0.99619472, -0.573576093, -0.819152355, 1.11758709e-08, 0.816035211, -0.571393609, 0.0871557295), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499998122, 1.3000015, -1.90734863e-06, -0.0713938028, -0.0499904826, -0.99619472, 0.573576033, -0.819152415, 5.58793545e-08, -0.816035271, -0.571393549, 0.087155737), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.500001192, 0.826281726, 0.0961997509, -0.0113969073, 0.0511440039, 0.998626411, 0.0852660537, 0.995103419, -0.0499904603, -0.996293128, 0.0845791027, -0.0157019645), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.831063509, 0.0745928288, -0.0113969073, -0.0511439741, -0.998626411, -0.0852655172, 0.995103478, -0.0499904566, 0.996293187, 0.0845785663, -0.015701957), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 0.819152117, 0.573576331, 0, 0.573576331, -0.819152117), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0.645248413, 0.258281708, -1, 0, 0, 0, -0.984807611, -0.173649192, 0, -0.173649192, 0.984807611), lerpintensity)
+  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.0871561915, 0.996194601, 0, -0.996194601, 0.0871561915), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+			else
+				  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.5, 1.30000007, 0, -0.0713938177, 0.0499904528, 0.99619472, -0.573576093, -0.819152355, 1.11758709e-08, 0.816035211, -0.571393609, 0.0871557295), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499998122, 1.3000015, -1.90734863e-06, -0.0713938028, -0.0499904826, -0.99619472, 0.573576033, -0.819152415, 5.58793545e-08, -0.816035271, -0.571393549, 0.087155737), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.500001192, 0.826281726, 0.0961997509, -0.0113969073, 0.0511440039, 0.998626411, 0.0852660537, 0.995103419, -0.0499904603, -0.996293128, 0.0845791027, -0.0157019645), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.831063509, 0.0745928288, -0.0113969073, -0.0511439741, -0.998626411, -0.0852655172, 0.995103478, -0.0499904566, 0.996293187, 0.0845785663, -0.015701957), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 0.819152117, 0.573576331, 0, 0.573576331, -0.819152117), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0.645248413, 0.258281708, -1, 0, 0, 0, -0.984807611, -0.173649192, 0, -0.173649192, 0.984807611), lerpintensity)
+  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.0871561915, 0.996194601, 0, -0.996194601, 0.0871561915), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+			end
+		end
+		Motor.C0 = CFrame.new(-0.0495090485, 2.10305977, -0.770607471, -1, 0, 0, 0, 0.25881806, 0.965925753, 0, 0.965921581, -0.258819163)
+		Character.Humanoid.WalkSpeed = 0
+		lerpintensity = 0.1
+		repeat
+			local chance = math.random(1, 10)
+			if chance < 10 then
+				for i = 1, 30 do
+					wait()
+					if i < 5 then
+						TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.965925694, -0.25881952, 0, 0.25881952, 0.965925694), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+					elseif i >= 5 and i < 10 then
+						 TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.984807789, 0.173647702, 0, -0.173647702, 0.984807789), lerpintensity)
+			  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+					elseif i >= 10 and i < 15 then
+						TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.965925694, -0.25881952, 0, 0.25881952, 0.965925694), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+					elseif i >= 15 and i < 20 then
+						 TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.984807789, 0.173647702, 0, -0.173647702, 0.984807789), lerpintensity)
+			  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+					elseif i >= 20 and i < 25 then
+							TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.965925694, -0.25881952, 0, 0.25881952, 0.965925694), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+					elseif i >= 25 then
+						 TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.984807789, 0.173647702, 0, -0.173647702, 0.984807789), lerpintensity)
+			  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+					end
+					if i > 15 then
+						 RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.5, 1.30000007, 0, -0.0713938177, 0.0499904528, 0.99619472, -0.816035151, 0.571393549, -0.087155737, -0.573576152, -0.819152236, 0), lerpintensity)
+			  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499998122, 1.3000015, -1.90734863e-06, -0.0713938028, -0.0499904826, -0.99619472, 0.816034973, 0.571393907, -0.087155737, 0.57357651, -0.819152057, 0), lerpintensity)
+			  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.500001192, 0.826281726, 0.0961997509, 0.07547912, 0.0435778312, 0.996194839, 0.862730265, 0.498097062, -0.087155737, -0.499999672, 0.866025746, 1.58324838e-08), lerpintensity)
+			  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.831063509, 0.0745928288, 0.0754791349, -0.0435778461, -0.996194839, -0.862730086, 0.498097271, -0.0871557519, 0.499999851, 0.866025507, 1.62981451e-08), lerpintensity)
+			  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, -0.642787695, 0.766044319, 0, 0.766044319, 0.642787695), lerpintensity)
+			  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0.645248413, 0.258281708, -1, 0, 0, 0, -0.342020512, 0.939692497, 0, 0.939692497, 0.342020512), lerpintensity)
+					end
+						Motor.C0 = Motor.C0:Lerp(CFrame.new(-0.0227355957, -1.26026344, -1.37898636, -1, 0, 0, 0, 0.573576629, -0.819151938, 0, -0.819151938, -0.573576629), lerpintensity)
+  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.5, 1.39999998, -0.100000001, -0.0713938177, 0.0499904528, 0.99619472, -0.96299684, 0.25676772, -0.0818995982, -0.259884864, -0.965179384, 0.0298090167), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499998122, 1.40000141, -0.100001909, -0.0713938028, -0.0499904826, -0.99619472, 0.962996662, 0.256768346, -0.0818996057, 0.25988543, -0.965179324, 0.0298089981), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.500001192, 0.42628178, 0.0961997509, 0.07547912, 0.0435778312, 0.996194839, 0.639691591, 0.76425612, -0.0818996131, -0.764916778, 0.643439114, 0.0298089981), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.431063563, 0.0745928288, 0.0754791349, -0.0435778461, -0.996194839, -0.639691174, 0.764256358, -0.0818996206, 0.764917135, 0.643438578, 0.0298090223), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, -0.707106829, 0.70710665, 0, 0.70710665, 0.707106829), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0.645248413, 0.258281708, -1, 0, 0, 0, -0.573576629, 0.819151938, 0, 0.819151938, 0.573576629), lerpintensity)
+				end
+			else
+				local squishnoise = math.random(1, 2)
+				if squishnoise == 1 then
+					SmallSquish:Play()
+				else
+					BigSquish:Play()
+				end
+				lerpintensity = 0.2
+				for i = 1, 7 do
+					wait()
+					if i > 3 then
+						TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.984807789, 0.173647702, 0, -0.173647702, 0.984807789), lerpintensity)
+  						TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+					else
+						  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.965925932, 0.258818567, 0, -0.258818567, 0.965925932), lerpintensity)
+ 						 TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+					end
+					Motor.C0 = Motor.C0:Lerp(CFrame.new(-0.0227355957, -1.26026344, -1.37898636, -1, 0, 0, 0, 0.573576629, -0.819151938, 0, -0.819151938, -0.573576629), lerpintensity)
+  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.5, 1.39999998, -0.100000001, -0.0713938177, 0.0499904528, 0.99619472, -0.96299684, 0.25676772, -0.0818995982, -0.259884864, -0.965179384, 0.0298090167), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499998122, 1.40000141, -0.100001909, -0.0713938028, -0.0499904826, -0.99619472, 0.962996662, 0.256768346, -0.0818996057, 0.25988543, -0.965179324, 0.0298089981), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.500001192, 0.42628178, 0.0961997509, 0.07547912, 0.0435778312, 0.996194839, 0.639691591, 0.76425612, -0.0818996131, -0.764916778, 0.643439114, 0.0298089981), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.431063563, 0.0745928288, 0.0754791349, -0.0435778461, -0.996194839, -0.639691174, 0.764256358, -0.0818996206, 0.764917135, 0.643438578, 0.0298090223), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, -0.707106829, 0.70710665, 0, 0.70710665, 0.707106829), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0.645248413, 0.258281708, -1, 0, 0, 0, -0.573576629, 0.819151938, 0, 0.819151938, 0.573576629), lerpintensity)
+				end
+			end
+		until on == "more" or on == "false"
+			local first = false
+			purring:Play()
+			repeat
+				if on == "false" then
+					break
+				end
+				if first == false then
+					first = true
+					coroutine.resume(coroutine.create(function()
+						Talk("prrrrrrrrrrrr...")
+					end))
+				else
+					coroutine.resume(coroutine.create(function()
+						Talk("prrrrrrrrrrrr...")
+					end))
+				end
+				lerpintensity = 0.15
+				for i = 1, 15 do
+					wait()
+					if i <= 7 then
+						if i == 1 then
+							brushsound:Play()
+							local chance = math.random(8, 13)
+							purring.PlaybackSpeed = chance/10
+						end
+						Motor.C0 = Motor.C0:Lerp(CFrame.new(0.0583114624, -0.512584686, -1.41906452, -0.99619472, 0, -0.087155737, 0.0298089981, 0.939692736, -0.340718448, 0.0818996131, -0.342019916, -0.936116934), lerpintensity)
+						   TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 0.438678026, 0.680997431, 0.586348057, -0.474547088, -0.378539503, 0.794677913, 0.763129473, -0.626857519, 0.157108307), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.300007641, 0.600003064, -0.100000381, -0.230375499, 0.115933135, 0.966171086, -0.934927404, 0.249000192, -0.252803802, -0.269885123, -0.961539626, 0.0510255098), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.273846447, 0.619167328, -0.0977859497, -0.389224023, -0.157410368, -0.907593906, 0.880719543, 0.225086316, -0.41673708, 0.269885838, -0.961539865, 0.051025331), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.497009277, -0.173597336, 0.196154714, 0.0262007248, -0.0151497796, 0.999542058, 0.343312234, 0.939207077, 0.00523614883, -0.938855946, 0.343017817, 0.0298089981), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.497009277, -0.168815613, 0.174548149, 0.0854182094, -0.148172021, -0.98526603, -0.33354643, 0.927569389, -0.16841206, 0.938856184, 0.34301731, 0.0298090223), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0.200912476, -0.709360123, 0.458553314, -0.800952435, 0.101351067, 0.590087712, 0.368687898, -0.693053365, 0.619472563, 0.471746415, 0.713726521, 0.517735839), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0.298843384, 0.105287552, 1.00426102, -0.99619472, 0, 0.087155737, 0.0298089981, -0.939692736, 0.340718448, 0.0818996131, 0.342019916, 0.936116934), lerpintensity)
+					else
+						if i == 8 then
+							brushsound:Play()
+						end
+						Motor.C0 = Motor.C0:Lerp(CFrame.new(0.195236206, -0.504997253, -1.39821768, -0.99619472, 0, 0.087155737, -0.0298089981, 0.939692736, -0.340718448, -0.0818996131, -0.342019916, -0.936116934), lerpintensity)
+						  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.300018311, 0.600002289, -0.100000381, -0.386793852, 0.164786592, 0.90732348, -0.880415916, 0.226710796, -0.416497767, -0.274333209, -0.959920764, 0.0573903918), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.273849487, 0.619165421, -0.0977859497, -0.232747033, -0.108718231, -0.966441572, 0.935460567, 0.246745914, -0.253043085, 0.265976012, -0.962962985, 0.0442721732), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.497024536, -0.173601151, 0.196154594, 0.116779052, 0.226236105, 0.967047155, 0.343777001, 0.904307723, -0.25307247, -0.93176204, 0.362002134, 0.0278293937), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.497009277, -0.168815613, 0.174548388, 0.0265306477, 0.0151176825, -0.999533892, -0.347999454, 0.937482119, 0.00494225696, 0.937119603, 0.347706079, 0.0301329084), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0.570289612, -0.803970337, -0.0138549805, 0.00520382822, 0.624937713, 0.78065753, -0.286788315, -0.746941745, 0.59985894, 0.957979977, -0.22700496, 0.175337881), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0.11423111, 1.02883196, -0.99619472, 0, -0.087155737, -0.0298089981, -0.939692736, 0.340718448, -0.0818996131, 0.342019916, 0.936116934), lerpintensity)
+  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 0.9468472, -0.225056857, 0.229848579, -0.193389788, 0.172739729, 0.965796232, -0.257062763, -0.95891124, 0.120034307), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+					end
+				end
+			until on == "false"
+				coroutine.resume(coroutine.create(function()
+					Talk("-w-")
+				end))
+				purring:Stop()
+		for i = 1, 5 do
+			wait()
+			 RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.5, 1.30000007, 0, -0.0713938177, 0.0499904528, 0.99619472, -0.816035151, 0.571393549, -0.087155737, -0.573576152, -0.819152236, 0), lerpintensity)
+			  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499998122, 1.3000015, -1.90734863e-06, -0.0713938028, -0.0499904826, -0.99619472, 0.816034973, 0.571393907, -0.087155737, 0.57357651, -0.819152057, 0), lerpintensity)
+			  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.500001192, 0.826281726, 0.0961997509, 0.07547912, 0.0435778312, 0.996194839, 0.862730265, 0.498097062, -0.087155737, -0.499999672, 0.866025746, 1.58324838e-08), lerpintensity)
+			  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.831063509, 0.0745928288, 0.0754791349, -0.0435778461, -0.996194839, -0.862730086, 0.498097271, -0.0871557519, 0.499999851, 0.866025507, 1.62981451e-08), lerpintensity)
+			  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, -0.642787695, 0.766044319, 0, 0.766044319, 0.642787695), lerpintensity)
+			  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0.645248413, 0.258281708, -1, 0, 0, 0, -0.342020512, 0.939692497, 0, 0.939692497, 0.342020512), lerpintensity)
+		end
+		grabbedtorso.Anchored = true
+		coroutine.resume(coroutine.create(function()
+			wait(0.2)
+			grabbedtorso.Anchored = false
+		end))
+		on = true
+		action = false
+		pcall(function()
+			for i, v in pairs(Character.Torso:GetChildren()) do
+				if v.Name == "Hugging" and v.ClassName == "Motor6D" then
+					v:Destroy()
+				end
+			end
+		end)
+		grabbedtorso.Parent:FindFirstChildOfClass("Humanoid").PlatformStand = false
+		if walking == true then
+			spawn(WalkAnimation)
+		elseif walking == false then
+			spawn(IdleAnimation)
+		end
+		Character.Humanoid.WalkSpeed = 10
+		Character.Humanoid.JumpPower = jumppower
+	end
+end
+
+function Groom()
+	local timeout = 1
+	local clocktime = 0
+	grabbed = false
+	running = false
+	local grabbedtorso = nil
+	if action == true or freefall == true then
+		return
+	else
+		action = true
+		lerpintensity = 0.2
+	end
+	Character.Humanoid.JumpPower = 0
+	Character.Humanoid.WalkSpeed = 35
+	coroutine.resume(coroutine.create(function()
+		repeat
+			wait(0.1)
+			clocktime = clocktime + 0.1
+		until clocktime >= timeout or grabbed == true
+		if clocktime >= timeout then
+			action = false
+			Character.Humanoid.WalkSpeed = 10
+			Character.Humanoid.JumpPower = jumppower
+			if GunEquipped == true then
+				if running == true then
+					spawn(GunRunAnimation)
+				elseif walking == true and running == false then
+					spawn(GunWalkAnimation)
+				elseif walking == false then
+					spawn(GunIdleAnimation)
+				end
+			elseif GunEquipped == false then
+				if walking == true then
+						spawn(WalkAnimation)
+				elseif walking == false then
+						spawn(IdleAnimation)
+				end
+			end
+		end
+	end))
+	Ring:Clone().Parent = Character.Torso
+	Character.Torso.Ring.CFrame = CFrame.new(Character.Torso.Position.X, Character.Torso.Position.Y, Character.Torso.Position.Z) * CFrame.new(0, -2.3, 0) * CFrame.Angles(math.rad(90), 0, 0)
+	local property = {}
+	property.Scale = Vector3.new(10, 10, 1)
+	local TweenInf = TweenInfo.new(0.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local Tween = TweenService:Create(Character.Torso.Ring.Mesh, TweenInf, property)
+	Character.Torso.Ring.Transparency = 1
+	Tween:Play()
+	property.Scale = nil
+	property.Transparency = 1
+	local TweenL = TweenService:Create(Character.Torso.Ring, TweenInf, property)
+	TweenL:Play()
+	TweenL.Completed:Connect(function()
+		pcall(function()
+			Character.Torso.Ring:Destroy()
+		end)
+	end)
+	purring:Play()
+	grabbed = true
+	if action == false then
+		return
+	end
+	if grabbed == true then
+		end
+		Character.Humanoid.WalkSpeed = 0
+		lerpintensity = 0.1
+		for i = 1, 15 do
+			wait()
+			     TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.98480767, -0.173648626, 0, 0.173648626, 0.98480767), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.500001907, 0.700000763, 3.81469727e-06, -0.212012142, 0.148452476, 0.965925813, -0.791240156, 0.554032147, -0.258819044, -0.573576331, -0.819152117, 0), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499998122, 0.50000149, -1.90734863e-06, -0.54167527, -0.54167521, -0.642787635, 0.45451957, 0.45451948, -0.766044438, 0.707106769, -0.707106888, 0), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(-0.206653118, 0.875644684, -0.290397644, 0.599353969, -0.78719008, 0.145280719, -0.726487219, -0.611128151, -0.314227045, 0.336141646, 0.0827887207, -0.938165724), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.200000018, 0.631063461, 0.274592966, -0.696535289, -0.623583138, -0.354940355, 0.632912159, -0.300920159, -0.713350654, 0.338024706, -0.721520066, 0.604274809), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -0.939692557, -0.309975654, -0.14454414, 0.0298090428, -0.495236635, 0.868246615, -0.340718865, 0.811576068, 0.47461018), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 1.2688303, 0.591665268, -1, 0, 0, 0, -0.422618449, 0.906307697, 0, 0.906307697, 0.422618449), lerpintensity)
+		end
+		repeat
+				for i = 1, 30 do
+					wait()
+					if i > 15 then
+      TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.98480767, -0.173648626, 0, 0.173648626, 0.98480767), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.380865097, 0.944504738, 0.102607727, -0.298836291, 0.298836201, 0.906307757, -0.640856564, 0.640856266, -0.42261827, -0.707106888, -0.707106948, 3.36828379e-08), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.359044552, 0.955858231, 0.102600098, -0.353553444, -0.353553385, -0.866025209, 0.612372696, 0.612372339, -0.5, 0.707106948, -0.707106948, -5.05242355e-08), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.199999988, 1.12627983, -0.103800572, 0.549776137, 0.331297398, 0.76680398, -0.668760061, -0.375469327, 0.64170301, 0.500505924, -0.865600824, 0.0151344091), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1.03106344, -0.525407076, 0.0667652041, -0.0560226068, -0.996194661, 0.256431252, -0.963922322, 0.0713938028, -0.964253783, -0.260222107, -0.0499905124), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0.200000003, -0.800000012, 0, -1, 0, 0, 0, -0.939692795, 0.342019498, 0, 0.342019498, 0.939692795), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 1.45009613, 0.676193237, -1, 2.30967999e-07, 0, -9.68575478e-08, -0.422618479, 0.906307697, 1.86264515e-07, 0.906307757, 0.422618449), lerpintensity)
+					else
+						if i == 1 then
+							brushsound:Play()
+						end
+					  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.98480767, -0.173648626, 0, 0.173648626, 0.98480767), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.385093689, 0.95358181, 0.126781464, -0.29883635, 0.298836231, 0.906307757, -0.640856504, 0.640856326, -0.42261824, -0.707106948, -0.707106948, 1.54024349e-08), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.364051819, 0.964536667, 0.126785278, -0.353553474, -0.353553414, -0.866025388, 0.612372637, 0.612372458, -0.5, 0.707107008, -0.707107008, -1.54024349e-08), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.199996948, 1.12628174, -0.10380125, 0.665907323, 0.373565733, 0.645768106, -0.553245008, -0.333425283, 0.763379157, 0.500487685, -0.865607619, -0.0153569616), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1.03106344, -0.525407076, 0.0667652041, -0.0560226068, -0.996194661, 0.085094586, -0.994465292, 0.0616284087, -0.994133413, -0.0888853818, -0.061628446), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0.200001717, -0.782634735, 0.0984802246, -1, 5.21098116e-08, -3.27107017e-08, 5.63623104e-08, -0.866026402, 0.499999702, -7.43935971e-08, 0.499999642, 0.866025925), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 1.42257214, 0.754058838, -1, 2.30967999e-07, 0, -8.02549565e-08, -0.342020363, 0.939692616, 1.93997408e-07, 0.939692676, 0.342020333), lerpintensity)
+					end
+					end
+		until on == "more" or on == "false"
+			for i = 1, 15 do
+				wait()
+				     TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.98480767, -0.173648626, 0, 0.173648626, 0.98480767), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.300000012, 0.700000048, 0, -0.640856445, 0.640856266, 0.42261827, -0.298836231, 0.298836172, -0.906307697, -0.707106709, -0.707106888, 0), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.537373543, 0.410797119, 0.514456749, -0.429610223, -0.797377706, 0.423821598, 0.859225631, -0.505339205, -0.0797840059, 0.27779156, 0.329882175, 0.902224898), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.413868725, 0.029406786, -0.140187263, -0.851848006, -0.495542467, 0.169690445, -0.154495448, -0.0718461946, -0.985377789, 0.500487924, -0.865607798, -0.015357133), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.531063378, 0.474592924, -0.78243959, -0.0379041135, -0.621571779, 0.617411792, 0.0829073936, -0.782258809, 0.0811837018, -0.995836377, -0.0414675511), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(2.1904707e-06, -0.61192739, 0.169189453, -1, 8.48723403e-09, -1.63108695e-07, 2.87404873e-08, -0.4226197, 0.906308532, -2.53046608e-07, 0.906308353, 0.422618985), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(-0.375876427, 1.14027405, 0.544895172, -0.939692616, 2.30967999e-07, -0.342020124, -0.321393877, -0.342020363, 0.883022189, -0.116977654, 0.939692676, 0.321394026), lerpintensity)
+			end
+			local first = false
+			repeat
+				if on == "false" then
+					break
+				end
+				if first == false then
+					first = true
+					coroutine.resume(coroutine.create(function()
+						Talk("prrrrrrrrrrrr...")
+					end))
+				else
+					coroutine.resume(coroutine.create(function()
+						Talk("prrrrrrrrrrrr...")
+					end))
+				end
+				lerpintensity = 0.15
+				for i = 1, 30 do
+					wait()
+					if i <= 15 then
+						if i == 1 then
+							local chance = math.random(8, 13)
+							purring.PlaybackSpeed = chance/10
+						end
+						  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.98480767, -0.173648626, 0, 0.173648626, 0.98480767), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.5, 1.20000005, 0, 0, 0, 1, -0.707106888, 0.707106709, 0, -0.707106709, -0.707106888, 0), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.700001895, 1.50501728e-06, 0.799998105, 0.178606153, 0.383022219, 0.906307817, -0.135401472, -0.902787268, 0.408217847, 0.974559665, -0.195625648, -0.109381542), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 0.126279831, 0.0961994305, 0.0667652041, 0.0560225844, 0.99619472, 0.76312983, 0.640341103, -0.087155737, -0.642787099, 0.766044855, 0), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.131063491, 0.0745929778, 0.0667652115, -0.0560226105, -0.99619472, -0.763129652, 0.640341401, -0.0871557593, 0.642787337, 0.766044736, 0), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, -0.422618657, 0.906307638, 0, 0.906307638, 0.422618657), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 1.2688303, 0.591665268, -1, 0, 0, 0, -0.422618449, 0.906307697, 0, 0.906307697, 0.422618449), lerpintensity)
+					else
+						if i == 16 then
+							brushsound:Play()
+						end
+						  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.98480767, -0.173648626, 0, 0.173648626, 0.98480767), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.5, 1.20000005, 0, 0, 0, 1, -0.707106888, 0.707106709, 0, -0.707106709, -0.707106888, 0), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.700001895, -0.0999984965, 0.699998081, 0.178606153, 0.383022219, 0.906307817, -0.219824702, -0.882301986, 0.416197687, 0.959050179, -0.273564339, -0.0733867884), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 0.126279831, 0.0961994305, 0.0667652041, 0.0560225844, 0.99619472, 0.76312983, 0.640341103, -0.087155737, -0.642787099, 0.766044855, 0), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 0.131063491, 0.0745929778, 0.0667652115, -0.0560226105, -0.99619472, -0.763129652, 0.640341401, -0.0871557593, 0.642787337, 0.766044736, 0), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, -0.258819461, 0.965925813, 0, 0.965925813, 0.258819461), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 1.2688303, 0.591665268, -1, 0, 0, 0, -0.422618449, 0.906307697, 0, 0.906307697, 0.422618449), lerpintensity)
+					end
+				end
+			until on == "owo" or on == "false"
+			on = "false"
+			repeat
+				if on == "false" then
+					break
+				end
+				for i = 1, 30 do
+					wait()
+					if i <= 15 then
+						  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.98480767, -0.173648626, 0, 0.173648626, 0.98480767), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.399999976, 0.700000048, 0.5, -0.353553444, 0.353553355, 0.866025388, 0.227985561, 0.930470407, -0.286788166, -0.907205939, 0.0960462689, -0.409576058), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.399998128, 0.600001454, 0.599998116, -0.351084054, -0.082283318, -0.932721436, -0.316419363, 0.947955728, 0.0354755521, 0.881259918, 0.307585865, -0.358848125), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 0.826279819, -0.00380057096, -0.0577223599, 0.537662208, 0.841182172, -0.755746245, -0.574083865, 0.315080076, 0.652315617, -0.617533088, 0.439473718), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.399999529, 0.531062007, -0.0254074335, -0.465810895, -0.352879643, -0.81147778, 0.541474938, 0.611641765, -0.576800704, 0.699874997, -0.708075047, -0.0938339308), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -1.29999352, 0.119611315, -1, 0, 0, 0, -0.965925992, -0.258818388, 0, -0.258818388, 0.965925992), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 1.97360229, -1.11223984, -1, 0, 0, 0, 0.819151938, 0.57357657, 0, 0.57357657, -0.819151938), lerpintensity)
+					else
+						if i == 16 then
+							brushsound:Play()
+						end
+						  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.98480767, -0.173648626, 0, 0.173648626, 0.98480767), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.399999976, 0.700000048, 0.5, -0.353553444, 0.353553355, 0.866025388, 0.227985561, 0.930470407, -0.286788166, -0.907205939, 0.0960462689, -0.409576058), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.399998128, 0.600001454, 0.599998116, -0.351084054, -0.082283318, -0.932721436, -0.316419363, 0.947955728, 0.0354755521, 0.881259918, 0.307585865, -0.358848125), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 0.826279819, -0.00380057096, -0.0577223599, 0.537662208, 0.841182172, -0.63099128, -0.672595739, 0.386607111, 0.773639441, -0.508462787, 0.378084034), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.399999529, 0.531062007, -0.0254074335, -0.465810895, -0.352879643, -0.81147778, 0.478416353, 0.671027124, -0.566427648, 0.744404435, -0.652072549, -0.143748358), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -1.29999352, 0.119611315, -1, 0, 0, 0, -0.984807849, -0.173647508, 0, -0.173647508, 0.984807849), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 1.97360229, -1.11223984, -1, 0, 0, 0, 0.819151938, 0.57357657, 0, 0.57357657, -0.819151938), lerpintensity)
+					end
+				end
+			until on == "false"
+				coroutine.resume(coroutine.create(function()
+					Talk("-w-")
+				end))
+				purring:Stop()
+		on = true
+		action = false
+		if walking == true then
+			spawn(WalkAnimation)
+		elseif walking == false then
+			spawn(IdleAnimation)
+		end
+		Character.Humanoid.WalkSpeed = 10
+		Character.Humanoid.JumpPower = jumppower
+end
+
+function GunWalkAnimation()
+	lerpintensity = 0.15
+	while true do
+		if walking == false or action == true or GunEquipped == false or running == true then
+				break
+			end
+		for i = 1, 20 do
+			wait()
+			if walking == false or action == true or GunEquipped == false or running == true then
+				break
+			end
+			if i < 5 then
+				 TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 0.953098297, 0.221296161, 0.206474632, -0.267031431, 0.935967088, 0.229476914, -0.142471164, -0.273849219, 0.951161504), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+				   RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(-0.199999988, 0.500000119, -0.800000012, 0, 0.087155737, 0.99619472, -8.74227766e-08, -0.99619472, 0.087155737, 1, -8.70901076e-08, 7.61939667e-09), lerpintensity)
+				  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.100001812, 0.691286087, 0.900381088, 0, 1, 2.98023224e-08, 0.0871555507, -2.96889162e-08, 0.99619472, 0.99619472, 2.59743782e-09, -0.0871555507), lerpintensity)
+				  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 1.10000229, -0.173206329, -0.173648134, 0, 0.984807551, 0.492403775, 0.866025448, 0.0868240669, -0.852868378, 0.5, -0.150383696), lerpintensity)
+				  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1.05000019, 0.0866088867, 0.173648134, 0, -0.984807551, 0.492404044, 0.866025329, 0.0868241116, 0.852868319, -0.500000179, 0.150383681), lerpintensity)
+				  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 1.71363354e-07, 1.00000012, 0, 1.00000012, -1.71363354e-07), lerpintensity)
+				  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0, 0, -0.98480773, -0.173648179, 0, 0, 0, 1, -0.173648179, 0.98480773, 0), lerpintensity)
+				  if i == 1 then
+				  	walksound:Play()
+				  end
+			elseif i >= 5 and i < 10 then
+				 TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 0.953098297, 0.221296161, 0.206474632, -0.267031431, 0.935967088, 0.229476914, -0.142471164, -0.273849219, 0.951161504), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+				 RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(-0.199999988, 0.500000119, -0.800000012, 0, 0.087155737, 0.99619472, -8.74227766e-08, -0.99619472, 0.087155737, 1, -8.70901076e-08, 7.61939667e-09), lerpintensity)
+				  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.100001812, 0.691286087, 0.900381088, 0, 1, 2.98023224e-08, 0.0871555507, -2.96889162e-08, 0.99619472, 0.99619472, 2.59743782e-09, -0.0871555507), lerpintensity)
+				  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 1.10000229, -0.173206329, -0.173648134, 0, 0.984807551, 0.492403775, 0.866025448, 0.0868240669, -0.852868378, 0.5, -0.150383696), lerpintensity)
+				  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1.05000019, 0.0866088867, 0.173648134, 0, -0.984807551, 0.492404044, 0.866025329, 0.0868241116, 0.852868319, -0.500000179, 0.150383681), lerpintensity)
+				  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 1.71363354e-07, 1.00000012, 0, 1.00000012, -1.71363354e-07), lerpintensity)
+				  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0.0999999046, 0, -0.98480773, -0.173648179, 0, 0, 0, 1, -0.173648179, 0.98480773, 0), lerpintensity)
+			elseif i >= 10 and i < 15 then
+				  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 0.696813047, 0.600698888, -0.391934067, -0.432968378, 0.787925243, 0.437849402, 0.571830273, -0.135404035, 0.809120178), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+				  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(-0.199999988, 0.500000119, -0.800000012, 0, 0.087155737, 0.99619472, -8.74227766e-08, -0.99619472, 0.087155737, 1, -8.70901076e-08, 7.61939667e-09), lerpintensity)
+				  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.100001812, 0.691286087, 0.900381088, 0, 1, 2.98023224e-08, 0.0871555507, -2.96889162e-08, 0.99619472, 0.99619472, 2.59743782e-09, -0.0871555507), lerpintensity)
+				  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.499996185, 1.19015789, 0.129904747, 0.173648402, -1.62060473e-07, 0.984807253, -0.564862609, 0.819151878, 0.0996008292, -0.806706905, -0.573576272, 0.142244384), lerpintensity)
+				  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1.15000057, -0.0866012573, -0.173648402, 1.54857418e-07, -0.984807372, -0.492403805, 0.866025448, 0.0868243426, 0.852868497, 0.499999762, -0.150383979), lerpintensity)
+				  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 1.71363354e-07, 1.00000012, 0, 1.00000012, -1.71363354e-07), lerpintensity)
+				  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0, 0, -0.98480767, 0.173648551, 0, 0, 0, 1, 0.173648551, 0.98480767, 0), lerpintensity)
+				  if i == 10 then
+				  	walksound:Play()
+				  end
+			elseif i >= 15 then
+				  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 0.696813047, 0.600698888, -0.391934067, -0.432968378, 0.787925243, 0.437849402, 0.571830273, -0.135404035, 0.809120178), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+				  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(-0.199999988, 0.500000119, -0.800000012, 0, 0.087155737, 0.99619472, -8.74227766e-08, -0.99619472, 0.087155737, 1, -8.70901076e-08, 7.61939667e-09), lerpintensity)
+				  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.100001812, 0.691286087, 0.900381088, 0, 1, 2.98023224e-08, 0.0871555507, -2.96889162e-08, 0.99619472, 0.99619472, 2.59743782e-09, -0.0871555507), lerpintensity)
+				  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.499996185, 1.19015789, 0.129904747, 0.173648402, -1.62060473e-07, 0.984807253, -0.564862609, 0.819151878, 0.0996008292, -0.806706905, -0.573576272, 0.142244384), lerpintensity)
+				  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1.15000057, -0.0866012573, -0.173648402, 1.54857418e-07, -0.984807372, -0.492403805, 0.866025448, 0.0868243426, 0.852868497, 0.499999762, -0.150383979), lerpintensity)
+				  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 1.71363354e-07, 1.00000012, 0, 1.00000012, -1.71363354e-07), lerpintensity)
+				  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0.0999999046, 0, -0.98480767, 0.173648551, 0, 0, 0, 1, 0.173648551, 0.98480767, 0), lerpintensity)
+			end
+		end
+	end
+end
+
+function GunRunAnimation()
+	lerpintensity = 0.5
+	if running == true then
+		return
+	end
+	running = true
+	while true do
+		if action == true and running == false then
+			stoprunning()
+			running = false
+			break
+		elseif walking == false then
+				stoprunning()
+				running = false
+				return
+			end
+		for i = 1, 12 do
+			wait()
+			if action == true and running == false then
+				stoprunning()
+				running = false
+				return
+			elseif walking == false then
+				stoprunning()
+				running = false
+				return
+			end
+			if i < 3 then
+				     TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 0.999999881, -0.000320188352, -0.00100398809, 0.000969801738, -0.0931002796, 0.995656371, -0.000412440335, -0.995656729, -0.0931000262), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.499998093, 1.11069322, 0.00284767151, 0.00104822579, -0.0373455845, 0.99930197, -0.769365489, 0.638332546, 0.0246625859, -0.638807893, -0.768854201, -0.0280633103), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499996185, 1.10000134, 0, -0.0025613904, 0.00549331307, -0.999981642, 0.766080141, 0.642743289, 0.00156857644, 0.64274013, -0.766061962, -0.00585465133), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.399996161, 0.726279974, 0.19619368, -0.570106149, -0.145601541, 0.80856663, -0.703167975, -0.422509432, -0.571875095, 0.424892604, -0.8945871, 0.138492972), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.1847637, 0.732380033, 0.257478714, -0.633421242, -0.0332981311, -0.773090959, 0.734873354, -0.338801771, -0.587516189, -0.242361262, -0.940268636, 0.2390742), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.499999762, 0, -1, 0, 0, 0, 0.965925813, 0.258818835, 0, 0.258818835, -0.965925813), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(-1.90734863e-06, 0.690116882, 0.826450348, -0.99984777, 0, 0.0174524188, 0.00152107805, -0.99619472, 0.0871424824, 0.0173860006, 0.0871557295, 0.996042967), lerpintensity)
+			elseif i >= 3 and i < 6 then
+				  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.499998093, 1.11069322, 0.00284767151, 0.00104822579, -0.0373455845, 0.99930197, -0.99572897, -0.0922928452, -0.00240467861, 0.0923182517, -0.995031238, -0.0372828394), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499996185, 1.10000134, 0, -0.0025613904, 0.00549331307, -0.999981642, 0.996186376, -0.0871997625, -0.00303071458, -0.0872148126, -0.996175826, -0.00524901412), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.199996173, 0.726279974, -0.00380632281, -0.486058295, -0.180515736, 0.855080307, -0.80583936, 0.471205562, -0.358592451, -0.338186681, -0.863353729, -0.374500334), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.1847637, 0.632380009, 0.15747872, -0.413873613, 0.211198509, -0.885496855, 0.714891076, 0.677620411, -0.172516018, 0.563595235, -0.704433382, -0.43143332), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.499999762, 0, -1, 0, 0, 0, 0.965925813, 0.258818835, 0, 0.258818835, -0.965925813), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(-1.90734863e-06, 0.690116882, 0.826450348, -0.99984777, 0, 0.0174524188, 0.00303057628, -0.984807789, 0.17362155, 0.0171872713, 0.17364797, 0.984657824), lerpintensity)
+  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 0.999999881, -0.000320188352, -0.00100398809, 0.000704634411, -0.505159855, 0.863025546, -0.000783653464, -0.863025784, -0.505159497), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+				if i == 3 then
+					walksound:Play()
+				end
+			elseif i >= 6 and i < 9 then
+				  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.499998093, 1.11069322, 0.00284767151, 0.00104822591, -0.0373455882, 0.99930203, -0.569322526, -0.821562707, -0.0301060043, 0.822113454, -0.568893552, -0.0221228637), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499996185, 1.10000134, 0, -0.0025613904, 0.00549331307, -0.999981642, 0.573526025, -0.819165647, -0.00596908294, -0.819183469, -0.573530793, -0.00105234119), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.499996185, 0.726279974, 0.296193689, 0.0152609367, 0.160046577, 0.986992121, -0.0897005647, 0.983345449, -0.158068463, -0.995851815, -0.0861214399, 0.0293631069), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.484763712, 0.632380009, 0.257478714, -0.0973621383, -0.221604943, -0.970264375, 0.0710586309, 0.970860004, -0.228871584, 0.99270916, -0.0912289917, -0.0787781402), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.499999762, 0, -1, 0, 0, 0, 0.965925813, 0.258818835, 0, 0.258818835, -0.965925813), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(-1.90734863e-06, 0.690116882, 0.826450348, -0.99984777, 0, 0.0174524188, 0.00737570506, -0.906307876, 0.422553718, 0.0158172604, 0.422618091, 0.906169891), lerpintensity)
+  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 0.999999881, -0.000320188352, -0.00100398809, 0.000557849184, -0.647348344, 0.762194097, -0.000894106633, -0.762194157, -0.647347927), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+			elseif i >= 9 then
+				   RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.499998093, 1.11069322, 0.00284767151, 0.00104822579, -0.0373455845, 0.99930197, -0.99572897, -0.0922928452, -0.00240467861, 0.0923182517, -0.995031238, -0.0372828394), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(-0.499996185, 1.10000134, 0, -0.0025613904, 0.00549331307, -0.999981642, 0.996186376, -0.0871997625, -0.00303071458, -0.0872148126, -0.996175826, -0.00524901412), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.199996173, 0.726279974, -0.00380632281, -0.486058295, -0.180515736, 0.855080307, -0.80583936, 0.471205562, -0.358592451, -0.338186681, -0.863353729, -0.374500334), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.1847637, 0.632380009, 0.15747872, -0.413873613, 0.211198509, -0.885496855, 0.714891076, 0.677620411, -0.172516018, 0.563595235, -0.704433382, -0.43143332), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.499999762, 0, -1, 0, 0, 0, 0.965925813, 0.258818835, 0, 0.258818835, -0.965925813), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(-1.90734863e-06, 0.690116882, 0.826450348, -0.99984777, 0, 0.0174524188, 0.00303057628, -0.984807789, 0.17362155, 0.0171872713, 0.17364797, 0.984657824), lerpintensity)
+  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 0.999999881, -0.000320188352, -0.00100398809, 0.000704634411, -0.505159855, 0.863025546, -0.000783653464, -0.863025784, -0.505159497), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+			end
+		end
+	end
+end
+
+function GunTakeOut()
+	if action == true then
+		return
+	else
+		action = true
+	end
+	lerpintensity = 0.3
+	Character.Humanoid.WalkSpeed = 0
+	Character.Humanoid.JumpPower = 0
+	if Tail ~= nil then
+		
+	end
+	if GunEquipped == false then
+		local random = nil
+		if Tail ~= nil then
+			random = math.random(1, 2)
+		else
+			random = math.random(2, 2)
+		end
+		
+		if random == 1 then
+			for i = 1, 45 do
+				wait()
+				if i >= 1 and i < 15 then
+				  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0.459564209, 0.892467499, 0.967061996, 0.3538284, 0.925181389, 0.137275308, 0.732968211, -0.36545071, 0.573762238, 0.581001699, -0.102394968, -0.807435691), lerpintensity)
+				  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+				  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(-0.5, 0.500000119, 0, 0, 0.087155737, 0.99619472, 0, 0.99619472, -0.087155737, -1, 0, 0), lerpintensity)
+				  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.500001907, 0.500000238, 0, 0, -0.0871557593, -0.99619472, 0, 0.99619472, -0.0871557593, 1, 0, 0), lerpintensity)
+				  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0), lerpintensity)
+				  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0), lerpintensity)
+				  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -0.766044438, 0.620885134, 0.166365698, -0.321393549, -0.59411478, 0.737383127, 0.556670487, 0.511399388, 0.654666781), lerpintensity)
+				  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0), lerpintensity)
+				elseif i >= 15 and i < 30 then
+					if i == 15 then
+						Gun.Parent = Tail
+				cocksound.Parent = Gun
+				cocksound:Play()
+				GunWeld.Part0 = Tail
+				GunWeld.Part1 = Gun
+				 GunWeld.C1 = GunWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1), 1)
+  GunWeld.C0 = GunWeld.C0:Lerp(CFrame.new(-0.136752129, 0.964542389, 2.05783081, -0.118005216, 0.918902755, 0.3764202, -0.431004584, -0.388897091, 0.81424433, 0.894600451, -0.0661537051, 0.441943228), 1)
+					end
+					  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(-0.500000954, 0.499999881, 0, 0, 0.087155737, 0.99619478, 0, 0.99619478, -0.087155737, -1, 0, 0), lerpintensity)
+					  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.500001907, 0.500000238, 0, 0, -0.0871557593, -0.99619472, 0, 0.99619472, -0.0871557593, 1, 0, 0), lerpintensity)
+					  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0), lerpintensity)
+					  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0), lerpintensity)
+					  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -0.766044438, 0.620885134, 0.166365698, -0.321393549, -0.59411478, 0.737383127, 0.556670487, 0.511399388, 0.654666781), lerpintensity)
+					  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0), lerpintensity)
+					  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(-0.0357952118, -0.133686066, 0.153659821, -0.156166315, 0.978144765, 0.137275308, 0.817494452, 0.0499944985, 0.573762238, 0.554359674, 0.201824218, -0.807435691), lerpintensity)
+					  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+				elseif i >= 30 then
+					   RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(-0.500011444, 0.699986637, 2.67028809e-05, -0.115969479, 0.31778273, 0.941044807, -0.557318985, 0.763417304, -0.326480567, -0.822159767, -0.562323868, 0.0885732472), lerpintensity)
+  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.700001895, 1.10000026, 0, 0.951251209, 0.2387826, -0.195202321, 0.0950286984, 0.375202537, 0.92205888, 0.29341203, -0.895659447, 0.334220678), lerpintensity)
+  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0), lerpintensity)
+  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0), lerpintensity)
+  Neck.C1 = Neck.C1:Lerp(CFrame.new(-3.81469727e-06, -0.499997854, 5.7220459e-06, -0.76603961, 0.620893061, 0.166358367, -0.413185656, -0.673885822, 0.612499475, 0.49240315, 0.400461972, 0.772767425), lerpintensity)
+  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(-0.000455379486, -9.98973846e-05, 0.00012588501, -1.00000155, -1.95503235e-05, -1.08927488e-05, -1.69947743e-05, 1.19060287e-05, 0.999993205, -1.01029873e-05, 0.999999881, -7.64429569e-06), lerpintensity)
+  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(-0.0357913971, -0.133386612, 0.154045105, 0.151821822, 0.941880465, 0.299685538, 0.876633883, -0.268372595, 0.399361014, 0.456577718, 0.202082798, -0.866429031), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+				end
+			end
+		else
+			for i = 1, 45 do
+			wait()
+			if i >= 1 and i < 15 then
+					if i == 1 then
+						masksound:Play()
+					end
+				  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(-0.5, 0.500000119, 0, -0.0885213241, -0.411008537, 0.907323539, 0.243210346, 0.874410391, 0.41982758, -0.965925813, 0.257834166, 0.0225575641), lerpintensity)
+				  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.500001907, 0.500000238, 0, -0.00644042995, 0.0771135688, -0.997001529, 0.036346633, 0.996381342, 0.0768309459, 0.999318421, -0.035742797, -0.00922000408), lerpintensity)
+				  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0), lerpintensity)
+				  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0), lerpintensity)
+				  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -0.817427635, 0.574380577, 0.0435779542, -0.306258202, -0.49742949, 0.811646461, 0.487870991, 0.650116205, 0.582521319), lerpintensity)
+				  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0), lerpintensity)
+			elseif i >= 15 and i < 30 then
+				if i == 15 then
+				Gun.Parent = Character["Right Arm"]
+				cocksound.Parent = Gun
+				cocksound:Play()
+				end
+				 RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(-0.499996185, 0.500000954, -0.299999237, 0.573117733, 0.450334728, 0.684641957, -0.810699165, 0.189650699, 0.553894997, 0.119595334, -0.872485697, 0.473778099), lerpintensity)
+				  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.500001907, 0.500000238, 0, 0, 0.0871557593, -0.99619472, 0, 0.99619472, 0.0871557593, 1, 0, 0), lerpintensity)
+				  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0), lerpintensity)
+				  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0), lerpintensity)
+				  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -0.836516201, 0.247167766, 0.489028335, 0.224143848, -0.660038292, 0.717013896, 0.500000179, 0.709406495, 0.496731579), lerpintensity)
+				  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0), lerpintensity)
+			elseif i >= 30 then
+				 RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(-0.399996191, 0.500000954, -0.0999992415, 0.390131444, -0.530427456, 0.752624869, -0.810699165, 0.189650699, 0.553894997, -0.436536878, -0.826244116, -0.356028348), lerpintensity)
+				  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.500001907, 0.500000238, 0, 0, 0.0871557593, -0.99619472, 0, 0.99619472, 0.0871557593, 1, 0, 0), lerpintensity)
+				  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0), lerpintensity)
+				  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0), lerpintensity)
+				  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -0.859785378, 0.00365444645, 0.51064235, 0.365998089, -0.692931056, 0.621201932, 0.356110126, 0.720994592, 0.59443444), lerpintensity)
+				  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0), lerpintensity)
+			end
+			end
+		end
+		GunWeld.Part1 = Character["Right Arm"]
+		GunWeld.Part0 = Gun
+		GunWeld.C0 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		GunWeld.C1 = CFrame.new(0.00025177002, -1.30018997, 4.76837158e-05, 1.00000012, -4.7326088e-05, 8.3854422e-05, -8.38935375e-05, 9.13441181e-06, 1, -4.73186374e-05, -1, 9.13441181e-06)
+		FlashlightClick.PlaybackSpeed = 1.1
+		FlashlightClick:Play()
+		GunLaser1.Transparency = 0.6
+		GunLaser2.Transparency = 0.8
+		GunLaser3.Transparency = 0.95
+		action = false
+		walking = false
+		running = false
+		GunEquipped = true
+		Character.Humanoid.WalkSpeed = 10
+		GunIdleAnimation()
+		Character.Humanoid.JumpPower = jumppower
+	else
+		action = true
+		GunEquipped = false
+		running = false
+		shiftdown = false
+		FlashlightClick.PlaybackSpeed = 0.9
+		FlashlightClick:Play()
+		GunLaser1.Transparency = 1
+		GunLaser2.Transparency = 1
+		GunLaser3.Transparency = 1
+		Character.Humanoid.JumpPower = 0
+		for i = 1, 15 do
+			wait()
+			if i == 1 then
+				masksound:Play()
+			elseif i == 14 then
+				equipsound:Play()
+			end
+			  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.866025448, 0.499999762, 0, -0.499999762, 0.866025448), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+			 RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(-0.5, 0.500000119, 0, -0.0885213241, -0.411008537, 0.907323539, 0.243210346, 0.874410391, 0.41982758, -0.965925813, 0.257834166, 0.0225575641), lerpintensity)
+				  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.500001907, 0.500000238, 0, -0.00644042995, 0.0771135688, -0.997001529, 0.036346633, 0.996381342, 0.0768309459, 0.999318421, -0.035742797, -0.00922000408), lerpintensity)
+				  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0), lerpintensity)
+				  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0), lerpintensity)
+				  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -0.817427635, 0.574380577, 0.0435779542, -0.306258202, -0.49742949, 0.811646461, 0.487870991, 0.650116205, 0.582521319), lerpintensity)
+				  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0), lerpintensity)
+		end
+		Gun.Parent = nil
+		action = false
+		walking = false
+		running = false
+		shiftdown = false
+		wait()
+		Character.Humanoid.WalkSpeed = 10
+		Character.Humanoid.JumpPower = jumppower
+		IdleAnimation()
+	end
+end
+
+function GunFire(hitP)
+	if action == true then
+		return
+	else
+		action = true
+		shooting = true
+		lerpintensity = 0.7
+	end
+	Character.Humanoid.JumpPower = 0
+	for i = 1, 5 do
+		wait()
+		  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.866025448, 0.499999762, 0, -0.499999762, 0.866025448), lerpintensity)
+  			TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+		  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.200000018, 1.10000014, 0, -1.94808241e-08, -1.49011603e-08, 0.99999994, -1, 1.87256603e-07, -2.00234354e-08, -1.78955474e-07, -1.00000012, 8.75252168e-16), lerpintensity)
+			  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.500001907, 1.10000026, 0, 0.819151998, -3.58062735e-08, -0.573576331, 0.573576391, -2.50718202e-08, 0.819151938, -4.37113883e-08, -1, 0), lerpintensity)
+			  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0), lerpintensity)
+			  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0), lerpintensity)
+			  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 0.0871559083, 0.99619472, 0, 0.99619472, -0.0871559083), lerpintensity)
+			  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0), lerpintensity)
+	end
+	local Rya = Ray.new(Gun.CFrame.p, (hitP - Gun.CFrame.p).unit * 500)
+	if not game.Workspace:FindFirstChild("ShotFolder") then
+		local Folder = Instance.new("Folder")
+		Folder.Name = "ShotFolder"
+		Folder.Parent = game.Workspace
+		Mouse.TargetFilter = game.Workspace.ShotFolder
+	end
+	for i, v in pairs(game.Workspace.ShotFolder:GetChildren()) do
+		table.insert(gunraycastignorelist, 1, v)
+	end
+	for i, v in pairs(game.Workspace:GetDescendants()) do
+		if v.ClassName == "Accessory" then
+			table.insert(gunraycastignorelist, 1, v)
+		end
+	end
+	local part, hitposition = workspace:FindPartOnRayWithIgnoreList(Rya, gunraycastignorelist)
+	local FireBeam = Instance.new("Part")
+	local Magn = (Gun.Position - hitposition).magnitude
+	if part then
+		if part.Parent:FindFirstChildOfClass("Humanoid") ~= nil then
+			if part.Name == "Head" then
+				if part.Parent:FindFirstChildOfClass("Humanoid").Health - headshotdamage <= 0 and part.Parent:FindFirstChildOfClass("Humanoid"):GetState() ~= Enum.HumanoidStateType.Dead then
+				if shoutplaying == true then
+					return
+				else
+					local chance = math.random(1, 3)
+				if chance == 1 then
+					Character.Head.Kill1:Play()
+					Character.Head.Kill1.Ended:Connect(function()
+						shoutplaying = false
+					end)
+				elseif chance == 2 then
+					Character.Head.Kill2:Play()
+					Character.Head.Kill2.Ended:Connect(function()
+						shoutplaying = false
+					end)
+				elseif chance == 3 then
+					Character.Head.Kill3:Play()
+					Character.Head.Kill3.Ended:Connect(function()
+						shoutplaying = false
+					end)
+				end
+				end
+			end
+				if headshotdamage <= part.Parent:FindFirstChildOfClass("Humanoid").Health / 40 then
+				Useless:Clone().Parent = part
+				part.Useless.PlaybackSpeed = (math.random(9, 12)) / 10
+				part.Useless:Remove()
+				else
+					ShotMarker:Clone().Parent = part
+					part.ShotMarker.PlaybackSpeed = 1.4
+					part.ShotMarker:Remove()
+				end
+				part.Parent:FindFirstChildOfClass("Humanoid"):TakeDamage(headshotdamage)
+			else
+				if part.Parent:FindFirstChildOfClass("Humanoid").Health - gunshotdamage <= 0 and part.Parent:FindFirstChildOfClass("Humanoid"):GetState() ~= Enum.HumanoidStateType.Dead then
+				if shoutplaying == true then
+					return
+				else
+					local chance = math.random(1, 3)
+				if chance == 1 then
+					Character.Head.Kill1:Play()
+					Character.Head.Kill1.Ended:Connect(function()
+						shoutplaying = false
+					end)
+				elseif chance == 2 then
+					Character.Head.Kill2:Play()
+					Character.Head.Kill2.Ended:Connect(function()
+						shoutplaying = false
+					end)
+				elseif chance == 3 then
+					Character.Head.Kill3:Play()
+					Character.Head.Kill3.Ended:Connect(function()
+						shoutplaying = false
+					end)
+				end
+				end
+			end
+				if gunshotdamage <= part.Parent:FindFirstChildOfClass("Humanoid").Health / 60 then
+				Useless:Clone().Parent = part
+				part.Useless.PlaybackSpeed = (math.random(9, 12)) / 10
+				part.Useless:Remove()
+				else
+					ShotMarker:Clone().Parent = part
+					part.ShotMarker.PlaybackSpeed = 1
+					part.ShotMarker:Remove()
+				end
+				part.Parent:FindFirstChildOfClass("Humanoid"):TakeDamage(gunshotdamage)
+			end
+		end
+	end
+	FireBeam.Transparency = 0.4
+	FireBeam.CanCollide = false
+	if part then
+		FireBeam.Size = Vector3.new(0.3, 0.3, Magn)
+	else
+		FireBeam.Size = Vector3.new(0.3, 0.3, 500)
+	end
+	FireBeam.Material = "Neon"
+	FireBeam.CFrame = Gun.CFrame:Lerp(CFrame.new(hitposition), 0.5)
+	FireBeam.CFrame = CFrame.new(FireBeam.Position, hitposition)
+	FireBeam.Anchored = true
+	FireBeam.Name = "PlayerGunFire"
+	FireBeam.Parent = game.Workspace.ShotFolder
+	local properties = {}
+	properties.Transparency = 1
+	properties.Size = FireBeam.Size + Vector3.new(1, 1, 0)
+	local TweenEnfo = TweenInfo.new(0.3, Enum.EasingStyle.Linear)
+	local TTween = TweenService:Create(FireBeam, TweenEnfo, properties)
+	TTween:Play()
+	TTween.Completed:Connect(function()
+		FireBeam:Destroy()
+	end)
+		local chance = possibleshotnoise[math.random(1, #possibleshotnoise)]
+		if chance == possibleshotnoise[1] then
+			if not Gun:FindFirstChild("first") then
+				local FireSound = Instance.new("Sound")
+				FireSound.Name = "first"
+				FireSound.Volume = 4
+				FireSound.SoundId = possibleshotnoise[1]
+				FireSound.Parent = Gun
+			end
+			Gun.first.Pitch = (math.random(8,12)) / 10
+			Gun.first:Play()
+		elseif chance == possibleshotnoise[2] then
+			if not Gun:FindFirstChild("second") then
+			local FireSound = Instance.new("Sound")
+				FireSound.Name = "second"
+				FireSound.Volume = 4
+				FireSound.SoundId = possibleshotnoise[2]
+				FireSound.Parent = Gun
+			end
+			Gun.second.Pitch = (math.random(8,12)) / 10
+			Gun.second:Play()
+		elseif chance == possibleshotnoise[3] then
+			if not Gun:FindFirstChild("third") then
+			local FireSound = Instance.new("Sound")
+				FireSound.Name = "third"
+				FireSound.Volume = 4
+				FireSound.SoundId = possibleshotnoise[3]
+				FireSound.Parent = Gun
+			end
+			Gun.third.Pitch = (math.random(8,12)) / 10
+			Gun.third:Play()
+		elseif chance == possibleshotnoise[4] then
+			if not Gun:FindFirstChild("fourth") then
+			local FireSound = Instance.new("Sound")
+				FireSound.Name = "fourth"
+				FireSound.Volume = 4
+				FireSound.SoundId = possibleshotnoise[4]
+				FireSound.Parent = Gun
+			end
+			Gun.fourth.Pitch = (math.random(8,12)) / 10
+			Gun.fourth:Play()
+		elseif chance == possibleshotnoise[5] then
+			if not Gun:FindFirstChild("fifth") then
+			local FireSound = Instance.new("Sound")
+				FireSound.Name = "fifth"
+				FireSound.Volume = 4
+				FireSound.SoundId = possibleshotnoise[5]
+				FireSound.Parent = Gun
+			end
+			Gun.fifth.Pitch = (math.random(8,12)) / 10
+			Gun.fifth:Play()
+		end
+	action = false
+	if walking == true then
+		if running == true then
+			GunRunAnimation()
+		else
+			GunWalkAnimation()
+		end
+	else
+		GunIdleAnimation()
+	end
+	shooting = false
+	Character.Humanoid.JumpPower = jumppower
+	gunraycastignorelist = {Gun, Character}
+end
+
+function GunExplosionFire(hitP)
+	local Cooldown = coroutine.wrap(function(cooldowntime)
+		repeat
+			wait(0.1)
+			cooldowntime = cooldowntime - 0.1
+		until cooldowntime <= 0
+		shotavailable = true
+	end)
+	if action == true then
+		return
+	else
+		action = true
+	end
+	Character.Humanoid.JumpPower = 0
+	lerpintensity = 0.7
+	shooting = true
+	shotavailable = false
+	for i = 1, 5 do
+		wait()
+		  TailWeld.C1 = TailWeld.C1:Lerp(CFrame.new(0, 0, 0, 1, 0, 0, 0, 0.866025448, 0.499999762, 0, -0.499999762, 0.866025448), lerpintensity)
+  TailWeld.C0 = TailWeld.C0:Lerp(CFrame.new(-9.53674316e-07, -0.899998903, 0.500267029, 1, 0, 0, 0, 1, 0, 0, 0, 1), lerpintensity)
+		  RShoulder.C1 = RShoulder.C1:Lerp(CFrame.new(0.200000018, 1.10000014, 0, -1.94808241e-08, -1.49011603e-08, 0.99999994, -1, 1.87256603e-07, -2.00234354e-08, -1.78955474e-07, -1.00000012, 8.75252168e-16), lerpintensity)
+			  LShoulder.C1 = LShoulder.C1:Lerp(CFrame.new(0.500001907, 1.10000026, 0, 0.819151998, -3.58062735e-08, -0.573576331, 0.573576391, -2.50718202e-08, 0.819151938, -4.37113883e-08, -1, 0), lerpintensity)
+			  RHip.C1 = RHip.C1:Lerp(CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0), lerpintensity)
+			  LHip.C1 = LHip.C1:Lerp(CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0), lerpintensity)
+			  Neck.C1 = Neck.C1:Lerp(CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 0.0871559083, 0.99619472, 0, 0.99619472, -0.0871559083), lerpintensity)
+			  RJoint.C1 = RJoint.C1:Lerp(CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0), lerpintensity)
+	end
+	local Rya = Ray.new(Gun.CFrame.p, (hitP - Gun.CFrame.p).unit * 500)
+	if not game.Workspace:FindFirstChild("ShotFolder") then
+		local Folder = Instance.new("Folder")
+		Folder.Name = "ShotFolder"
+		Folder.Parent = game.Workspace
+		Mouse.TargetFilter = game.Workspace.ShotFolder
+	end
+	for i, v in pairs(game.Workspace.ShotFolder:GetChildren()) do
+		if v.Name == "PlayerGunFire" then
+			table.insert(gunraycastignorelist, 1, v)
+		end
+	end
+	local part, hitposition = workspace:FindPartOnRayWithIgnoreList(Rya, gunraycastignorelist)
+	local FireBeam = Instance.new("Part")
+	FireBeam.Color = Orange
+	local Magn = (Gun.Position - hitposition).magnitude
+	FireBeam.Transparency = 0.4
+	FireBeam.CanCollide = false
+	if part then
+		FireBeam.Size = Vector3.new(0.3, 0.3, Magn)
+	else
+		FireBeam.Size = Vector3.new(0.3, 0.3, 500)
+	end
+	FireBeam.Material = "Neon"
+	FireBeam.CFrame = Gun.CFrame:Lerp(CFrame.new(hitposition), 0.5)
+	FireBeam.CFrame = CFrame.new(FireBeam.Position, hitposition)
+	FireBeam.Anchored = true
+	FireBeam.Name = "PlayerGunFire"
+	local SecondBeam = FireBeam:Clone()
+	SecondBeam.Size = FireBeam.Size + Vector3.new(0.7, 0.7, 0)
+	SecondBeam.Name = "PlayerGunFire"
+	FireBeam.Parent = game.Workspace.ShotFolder
+	SecondBeam.Parent = game.Workspace.ShotFolder
+	local properties = {}
+	properties.Transparency = 1
+	properties.CFrame = FireBeam.CFrame
+	properties.Size = FireBeam.Size + Vector3.new(FireBeam.Size.X + 1, FireBeam.Size.Y + 1, 0)
+	local TweenEnfo = TweenInfo.new(0.3, Enum.EasingStyle.Linear)
+	local TTween = TweenService:Create(FireBeam, TweenEnfo, properties)
+	TTween:Play()
+	TTween = TweenService:Create(SecondBeam, TweenEnfo, properties)
+	TTween:Play()
+	TTween.Completed:Connect(function()
+		FireBeam:Destroy()
+		SecondBeam:Destroy()
+	end)
+	local Explosioo1 = Explosion1:Clone()
+	local Explosioo2 = Explosion2:Clone()
+	properties.Size = Vector3.new(Explosioo1.Size.X + 1, Explosioo1.Size.Y + 1, Explosioo1.Size.Z + 1)
+	properties.CFrame = CFrame.new(hitposition)
+	Explosioo1.CFrame = CFrame.new(hitposition)
+	Explosioo1.Parent = game.Workspace
+	TTween = TweenService:Create(Explosioo1, TweenEnfo, properties)
+	TTween:Play()
+	Explosioo2.CFrame = CFrame.new(hitposition)
+	Explosioo2.Parent = game.Workspace
+	explosionsound:Clone().Parent = Explosioo2
+	Explosioo2.Sound:Remove()
+	TTween = TweenService:Create(Explosioo2, TweenEnfo, properties)
+	TTween:Play()
+	TTween.Completed:Connect(function()
+		Explosioo1:Destroy()
+		Explosioo2:Destroy()
+		wait()
+	end)
+	local Explosion = Instance.new("Explosion")
+	Explosion.BlastPressure = 500000
+	Explosion.BlastRadius = 18
+	Explosion.DestroyJointRadiusPercent = 0
+	Explosion.ExplosionType = Enum.ExplosionType.NoCraters
+	Explosion.Visible = false
+	Explosion.Position = Explosioo1.Position
+	Explosion.Parent = game.Workspace
+	Explosioo1.Touched:Connect(function(hit)
+		if hit.Parent:FindFirstChildOfClass("Humanoid") ~= nil then
+			if hit.Parent:FindFirstChildOfClass("Humanoid"):FindFirstChild("Hit") then
+				return
+			end
+				if hit.Parent:FindFirstChildOfClass("Humanoid") ~= nil then
+				if hit.Parent:FindFirstChildOfClass("Humanoid").Health - explosionshotdamage <= 0 and hit.Parent:FindFirstChildOfClass("Humanoid"):GetState() ~= Enum.HumanoidStateType.Dead then
+				if shoutplaying == true then
+					return
+				else
+					local chance = math.random(1, 3)
+				if chance == 1 then
+					Character.Head.Kill1:Play()
+					Character.Head.Kill1.Ended:Connect(function()
+						shoutplaying = false
+					end)
+				elseif chance == 2 then
+					Character.Head.Kill2:Play()
+					Character.Head.Kill2.Ended:Connect(function()
+						shoutplaying = false
+					end)
+				elseif chance == 3 then
+					Character.Head.Kill3:Play()
+					Character.Head.Kill3.Ended:Connect(function()
+						shoutplaying = false
+					end)
+				end
+				end
+				end
+			if explosionshotdamage <= hit.Parent:FindFirstChildOfClass("Humanoid").Health / 20 then
+				Useless:Clone().Parent = hit
+				hit.Useless.PlaybackSpeed = (math.random(9, 12)) / 10
+				hit.Useless:Remove()
+			end
+			local Haet = Instance.new("NumberValue")
+			Haet.Name = "Hit"
+			Haet.Parent = hit.Parent:FindFirstChildOfClass("Humanoid")
+			hit.Parent:FindFirstChildOfClass("Humanoid"):TakeDamage(explosionshotdamage)
+			end
+		end
+	end)
+		local chance = possibleshotnoise[math.random(1, #possibleshotnoise)]
+		if chance == possibleshotnoise[1] then
+			if not Gun:FindFirstChild("first") then
+				local FireSound = Instance.new("Sound")
+				FireSound.Name = "first"
+				FireSound.Volume = 4
+				FireSound.Parent = Gun
+			end
+			Gun.first.Pitch = (math.random(8,12)) / 10
+			Gun.first:Play()
+		elseif chance == possibleshotnoise[2] then
+			if not Gun:FindFirstChild("second") then
+			local FireSound = Instance.new("Sound")
+				FireSound.Name = "second"
+				FireSound.Volume = 4
+				FireSound.Parent = Gun
+			end
+			Gun.second.Pitch = (math.random(8,12)) / 10
+			Gun.second:Play()
+		elseif chance == possibleshotnoise[3] then
+			if not Gun:FindFirstChild("third") then
+			local FireSound = Instance.new("Sound")
+				FireSound.Name = "third"
+				FireSound.Volume = 4
+				FireSound.Parent = Gun
+			end
+			Gun.third.Pitch = (math.random(8,12)) / 10
+			Gun.third:Play()
+		elseif chance == possibleshotnoise[4] then
+			if not Gun:FindFirstChild("fourth") then
+			local FireSound = Instance.new("Sound")
+				FireSound.Name = "fourth"
+				FireSound.Volume = 4
+				FireSound.Parent = Gun
+			end
+			Gun.fourth.Pitch = (math.random(8,12)) / 10
+			Gun.fourth:Play()
+		elseif chance == possibleshotnoise[5] then
+			if not Gun:FindFirstChild("fifth") then
+			local FireSound = Instance.new("Sound")
+				FireSound.Name = "fifth"
+				FireSound.Volume = 4
+				FireSound.Parent = Gun
+			end
+			Gun.fifth.Pitch = (math.random(8,12)) / 10
+			Gun.fifth:Play()
+		end
+	action = false
+	Cooldown(2)
+	if walking == true then
+		if running == true then
+			GunRunAnimation()
+		else
+			GunWalkAnimation()
+		end
+	else
+		GunIdleAnimation()
+	end
+	lerpintensity = 0.2
+	gunraycastignorelist = {Gun, Character}
+	shooting = false
+	Character.Humanoid.JumpPower = jumppower
+	wait()
+	for i, v in pairs(game.Workspace:GetDescendants()) do
+		if v.ClassName == "NumberValue" and v.Name == "Hit" then
+			v:Destroy()
+		end
+	end
+end
+
+function Ragdoll()
+			Character.Humanoid.AutoRotate = false
+			
+			local xrandom = 0
+			local yrandom = 0
+			local zrandom = 0
+			
+			xrandom = math.random(1,2)
+			yrandom = math.random(1,2)
+			zrandom = math.random(1,2)
+			
+			if xrandom == 1 then
+				xrandom = -10
+			else
+				xrandom = 10
+			end
+			if yrandom == 1 then
+				yrandom = -10
+			else
+				yrandom = 10
+			end
+			if zrandom == 1 then
+				zrandom = -10
+			else
+				yrandom = 10
+			end
+			
+			Character.Torso.RotVelocity = Vector3.new(Character.Torso.RotVelocity.X + xrandom, Character.Torso.RotVelocity.Y + yrandom, Character.Torso.RotVelocity.Z + zrandom)
+			local LeftC = Instance.new("Attachment")
+			LeftC.Position = Vector3.new(0.5, 1, -0)
+			LeftC.Name = "LeftCollarAttachment"
+			local RightC = Instance.new("Attachment")
+			RightC.Position = Vector3.new(-0.5, 1, -0)
+			RightC.Name = "RightCollarAttachment"
+			local LeftH = Instance.new("Attachment")
+			LeftH.Position = Vector3.new(0.1, 1, -0)
+			LeftH.Name = "LeftHipAttachment"
+			local LeftHOrig = Instance.new("Attachment")
+			LeftHOrig.Position = Vector3.new(-0.4, -1, 0)
+			LeftHOrig.Name = "LeftHipAttachmentOrig"
+			local RightH = Instance.new("Attachment")
+			RightH.Position = Vector3.new(-0.1, 1, 0)
+			RightH.Name = "RightHipAttachment"
+			local RightHOrig = Instance.new("Attachment")
+			RightHOrig.Position = Vector3.new(0.4, -1, 0)
+			RightHOrig.Name = "RightHipAttachmentOrig"
+			local NH = Instance.new("Attachment")
+			NH.Position = Vector3.new(0, -0.5, 0)
+			NH.Name = "NeckAttachment"
+			
+			local LeftArmdoll = Instance.new("BallSocketConstraint")
+			LeftArmdoll.TwistLimitsEnabled = false
+			LeftArmdoll.Name = "LeftArmdoll"
+			local RightArmdoll = Instance.new("BallSocketConstraint")
+			RightArmdoll.TwistLimitsEnabled = false
+			RightArmdoll.Name = "RightArmdoll"
+			local LeftLegdoll = Instance.new("BallSocketConstraint")
+			LeftLegdoll.TwistLimitsEnabled = false
+			LeftLegdoll.Name = "LeftLegdoll"
+			local RightLegdoll = Instance.new("BallSocketConstraint")
+			RightLegdoll.TwistLimitsEnabled = false
+			RightLegdoll.Name = "RightLegdoll"
+			local Neckdoll = Instance.new("BallSocketConstraint")
+			Neckdoll.TwistLimitsEnabled = false
+			Neckdoll.Name = "Neckdoll"
+			
+			LeftC:Clone().Parent = Character["Left Arm"]
+			RightC:Clone().Parent = Character["Right Arm"]
+			LeftH:Clone().Parent = Character["Left Leg"]
+			LeftHOrig:Clone().Parent = Character.Torso
+			RightH:Clone().Parent = Character["Right Leg"]
+			RightHOrig:Clone().Parent = Character.Torso
+			NH:Clone().Parent = Character["Head"]
+			
+
+			LeftArmdoll:Clone().Parent = Character.Torso
+			RightArmdoll:Clone().Parent = Character.Torso
+			LeftLegdoll:Clone().Parent = Character.Torso
+			RightLegdoll:Clone().Parent = Character.Torso
+			Neckdoll:Clone().Parent = Character.Torso
+			
+			Character.Torso.LeftArmdoll.Attachment0 = Character.Torso.LeftCollarAttachment
+			Character.Torso.LeftArmdoll.Attachment1 = Character["Left Arm"].LeftCollarAttachment
+			Character.Torso.RightArmdoll.Attachment0 = Character.Torso.RightCollarAttachment
+			Character.Torso.RightArmdoll.Attachment1 = Character["Right Arm"].RightCollarAttachment
+			Character.Torso.LeftLegdoll.Attachment0 = Character.Torso.LeftHipAttachmentOrig
+			Character.Torso.LeftLegdoll.Attachment1 = Character["Left Leg"].LeftHipAttachment
+			Character.Torso.RightLegdoll.Attachment0 = Character.Torso.RightHipAttachmentOrig
+			Character.Torso.RightLegdoll.Attachment1 = Character["Right Leg"].RightHipAttachment
+			Character.Torso.Neckdoll.Attachment0 = Character.Torso.NeckAttachment
+			Character.Torso.Neckdoll.Attachment1 = Character.Head.NeckAttachment
+			for i, v in pairs(Character:GetChildren()) do
+				if v:IsA("BasePart") then
+					if v.Name == "Right Arm" or v.Name == "Left Arm" then
+						v.CustomPhysicalProperties = PhysicalProperties.new(0.1, 0, 0, 0, 0)
+						local legpart = Instance.new("Part")
+						legpart.Size = Vector3.new(1,2,1)
+						legpart.Transparency = 1
+						legpart.Parent = v
+						
+						local weld = Instance.new("ManualWeld")
+						weld.Parent = game.Players.LocalPlayer.Character.Dummy
+						weld.Part0 = legpart
+						weld.Part1 = v
+						
+						weld.C0 = CFrame.new(0,0,0)
+						weld.C1 = CFrame.new(0,0,0)
+						
+			
+						PhysicsService:SetPartCollisionGroup(legpart, "TopLimbs")
+					elseif v.Name == "Left Leg" or v.Name == "Right Leg" then
+						v.CustomPhysicalProperties = PhysicalProperties.new(0.1, 0, 0, 0, 0)
+						local legpart = Instance.new("Part")
+						legpart.Size = Vector3.new(1,2,1)
+						legpart.Transparency = 1
+						legpart.Parent = v
+						
+						local weld = Instance.new("ManualWeld")
+						weld.Parent = game.Players.LocalPlayer.Character.Dummy
+						weld.Part0 = legpart
+						weld.Part1 = v
+						
+						weld.C0 = CFrame.new(0,0,0)
+						weld.C1 = CFrame.new(0,0,0)
+						
+			
+						PhysicsService:SetPartCollisionGroup(legpart, "BottomLimbs")
+					elseif v.Name == "Torso" or v.Name == "Head" then
+						if v.Size == Vector3.new(2, 1, 1) then
+							v.CustomPhysicalProperties = PhysicalProperties.new(0.1, 0, 0, 0, 0)
+							local headpart = Instance.new("Part")
+							headpart.Size = Vector3.new(2,1,1)
+							headpart.Transparency = 1
+							headpart.Parent = v
+							
+							local weld = Instance.new("ManualWeld")
+							weld.Parent = game.Players.LocalPlayer.Character.Dummy
+							weld.Part0 = headpart
+							weld.Part1 = v
+							
+							weld.C0 = CFrame.new(0,0,0)
+							weld.C1 = CFrame.new(0,0,0)
+						else
+							local torsopart = Instance.new("Part")
+							torsopart.Size = Vector3.new(2,2,1)
+							torsopart.Transparency = 1
+							torsopart.Parent = v
+							
+							local weld = Instance.new("ManualWeld")
+							weld.Parent = game.Players.LocalPlayer.Character.Dummy
+							weld.Part0 = torsopart
+							weld.Part1 = v
+							
+							weld.C0 = CFrame.new(0,0,0)
+							weld.C1 = CFrame.new(0,0,0)
+						end
+						PhysicsService:SetPartCollisionGroup(v, "BignSmallLimbs")
+					end
+				end
+			end
+					
+		for i, v in pairs(Character:GetDescendants()) do
+			if v.ClassName == "Motor6D" then
+				v:Remove()
+			end
+		end
+end
+
+function SelfTerminate()
+	while wait() do
+		if Character == nil then
+			wait(1)
+			script.Disabled = true
+		end
+	end
+end
+
+function Talk(chatmessage)
+	local WhatHeSaid = chatmessage
+	if Character.Torso:FindFirstChild("BillboardGui") ~= nil then
+		Character.Torso.BillboardGui:Destroy()
+	elseif Character.Torso:FindFirstChild("SecondBoard") ~= nil then
+		Character.Torso.SecondBoard:Destroy()
+	end
+	--Character.Head.Mouth.Texture = "rbxassetid://2818152743"
+	local BillboardGui = Instance.new("BillboardGui")
+	BillboardGui.Parent = Character.Torso
+	BillboardGui.StudsOffset = Vector3.new(0, 4, 0)
+	BillboardGui.Size = UDim2.new(1, 0, 1, 0)
+	local Text = Instance.new("TextLabel")
+	Text.Text = ""
+	Text.Size = UDim2.new(1, 0, 1, 0)
+	Text.BackgroundTransparency = 1
+	Text.Parent = BillboardGui
+	Text.TextSize = 16
+	Text.TextColor3 = Color3.new(1, 1, 1)
+	Text.TextStrokeTransparency = 0
+	Text.TextStrokeColor3 = Color3.new(0.4, 0.4, 0.4)
+	Text.Text = WhatHeSaid
+	wait(1)
+	--Character.Head.Mouth.Texture = "rbxassetid://2801594973"
+	local chance = math.random(1, 2)
+	local properties = {}
+	properties.TextTransparency = 1
+	properties.TextStrokeTransparency = 1
+	if chance == 1 then
+		properties.Rotation = -45
+	else
+		properties.Rotation = 45
+	end
+	local TweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+	local Tween = TweenService:Create(Text, TweenInfo, properties)
+	Tween:Play()
+	Tween.Completed:Connect(function()
+		if BillboardGui then
+			BillboardGui:Destroy()
+		end
+	end)
+	properties.TextTransparency = nil
+	properties.TextStrokeTransparency = nil
+	properties.Rotation = nil
+	Tween = TweenService:Create(BillboardGui, TweenInfo, properties)
+	Tween:Play()
+end
+
+Character.Humanoid.Running:Connect(function(spd)
+	if spd > 0.1 then
+		if action == true or walking == true then
+			return
+		end
+		if GunEquipped == true then
+			walking = true
+			GunWalkAnimation()
+		else
+			walking = true
+			WalkAnimation()
+		end
+	elseif spd <= 0.1 then
+		if action == true or walking == false then
+			return
+		end
+		if GunEquipped == true then
+			walking = false
+			GunIdleAnimation()
+		else
+			walking = false
+			IdleAnimation()
+		end
+	end
+end)
+
+Character.Humanoid.StateChanged:Connect(function(old, new)
+	if freefall == true and Character.Humanoid:GetState() ~= Enum.HumanoidStateType.Freefall then
+		freefall = false
+	end
+	if Character.Humanoid:GetState() == Enum.HumanoidStateType.Dead then
+		Ragdoll()
+		if Gun.Parent ~= nil and Gun:FindFirstChildOfClass("ManualWeld") then
+			Gun.ManualWeld:Destroy()
+		end
+		wait(0.1)
+		script.Disabled = true
+	elseif Character.Humanoid:GetState() == Enum.HumanoidStateType.Freefall then
+		freefall = true
+		FallingAnimation()
+	end
+end)
+
+Playerr.Chatted:Connect(function(chatmessage)
+	Talk(chatmessage)
+end)
+
+function stoprunning()
+	if GunEquipped == false then
+			return
+		end
+		shiftdown = false
+		running = false
+		Character.Humanoid.WalkSpeed = 10
+		if walking == true then
+			GunWalkAnimation()
+		else
+			GunIdleAnimation()
+		end
+end
+
+localfunc = (function(player, contact, contact2)
+    localfunc2(player,contact)
+	if contact == "gunhold" then
+			if GunEquipped == true then
+			return
+		end
+		if action == true then
+			if grabbed == true then
+				if on == "true" then
+					on = "more"
+					return
+				elseif on == "more" then
+					on = "owo"
+				end
+			end
+			return
+		end
+		on = "true"
+		Groom()
+	elseif contact == "gunfire" then
+		if GunEquipped == true then
+			GunFire(contact2)
+		end
+	elseif contact == "explosionfire" then
+		if GunEquipped == true and shotavailable == true then
+			GunExplosionFire(contact2)
+		end
+	elseif contact == "startrunning" then
+		if action == true then
+			return
+		end
+		if walking == true then
+			shiftdown = true
+			Character.Humanoid.WalkSpeed = 50
+			GunRunAnimation()
+		end
+	elseif contact == "stoprunning" then
+		shiftdown = false
+		if action == true or running == false then
+			return
+		end
+		stoprunning()
+	elseif contact == "musicswitch" then
+		if music == false then
+			local h = math.random(1,4)
+			if h == 1 then 
+				YoshisIsland.SoundId = "rbxassetid://916843842"
+				YoshisIsland.Volume = 10
+				YoshisIsland.Pitch = 3
+				YoshisIsland:Play()
+			elseif h == 2 then 
+				YoshisIsland.SoundId = "rbxassetid://1687028388"
+				YoshisIsland.Volume = 10
+				YoshisIsland.Pitch = 1
+				YoshisIsland:Play()
+			elseif h == 3 then 
+				YoshisIsland.SoundId = "rbxassetid://277251227"
+				YoshisIsland.Volume = 10
+				YoshisIsland.Pitch = 1
+				YoshisIsland:Play()
+			elseif h == 4 then 
+				YoshisIsland.SoundId = "rbxassetid://843141049"
+				YoshisIsland.Volume = 10
+				YoshisIsland.Pitch = 1
+				YoshisIsland:Play()
+			end
+			music = true
+		else
+			YoshisIsland:Stop()
+			music = false
+		end
+	elseif contact == "tacklehug" then
+		if GunEquipped == true then
+			return
+		end
+		if action == true then
+			if grabbed == true then
+				if on == "true" then
+					on = "more"
+					return
+				end
+			end
+			return
+		end
+		on = "true"
+		Tackle()
+	elseif contact == "stoptacklehug" then
+		if GunEquipped == true then
+			return
+		end
+		on = "false"
+	elseif contact == "ohno" then
+		if grabbed == true then
+		if GunEquipped == true then
+			return
+		end
+		if timesraped < 1 then
+		Talk("this is my first time "..slave.Name..", Please be gentle!~")
+		else
+		Talk("this isnt my first time "..slave.Name.." you know? but it still feels good~")
+		end
+		wait(1)
+		local splat1 = Instance.new("Sound", Character.Torso)
+		local splat2 = Instance.new("Sound", Character.Torso)
+		local splat3 = Instance.new("Sound", Character.Torso)
+		local ohno = Instance.new("Sound", Character.Torso)
+		splat1.Volume = 3
+		splat2.Volume = 3
+		splat3.Volume = 3
+		ohno.Volume = 5
+		splat1.SoundId = "rbxassetid://"..ids[1]
+		splat2.SoundId = "rbxassetid://"..ids[2]
+		splat3.SoundId = "rbxassetid://"..ids[3]
+		ohno.SoundId = "rbxassetid://"..ids[4]
+		Character.Head.Eyes.Texture = "rbxassetid://2818165600"
+		--Character.Head.Mouth.Texture = "rbxassetid://2801778896"
+		splat1:Play()
+		splat2:Play()
+		splat3:Play()
+		ohno:Play()
+		wait(0.61+0.25)
+		splat1:Destroy()
+		splat2:Destroy()
+		splat3:Destroy()
+		ohno:Destroy()
+		Character.Head.Eyes.Texture = "rbxassetid://3656713670"
+		--Character.Head.Mouth.Texture = "rbxassetid://2801594973"
+		aro = true
+		timesraped = timesraped + 1
+		end
+	end
+end)
+
+spawn(SelfTerminate)
+wait()
+IdleAnimation()
+Talk(Character.Name.." The Neko")
+spawn(function()
+while wait() do
+	if aro == true then
+		Character.Head.Blush.Texture = "rbxassetid://3523974768"
+		break
+	else
+	end
+end
+end)
+ContextActionService = game:GetService("ContextActionService")
+Players = game:GetService("Players")
+LocalPlayer = Players.LocalPlayer
+Mouse = LocalPlayer:GetMouse()
+Mouse.TargetFilter = nil
+Character = game.Players.LocalPlayer.Character.Dummy
+while wait() do
+	if LocalPlayer.Character.Dummy ~= nil then
+		Character = LocalPlayer.Character.Dummy
+		break
+	end
+end
+if Character:FindFirstChild("Humanoid") then
+	if Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		error("Nice work fucking skid you fucked it up somehow")
+	end
+end
+localfunc(game.Players.LocalPlayer,tostring(math.random(1, 10000)))
+localfunc(game.Players.LocalPlayer,tostring(math.random(1, 10000)))
+function GunHold(actionname, userinputstate, inputobject)
+	if userinputstate == Enum.UserInputState.Begin then
+		localfunc(game.Players.LocalPlayer,"gunhold")
+	end
+end
+
+function ExplosionShot(actionname, userinputstate, inputobject)
+	if userinputstate == Enum.UserInputState.Begin then
+		localfunc(game.Players.LocalPlayer,"explosionfire", Mouse.Hit.p)
+	end
+end
+
+function Hug(actionname, userinputstate, inputobject)
+	if userinputstate == Enum.UserInputState.Begin then
+		localfunc(game.Players.LocalPlayer,"tacklehug")
+	end
+end
+
+function StopIt(actionname, userinputstate, inputobject)
+	if userinputstate == Enum.UserInputState.Begin then
+		localfunc(game.Players.LocalPlayer,"stoptacklehug")
+	end
+end
+
+function RunSwitch(actionname, userinputstate, inputobject)
+	if userinputstate == Enum.UserInputState.Begin then
+		localfunc(game.Players.LocalPlayer,"startrunning")
+	elseif userinputstate == Enum.UserInputState.End then
+		localfunc(game.Players.LocalPlayer,"stoprunning")
+	end
+end
+
+function MusicSwitch(actionname, userinputstate, inputobject)
+	if userinputstate == Enum.UserInputState.Begin then
+		localfunc(game.Players.LocalPlayer,"musicswitch")
+	end
+end
+
+function SelfTerminate()
+	while wait() do
+		if Character == nil then
+			wait()
+			script.Disabled = true
+		end
+	end
+end
+
+Mouse.Button1Down:Connect(function()
+	localfunc(game.Players.LocalPlayer,"gunfire", Mouse.Hit.p)
+end)
+
+
+function WHATTHEACTUALFUCK(actionname, userinputstate, inputobject)
+	if userinputstate == Enum.UserInputState.Begin then
+		localfunc(game.Players.LocalPlayer,"ohno")
+	end
+end
+
+spawn(SelfTerminate)
+wait()
+
+ContextActionService:BindAction("gunhold", GunHold, false, Enum.KeyCode.V)
+ContextActionService:BindAction("gunexplosionfire", ExplosionShot, false, Enum.KeyCode.Z)
+ContextActionService:BindAction("runswitch", RunSwitch, false, Enum.KeyCode.LeftShift)
+ContextActionService:BindAction("musicswitch", MusicSwitch, false, Enum.KeyCode.M)
+ContextActionService:BindAction("tacklehug", Hug, false, Enum.KeyCode.C)
+ContextActionService:BindAction("stoptacklehug", StopIt, false, Enum.KeyCode.B)
+ContextActionService:BindAction("ohno", WHATTHEACTUALFUCK, false, Enum.KeyCode.P)
