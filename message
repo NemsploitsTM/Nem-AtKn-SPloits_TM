@@ -1,0 +1,20 @@
+local StarterGui = game:GetService("StarterGui")
+
+local Notifications = {
+	"Notification Message 1",
+}
+
+local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+
+for i = 1, #Notifications do
+	local Notification = Notifications[i]
+		
+	StarterGui:SetCore("SendNotification", {
+		Title = "Nem&AtKn Sploits™";
+		Text = "Gui made by Nem&AtKn Sploits™";
+		Icon = "rbxassetid://4833960080";
+		Duration = 7;
+	})
+		
+	wait(TimeBetweenNotifications)
+end
