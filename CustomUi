@@ -120,6 +120,7 @@ local CloseOpen_5 = Instance.new("TextButton")
 Filterware.Name = "Filterware"
 Filterware.Parent = game.CoreGui
 Filterware.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Filterware.ResetOnSpawn = false
 
 Pages.Name = "Pages"
 Pages.Parent = Filterware
