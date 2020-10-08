@@ -1,0 +1,2397 @@
+local Filterware = Instance.new("ScreenGui")
+local Pages = Instance.new("Frame")
+local Reanim = Instance.new("Frame")
+local Hub = Instance.new("Frame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local UIPadding = Instance.new("UIPadding")
+local R6 = Instance.new("TextButton")
+local R15 = Instance.new("TextButton")
+local Rejoin = Instance.new("TextButton")
+local fps = Instance.new("TextButton")
+local net = Instance.new("TextButton")
+local res = Instance.new("TextButton")
+local Rainbow = Instance.new("Frame")
+local Name = Instance.new("TextLabel")
+local CloseOpen = Instance.new("TextButton")
+local Free = Instance.new("Frame")
+local Hub_2 = Instance.new("Frame")
+local UIGridLayout_2 = Instance.new("UIGridLayout")
+local UIPadding_2 = Instance.new("UIPadding")
+local memeus = Instance.new("TextButton")
+local sonic = Instance.new("TextButton")
+local smoothmoves = Instance.new("TextButton")
+local billiejean = Instance.new("TextButton")
+local cruisin = Instance.new("TextButton")
+local jive = Instance.new("TextButton")
+local defaultdance = Instance.new("TextButton")
+local helicopter = Instance.new("TextButton")
+local goopie = Instance.new("TextButton")
+local carson = Instance.new("TextButton")
+local springdance = Instance.new("TextButton")
+local oj = Instance.new("TextButton")
+local bangfemale = Instance.new("TextButton")
+local upsidedown = Instance.new("TextButton")
+local stickbug = Instance.new("TextButton")
+local bangmale = Instance.new("TextButton")
+local masturbate = Instance.new("TextButton")
+local rolling = Instance.new("TextButton")
+local suck = Instance.new("TextButton")
+local _69 = Instance.new("TextButton")
+local Rainbow_2 = Instance.new("Frame")
+local Name_2 = Instance.new("TextLabel")
+local CloseOpen_2 = Instance.new("TextButton")
+local R15_2 = Instance.new("Frame")
+local Hub_3 = Instance.new("Frame")
+local UIGridLayout_3 = Instance.new("UIGridLayout")
+local UIPadding_3 = Instance.new("UIPadding")
+local ttl = Instance.new("TextButton")
+local floss = Instance.new("TextButton")
+local oj_2 = Instance.new("TextButton")
+local dancingfeets = Instance.new("TextButton")
+local shimshamII = Instance.new("TextButton")
+local goopie_2 = Instance.new("TextButton")
+local brooklyn = Instance.new("TextButton")
+local hiphop = Instance.new("TextButton")
+local macarena = Instance.new("TextButton")
+local jevil = Instance.new("TextButton")
+local soulfloorcombo = Instance.new("TextButton")
+local Rainbow_3 = Instance.new("Frame")
+local Name_3 = Instance.new("TextLabel")
+local CloseOpen_3 = Instance.new("TextButton")
+local hats = Instance.new("Frame")
+local Hub_4 = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIPadding_4 = Instance.new("UIPadding")
+local UIGridLayout_4 = Instance.new("UIGridLayout")
+local trashcan = Instance.new("TextButton")
+local mask = Instance.new("TextButton")
+local gayburn = Instance.new("TextButton")
+local drone = Instance.new("TextButton")
+local xester = Instance.new("TextButton")
+local minigunshoulder = Instance.new("TextButton")
+local bigppsword = Instance.new("TextButton")
+local morphpp = Instance.new("TextButton")
+local halloween = Instance.new("TextButton")
+local starglitcher = Instance.new("TextButton")
+local wings = Instance.new("TextButton")
+local sniper = Instance.new("TextButton")
+local tommygun = Instance.new("TextButton")
+local shotgun = Instance.new("TextButton")
+local minigun = Instance.new("TextButton")
+local blackburn = Instance.new("TextButton")
+local tonk = Instance.new("TextButton")
+local flamethrower = Instance.new("TextButton")
+local baguette = Instance.new("TextButton")
+local bigpp = Instance.new("TextButton")
+local fireaura = Instance.new("TextButton")
+local pooping = Instance.new("TextButton")
+local fferry = Instance.new("TextButton")
+local supercar = Instance.new("TextButton")
+local jail = Instance.new("TextButton")
+local box = Instance.new("TextButton")
+local skate = Instance.new("TextButton")
+local hero = Instance.new("TextButton")
+local infinite = Instance.new("TextButton")
+local rickroll = Instance.new("TextButton")
+local lazy = Instance.new("TextButton")
+local rlshoulder = Instance.new("TextButton")
+local vodoodoll = Instance.new("TextButton")
+local fallenangel = Instance.new("TextButton")
+local swordcaster = Instance.new("TextButton")
+local tronbike = Instance.new("TextButton")
+local halosgod = Instance.new("TextButton")
+local vampuroking = Instance.new("TextButton")
+local Rainbow_4 = Instance.new("Frame")
+local Name_4 = Instance.new("TextLabel")
+local CloseOpen_4 = Instance.new("TextButton")
+local other = Instance.new("Frame")
+local Hub_5 = Instance.new("Frame")
+local UIGridLayout_5 = Instance.new("UIGridLayout")
+local UIPadding_5 = Instance.new("UIPadding")
+local IY = Instance.new("TextButton")
+local al = Instance.new("TextButton")
+local soon = Instance.new("TextLabel")
+local Rainbow_5 = Instance.new("Frame")
+local Name_5 = Instance.new("TextLabel")
+local CloseOpen_5 = Instance.new("TextButton")
+
+--Properties:
+
+Filterware.Name = "Filterware"
+Filterware.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Filterware.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Pages.Name = "Pages"
+Pages.Parent = Filterware
+Pages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pages.BackgroundTransparency = 1.000
+Pages.Size = UDim2.new(0, 100, 0, 100)
+Pages.ZIndex = 1000000000
+
+Reanim.Name = "Reanim"
+Reanim.Parent = Pages
+Reanim.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Reanim.Position = UDim2.new(0.170000076, 0, 0.0700000003, 0)
+Reanim.Size = UDim2.new(0, 195, 0, 30)
+
+Hub.Name = "Hub"
+Hub.Parent = Reanim
+Hub.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Hub.Position = UDim2.new(0, 0, 1.06666672, 0)
+Hub.Size = UDim2.new(0, 195, 0, 185)
+
+UIGridLayout.Parent = Hub
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout.CellSize = UDim2.new(0, 180, 0, 25)
+
+UIPadding.Parent = Hub
+UIPadding.PaddingBottom = UDim.new(0, 5)
+UIPadding.PaddingLeft = UDim.new(0, 5)
+UIPadding.PaddingRight = UDim.new(0, 5)
+UIPadding.PaddingTop = UDim.new(0, 5)
+
+R6.Name = "!!R6"
+R6.Parent = Hub
+R6.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+R6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+R6.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+R6.Size = UDim2.new(0, 200, 0, 50)
+R6.Font = Enum.Font.SourceSansSemibold
+R6.Text = "R6"
+R6.TextColor3 = Color3.fromRGB(255, 255, 255)
+R6.TextSize = 17.000
+
+R15.Name = "!R15"
+R15.Parent = Hub
+R15.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+R15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+R15.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+R15.Size = UDim2.new(0, 200, 0, 50)
+R15.Font = Enum.Font.SourceSansSemibold
+R15.Text = "R15"
+R15.TextColor3 = Color3.fromRGB(255, 255, 255)
+R15.TextSize = 17.000
+
+Rejoin.Name = "Rejoin"
+Rejoin.Parent = Hub
+Rejoin.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rejoin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Rejoin.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+Rejoin.Size = UDim2.new(0, 200, 0, 50)
+Rejoin.Font = Enum.Font.SourceSansSemibold
+Rejoin.Text = "Rejoin"
+Rejoin.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rejoin.TextSize = 17.000
+
+fps.Name = "fps"
+fps.Parent = Hub
+fps.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+fps.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fps.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+fps.Size = UDim2.new(0, 200, 0, 50)
+fps.Font = Enum.Font.SourceSansSemibold
+fps.Text = "Fps Boost"
+fps.TextColor3 = Color3.fromRGB(255, 255, 255)
+fps.TextSize = 17.000
+
+net.Name = "net"
+net.Parent = Hub
+net.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+net.BorderColor3 = Color3.fromRGB(0, 0, 0)
+net.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+net.Size = UDim2.new(0, 200, 0, 50)
+net.Font = Enum.Font.SourceSansSemibold
+net.Text = "Network Optimizer"
+net.TextColor3 = Color3.fromRGB(255, 255, 255)
+net.TextSize = 17.000
+
+res.Name = "res"
+res.Parent = Hub
+res.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+res.BorderColor3 = Color3.fromRGB(0, 0, 0)
+res.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+res.Size = UDim2.new(0, 200, 0, 50)
+res.Font = Enum.Font.SourceSansSemibold
+res.Text = "Respawn"
+res.TextColor3 = Color3.fromRGB(255, 255, 255)
+res.TextSize = 17.000
+
+Rainbow.Name = "Rainbow"
+Rainbow.Parent = Reanim
+Rainbow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow.BorderSizePixel = 0
+Rainbow.Position = UDim2.new(0, 0, 1, 0)
+Rainbow.Size = UDim2.new(0, 195, 0, 2)
+
+Name.Name = "Name"
+Name.Parent = Reanim
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0.189225882, 0, 0, 0)
+Name.Size = UDim2.new(0, 120, 0, 30)
+Name.Font = Enum.Font.SourceSansSemibold
+Name.Text = "Reanimation"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+CloseOpen.Name = "Close/Open"
+CloseOpen.Parent = Reanim
+CloseOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen.BackgroundTransparency = 1.000
+CloseOpen.Position = UDim2.new(0.843177199, 0, 0, 0)
+CloseOpen.Size = UDim2.new(0, 30, 0, 30)
+CloseOpen.Font = Enum.Font.SourceSans
+CloseOpen.Text = "-"
+CloseOpen.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen.TextScaled = true
+CloseOpen.TextSize = 14.000
+CloseOpen.TextWrapped = true
+
+Free.Name = "Free"
+Free.Parent = Pages
+Free.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Free.Position = UDim2.new(2.43999982, 0, 0.0700000003, 0)
+Free.Size = UDim2.new(0, 195, 0, 30)
+
+Hub_2.Name = "Hub"
+Hub_2.Parent = Free
+Hub_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Hub_2.Position = UDim2.new(0, 0, 1.06666672, 0)
+Hub_2.Size = UDim2.new(0, 195, 0, 605)
+
+UIGridLayout_2.Parent = Hub_2
+UIGridLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_2.CellSize = UDim2.new(0, 180, 0, 25)
+
+UIPadding_2.Parent = Hub_2
+UIPadding_2.PaddingBottom = UDim.new(0, 5)
+UIPadding_2.PaddingLeft = UDim.new(0, 5)
+UIPadding_2.PaddingRight = UDim.new(0, 5)
+UIPadding_2.PaddingTop = UDim.new(0, 5)
+
+memeus.Name = "memeus"
+memeus.Parent = Hub_2
+memeus.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+memeus.BorderColor3 = Color3.fromRGB(0, 0, 0)
+memeus.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+memeus.Size = UDim2.new(0, 200, 0, 50)
+memeus.Font = Enum.Font.SourceSansSemibold
+memeus.Text = "Memeus"
+memeus.TextColor3 = Color3.fromRGB(255, 255, 255)
+memeus.TextSize = 17.000
+
+sonic.Name = "sonic"
+sonic.Parent = Hub_2
+sonic.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+sonic.BorderColor3 = Color3.fromRGB(0, 0, 0)
+sonic.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+sonic.Size = UDim2.new(0, 200, 0, 50)
+sonic.Font = Enum.Font.SourceSansSemibold
+sonic.Text = "Sonic"
+sonic.TextColor3 = Color3.fromRGB(255, 255, 255)
+sonic.TextSize = 17.000
+
+smoothmoves.Name = "smoothmoves"
+smoothmoves.Parent = Hub_2
+smoothmoves.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+smoothmoves.BorderColor3 = Color3.fromRGB(0, 0, 0)
+smoothmoves.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+smoothmoves.Size = UDim2.new(0, 200, 0, 50)
+smoothmoves.Font = Enum.Font.SourceSansSemibold
+smoothmoves.Text = "SmoothMoves"
+smoothmoves.TextColor3 = Color3.fromRGB(255, 255, 255)
+smoothmoves.TextSize = 17.000
+
+billiejean.Name = "billiejean"
+billiejean.Parent = Hub_2
+billiejean.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+billiejean.BorderColor3 = Color3.fromRGB(0, 0, 0)
+billiejean.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+billiejean.Size = UDim2.new(0, 200, 0, 50)
+billiejean.Font = Enum.Font.SourceSansSemibold
+billiejean.Text = "BillieJean"
+billiejean.TextColor3 = Color3.fromRGB(255, 255, 255)
+billiejean.TextSize = 17.000
+
+cruisin.Name = "cruisin"
+cruisin.Parent = Hub_2
+cruisin.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+cruisin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+cruisin.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+cruisin.Size = UDim2.new(0, 200, 0, 50)
+cruisin.Font = Enum.Font.SourceSansSemibold
+cruisin.Text = "cruisin"
+cruisin.TextColor3 = Color3.fromRGB(255, 255, 255)
+cruisin.TextSize = 17.000
+
+jive.Name = "jive"
+jive.Parent = Hub_2
+jive.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+jive.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jive.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+jive.Size = UDim2.new(0, 200, 0, 50)
+jive.Font = Enum.Font.SourceSansSemibold
+jive.Text = "Jive"
+jive.TextColor3 = Color3.fromRGB(255, 255, 255)
+jive.TextSize = 17.000
+
+defaultdance.Name = "defaultdance"
+defaultdance.Parent = Hub_2
+defaultdance.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+defaultdance.BorderColor3 = Color3.fromRGB(0, 0, 0)
+defaultdance.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+defaultdance.Size = UDim2.new(0, 200, 0, 50)
+defaultdance.Font = Enum.Font.SourceSansSemibold
+defaultdance.Text = "defaultdance"
+defaultdance.TextColor3 = Color3.fromRGB(255, 255, 255)
+defaultdance.TextSize = 17.000
+
+helicopter.Name = "helicopter"
+helicopter.Parent = Hub_2
+helicopter.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+helicopter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+helicopter.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+helicopter.Size = UDim2.new(0, 200, 0, 50)
+helicopter.Font = Enum.Font.SourceSansSemibold
+helicopter.Text = "helicopter"
+helicopter.TextColor3 = Color3.fromRGB(255, 255, 255)
+helicopter.TextSize = 17.000
+
+goopie.Name = "goopie"
+goopie.Parent = Hub_2
+goopie.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+goopie.BorderColor3 = Color3.fromRGB(0, 0, 0)
+goopie.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+goopie.Size = UDim2.new(0, 200, 0, 50)
+goopie.Font = Enum.Font.SourceSansSemibold
+goopie.Text = "Goopie"
+goopie.TextColor3 = Color3.fromRGB(255, 255, 255)
+goopie.TextSize = 17.000
+
+carson.Name = "carson"
+carson.Parent = Hub_2
+carson.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+carson.BorderColor3 = Color3.fromRGB(0, 0, 0)
+carson.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+carson.Size = UDim2.new(0, 200, 0, 50)
+carson.Font = Enum.Font.SourceSansSemibold
+carson.Text = "carson"
+carson.TextColor3 = Color3.fromRGB(255, 255, 255)
+carson.TextSize = 17.000
+
+springdance.Name = "spring dance"
+springdance.Parent = Hub_2
+springdance.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+springdance.BorderColor3 = Color3.fromRGB(0, 0, 0)
+springdance.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+springdance.Size = UDim2.new(0, 200, 0, 50)
+springdance.Font = Enum.Font.SourceSansSemibold
+springdance.Text = "Spring Dance"
+springdance.TextColor3 = Color3.fromRGB(255, 255, 255)
+springdance.TextSize = 17.000
+
+oj.Name = "oj"
+oj.Parent = Hub_2
+oj.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+oj.BorderColor3 = Color3.fromRGB(0, 0, 0)
+oj.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+oj.Size = UDim2.new(0, 200, 0, 50)
+oj.Font = Enum.Font.SourceSansSemibold
+oj.Text = "Orange Justice"
+oj.TextColor3 = Color3.fromRGB(255, 255, 255)
+oj.TextSize = 17.000
+
+bangfemale.Name = "bangfemale"
+bangfemale.Parent = Hub_2
+bangfemale.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+bangfemale.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bangfemale.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+bangfemale.Size = UDim2.new(0, 200, 0, 50)
+bangfemale.Font = Enum.Font.SourceSansSemibold
+bangfemale.Text = "BangFemale"
+bangfemale.TextColor3 = Color3.fromRGB(255, 255, 255)
+bangfemale.TextSize = 17.000
+
+upsidedown.Name = "upsidedown"
+upsidedown.Parent = Hub_2
+upsidedown.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+upsidedown.BorderColor3 = Color3.fromRGB(0, 0, 0)
+upsidedown.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+upsidedown.Size = UDim2.new(0, 200, 0, 50)
+upsidedown.Font = Enum.Font.SourceSansSemibold
+upsidedown.Text = "UpsideDown"
+upsidedown.TextColor3 = Color3.fromRGB(255, 255, 255)
+upsidedown.TextSize = 17.000
+
+stickbug.Name = "stickbug"
+stickbug.Parent = Hub_2
+stickbug.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+stickbug.BorderColor3 = Color3.fromRGB(0, 0, 0)
+stickbug.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+stickbug.Size = UDim2.new(0, 200, 0, 50)
+stickbug.Font = Enum.Font.SourceSansSemibold
+stickbug.Text = "Stickbug"
+stickbug.TextColor3 = Color3.fromRGB(255, 255, 255)
+stickbug.TextSize = 17.000
+
+bangmale.Name = "bangmale"
+bangmale.Parent = Hub_2
+bangmale.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+bangmale.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bangmale.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+bangmale.Size = UDim2.new(0, 200, 0, 50)
+bangmale.Font = Enum.Font.SourceSansSemibold
+bangmale.Text = "BangMale"
+bangmale.TextColor3 = Color3.fromRGB(255, 255, 255)
+bangmale.TextSize = 17.000
+
+masturbate.Name = "masturbate"
+masturbate.Parent = Hub_2
+masturbate.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+masturbate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+masturbate.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+masturbate.Size = UDim2.new(0, 200, 0, 50)
+masturbate.Font = Enum.Font.SourceSansSemibold
+masturbate.Text = "masturbate"
+masturbate.TextColor3 = Color3.fromRGB(255, 255, 255)
+masturbate.TextSize = 17.000
+
+rolling.Name = "rolling"
+rolling.Parent = Hub_2
+rolling.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+rolling.BorderColor3 = Color3.fromRGB(0, 0, 0)
+rolling.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+rolling.Size = UDim2.new(0, 200, 0, 50)
+rolling.Font = Enum.Font.SourceSansSemibold
+rolling.Text = "Rolling"
+rolling.TextColor3 = Color3.fromRGB(255, 255, 255)
+rolling.TextSize = 17.000
+
+suck.Name = "suck"
+suck.Parent = Hub_2
+suck.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+suck.BorderColor3 = Color3.fromRGB(0, 0, 0)
+suck.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+suck.Size = UDim2.new(0, 200, 0, 50)
+suck.Font = Enum.Font.SourceSansSemibold
+suck.Text = "Suck"
+suck.TextColor3 = Color3.fromRGB(255, 255, 255)
+suck.TextSize = 17.000
+
+_69.Name = "69"
+_69.Parent = Hub_2
+_69.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+_69.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_69.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+_69.Size = UDim2.new(0, 200, 0, 50)
+_69.Font = Enum.Font.SourceSansSemibold
+_69.Text = "69"
+_69.TextColor3 = Color3.fromRGB(255, 255, 255)
+_69.TextSize = 17.000
+
+Rainbow_2.Name = "Rainbow"
+Rainbow_2.Parent = Free
+Rainbow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow_2.BorderSizePixel = 0
+Rainbow_2.Position = UDim2.new(0, 0, 1, 0)
+Rainbow_2.Size = UDim2.new(0, 195, 0, 2)
+
+Name_2.Name = "Name"
+Name_2.Parent = Free
+Name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_2.BackgroundTransparency = 1.000
+Name_2.Position = UDim2.new(0.189225882, 0, 0, 0)
+Name_2.Size = UDim2.new(0, 120, 0, 30)
+Name_2.Font = Enum.Font.SourceSansSemibold
+Name_2.Text = "Free Scripts"
+Name_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_2.TextScaled = true
+Name_2.TextSize = 14.000
+Name_2.TextWrapped = true
+
+CloseOpen_2.Name = "Close/Open"
+CloseOpen_2.Parent = Free
+CloseOpen_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen_2.BackgroundTransparency = 1.000
+CloseOpen_2.Position = UDim2.new(0.843177199, 0, 0, 0)
+CloseOpen_2.Size = UDim2.new(0, 30, 0, 30)
+CloseOpen_2.Font = Enum.Font.SourceSans
+CloseOpen_2.Text = "-"
+CloseOpen_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen_2.TextScaled = true
+CloseOpen_2.TextSize = 14.000
+CloseOpen_2.TextWrapped = true
+
+R15_2.Name = "R15"
+R15_2.Parent = Pages
+R15_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+R15_2.Position = UDim2.new(4.69999981, 0, 0.0700000003, 0)
+R15_2.Size = UDim2.new(0, 195, 0, 30)
+
+Hub_3.Name = "Hub"
+Hub_3.Parent = R15_2
+Hub_3.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Hub_3.Position = UDim2.new(0, 0, 1.06666672, 0)
+Hub_3.Size = UDim2.new(0, 195, 0, 335)
+
+UIGridLayout_3.Parent = Hub_3
+UIGridLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_3.CellSize = UDim2.new(0, 180, 0, 25)
+
+UIPadding_3.Parent = Hub_3
+UIPadding_3.PaddingBottom = UDim.new(0, 5)
+UIPadding_3.PaddingLeft = UDim.new(0, 5)
+UIPadding_3.PaddingRight = UDim.new(0, 5)
+UIPadding_3.PaddingTop = UDim.new(0, 5)
+
+ttl.Name = "ttl"
+ttl.Parent = Hub_3
+ttl.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+ttl.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ttl.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+ttl.Size = UDim2.new(0, 200, 0, 50)
+ttl.Font = Enum.Font.SourceSansSemibold
+ttl.Text = "TakeTheL"
+ttl.TextColor3 = Color3.fromRGB(255, 255, 255)
+ttl.TextSize = 17.000
+
+floss.Name = "floss"
+floss.Parent = Hub_3
+floss.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+floss.BorderColor3 = Color3.fromRGB(0, 0, 0)
+floss.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+floss.Size = UDim2.new(0, 200, 0, 50)
+floss.Font = Enum.Font.SourceSansSemibold
+floss.Text = "Floss"
+floss.TextColor3 = Color3.fromRGB(255, 255, 255)
+floss.TextSize = 17.000
+
+oj_2.Name = "oj"
+oj_2.Parent = Hub_3
+oj_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+oj_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+oj_2.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+oj_2.Size = UDim2.new(0, 200, 0, 50)
+oj_2.Font = Enum.Font.SourceSansSemibold
+oj_2.Text = "Orangejustice"
+oj_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+oj_2.TextSize = 17.000
+
+dancingfeets.Name = "dancingfeets"
+dancingfeets.Parent = Hub_3
+dancingfeets.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+dancingfeets.BorderColor3 = Color3.fromRGB(0, 0, 0)
+dancingfeets.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+dancingfeets.Size = UDim2.new(0, 200, 0, 50)
+dancingfeets.Font = Enum.Font.SourceSansSemibold
+dancingfeets.Text = "DancingFeets"
+dancingfeets.TextColor3 = Color3.fromRGB(255, 255, 255)
+dancingfeets.TextSize = 17.000
+
+shimshamII.Name = "shimshamII"
+shimshamII.Parent = Hub_3
+shimshamII.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+shimshamII.BorderColor3 = Color3.fromRGB(0, 0, 0)
+shimshamII.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+shimshamII.Size = UDim2.new(0, 200, 0, 50)
+shimshamII.Font = Enum.Font.SourceSansSemibold
+shimshamII.Text = "ShimShamII"
+shimshamII.TextColor3 = Color3.fromRGB(255, 255, 255)
+shimshamII.TextSize = 17.000
+
+goopie_2.Name = "goopie"
+goopie_2.Parent = Hub_3
+goopie_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+goopie_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+goopie_2.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+goopie_2.Size = UDim2.new(0, 200, 0, 50)
+goopie_2.Font = Enum.Font.SourceSansSemibold
+goopie_2.Text = "Goopie"
+goopie_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+goopie_2.TextSize = 17.000
+
+brooklyn.Name = "brooklyn"
+brooklyn.Parent = Hub_3
+brooklyn.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+brooklyn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+brooklyn.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+brooklyn.Size = UDim2.new(0, 200, 0, 50)
+brooklyn.Font = Enum.Font.SourceSansSemibold
+brooklyn.Text = "Brooklyn"
+brooklyn.TextColor3 = Color3.fromRGB(255, 255, 255)
+brooklyn.TextSize = 17.000
+
+hiphop.Name = "hiphop"
+hiphop.Parent = Hub_3
+hiphop.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+hiphop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+hiphop.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+hiphop.Size = UDim2.new(0, 200, 0, 50)
+hiphop.Font = Enum.Font.SourceSansSemibold
+hiphop.Text = "Hip Hop"
+hiphop.TextColor3 = Color3.fromRGB(255, 255, 255)
+hiphop.TextSize = 17.000
+
+macarena.Name = "macarena"
+macarena.Parent = Hub_3
+macarena.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+macarena.BorderColor3 = Color3.fromRGB(0, 0, 0)
+macarena.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+macarena.Size = UDim2.new(0, 200, 0, 50)
+macarena.Font = Enum.Font.SourceSansSemibold
+macarena.Text = "Macarena"
+macarena.TextColor3 = Color3.fromRGB(255, 255, 255)
+macarena.TextSize = 17.000
+
+jevil.Name = "jevil"
+jevil.Parent = Hub_3
+jevil.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+jevil.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jevil.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+jevil.Size = UDim2.new(0, 200, 0, 50)
+jevil.Font = Enum.Font.SourceSansSemibold
+jevil.Text = "Jevil"
+jevil.TextColor3 = Color3.fromRGB(255, 255, 255)
+jevil.TextSize = 17.000
+
+soulfloorcombo.Name = "soulfloorcombo"
+soulfloorcombo.Parent = Hub_3
+soulfloorcombo.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+soulfloorcombo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+soulfloorcombo.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+soulfloorcombo.Size = UDim2.new(0, 200, 0, 50)
+soulfloorcombo.Font = Enum.Font.SourceSansSemibold
+soulfloorcombo.Text = "SoulFloorCombo"
+soulfloorcombo.TextColor3 = Color3.fromRGB(255, 255, 255)
+soulfloorcombo.TextSize = 17.000
+
+Rainbow_3.Name = "Rainbow"
+Rainbow_3.Parent = R15_2
+Rainbow_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow_3.BorderSizePixel = 0
+Rainbow_3.Position = UDim2.new(0, 0, 1, 0)
+Rainbow_3.Size = UDim2.new(0, 195, 0, 2)
+
+Name_3.Name = "Name"
+Name_3.Parent = R15_2
+Name_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_3.BackgroundTransparency = 1.000
+Name_3.Position = UDim2.new(0.189225882, 0, 0, 0)
+Name_3.Size = UDim2.new(0, 120, 0, 30)
+Name_3.Font = Enum.Font.SourceSansSemibold
+Name_3.Text = "R15 Anims"
+Name_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_3.TextScaled = true
+Name_3.TextSize = 14.000
+Name_3.TextWrapped = true
+
+CloseOpen_3.Name = "Close/Open"
+CloseOpen_3.Parent = R15_2
+CloseOpen_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen_3.BackgroundTransparency = 1.000
+CloseOpen_3.Position = UDim2.new(0.843177199, 0, 0, 0)
+CloseOpen_3.Size = UDim2.new(0, 30, 0, 30)
+CloseOpen_3.Font = Enum.Font.SourceSans
+CloseOpen_3.Text = "-"
+CloseOpen_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen_3.TextScaled = true
+CloseOpen_3.TextSize = 14.000
+CloseOpen_3.TextWrapped = true
+
+hats.Name = "hats"
+hats.Parent = Pages
+hats.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+hats.Position = UDim2.new(6.96000004, 0, 0.0700000003, 0)
+hats.Size = UDim2.new(0, 195, 0, 30)
+
+Hub_4.Name = "Hub"
+Hub_4.Parent = hats
+Hub_4.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Hub_4.Position = UDim2.new(0, 0, 1.06666672, 0)
+Hub_4.Size = UDim2.new(0, 195, 0, 605)
+
+ScrollingFrame.Parent = Hub_4
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.Size = UDim2.new(0, 195, 0, 605)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 1.89300001, 0)
+ScrollingFrame.ScrollBarThickness = 3
+
+UIPadding_4.Parent = ScrollingFrame
+UIPadding_4.PaddingBottom = UDim.new(0, 5)
+UIPadding_4.PaddingLeft = UDim.new(0, 5)
+UIPadding_4.PaddingRight = UDim.new(0, 5)
+UIPadding_4.PaddingTop = UDim.new(0, 5)
+
+UIGridLayout_4.Parent = ScrollingFrame
+UIGridLayout_4.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_4.CellSize = UDim2.new(0, 180, 0, 25)
+
+trashcan.Name = "trashcan"
+trashcan.Parent = ScrollingFrame
+trashcan.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+trashcan.BorderColor3 = Color3.fromRGB(0, 0, 0)
+trashcan.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+trashcan.Size = UDim2.new(0, 200, 0, 50)
+trashcan.Font = Enum.Font.SourceSansSemibold
+trashcan.Text = "trashcan"
+trashcan.TextColor3 = Color3.fromRGB(255, 255, 255)
+trashcan.TextSize = 17.000
+
+mask.Name = "mask"
+mask.Parent = ScrollingFrame
+mask.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+mask.BorderColor3 = Color3.fromRGB(0, 0, 0)
+mask.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+mask.Size = UDim2.new(0, 200, 0, 50)
+mask.Font = Enum.Font.SourceSansSemibold
+mask.Text = "Mask"
+mask.TextColor3 = Color3.fromRGB(255, 255, 255)
+mask.TextSize = 17.000
+
+gayburn.Name = "gayburn"
+gayburn.Parent = ScrollingFrame
+gayburn.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+gayburn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+gayburn.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+gayburn.Size = UDim2.new(0, 200, 0, 50)
+gayburn.Font = Enum.Font.SourceSansSemibold
+gayburn.Text = "GayBurn"
+gayburn.TextColor3 = Color3.fromRGB(255, 255, 255)
+gayburn.TextSize = 17.000
+
+drone.Name = "drone"
+drone.Parent = ScrollingFrame
+drone.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+drone.BorderColor3 = Color3.fromRGB(0, 0, 0)
+drone.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+drone.Size = UDim2.new(0, 200, 0, 50)
+drone.Font = Enum.Font.SourceSansSemibold
+drone.Text = "Drone"
+drone.TextColor3 = Color3.fromRGB(255, 255, 255)
+drone.TextSize = 17.000
+
+xester.Name = "xester"
+xester.Parent = ScrollingFrame
+xester.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+xester.BorderColor3 = Color3.fromRGB(0, 0, 0)
+xester.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+xester.Size = UDim2.new(0, 200, 0, 50)
+xester.Font = Enum.Font.SourceSansSemibold
+xester.Text = "Xester"
+xester.TextColor3 = Color3.fromRGB(255, 255, 255)
+xester.TextSize = 17.000
+
+minigunshoulder.Name = "minigunshoulder"
+minigunshoulder.Parent = ScrollingFrame
+minigunshoulder.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+minigunshoulder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+minigunshoulder.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+minigunshoulder.Size = UDim2.new(0, 200, 0, 50)
+minigunshoulder.Font = Enum.Font.SourceSansSemibold
+minigunshoulder.Text = "MinigunShoulder"
+minigunshoulder.TextColor3 = Color3.fromRGB(255, 255, 255)
+minigunshoulder.TextSize = 17.000
+
+bigppsword.Name = "bigppsword"
+bigppsword.Parent = ScrollingFrame
+bigppsword.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+bigppsword.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bigppsword.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+bigppsword.Size = UDim2.new(0, 200, 0, 50)
+bigppsword.Font = Enum.Font.SourceSansSemibold
+bigppsword.Text = "BigPP Sword"
+bigppsword.TextColor3 = Color3.fromRGB(255, 255, 255)
+bigppsword.TextSize = 17.000
+
+morphpp.Name = "morphpp"
+morphpp.Parent = ScrollingFrame
+morphpp.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+morphpp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+morphpp.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+morphpp.Size = UDim2.new(0, 200, 0, 50)
+morphpp.Font = Enum.Font.SourceSansSemibold
+morphpp.Text = "MorphPP"
+morphpp.TextColor3 = Color3.fromRGB(255, 255, 255)
+morphpp.TextSize = 17.000
+
+halloween.Name = "halloween"
+halloween.Parent = ScrollingFrame
+halloween.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+halloween.BorderColor3 = Color3.fromRGB(0, 0, 0)
+halloween.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+halloween.Size = UDim2.new(0, 200, 0, 50)
+halloween.Font = Enum.Font.SourceSansSemibold
+halloween.Text = "Halloween"
+halloween.TextColor3 = Color3.fromRGB(255, 255, 255)
+halloween.TextSize = 17.000
+
+starglitcher.Name = "starglitcher"
+starglitcher.Parent = ScrollingFrame
+starglitcher.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+starglitcher.BorderColor3 = Color3.fromRGB(0, 0, 0)
+starglitcher.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+starglitcher.Size = UDim2.new(0, 200, 0, 50)
+starglitcher.Font = Enum.Font.SourceSansSemibold
+starglitcher.Text = "starglitcher"
+starglitcher.TextColor3 = Color3.fromRGB(255, 255, 255)
+starglitcher.TextSize = 17.000
+
+wings.Name = "wings"
+wings.Parent = ScrollingFrame
+wings.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+wings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+wings.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+wings.Size = UDim2.new(0, 200, 0, 50)
+wings.Font = Enum.Font.SourceSansSemibold
+wings.Text = "Wings"
+wings.TextColor3 = Color3.fromRGB(255, 255, 255)
+wings.TextSize = 17.000
+
+sniper.Name = "sniper"
+sniper.Parent = ScrollingFrame
+sniper.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+sniper.BorderColor3 = Color3.fromRGB(0, 0, 0)
+sniper.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+sniper.Size = UDim2.new(0, 200, 0, 50)
+sniper.Font = Enum.Font.SourceSansSemibold
+sniper.Text = "sniper"
+sniper.TextColor3 = Color3.fromRGB(255, 255, 255)
+sniper.TextSize = 17.000
+
+tommygun.Name = "tommygun"
+tommygun.Parent = ScrollingFrame
+tommygun.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+tommygun.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tommygun.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+tommygun.Size = UDim2.new(0, 200, 0, 50)
+tommygun.Font = Enum.Font.SourceSansSemibold
+tommygun.Text = "TommyGun"
+tommygun.TextColor3 = Color3.fromRGB(255, 255, 255)
+tommygun.TextSize = 17.000
+
+shotgun.Name = "shotgun"
+shotgun.Parent = ScrollingFrame
+shotgun.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+shotgun.BorderColor3 = Color3.fromRGB(0, 0, 0)
+shotgun.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+shotgun.Size = UDim2.new(0, 200, 0, 50)
+shotgun.Font = Enum.Font.SourceSansSemibold
+shotgun.Text = "Shotgun"
+shotgun.TextColor3 = Color3.fromRGB(255, 255, 255)
+shotgun.TextSize = 17.000
+
+minigun.Name = "minigun"
+minigun.Parent = ScrollingFrame
+minigun.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+minigun.BorderColor3 = Color3.fromRGB(0, 0, 0)
+minigun.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+minigun.Size = UDim2.new(0, 200, 0, 50)
+minigun.Font = Enum.Font.SourceSansSemibold
+minigun.Text = "minigun"
+minigun.TextColor3 = Color3.fromRGB(255, 255, 255)
+minigun.TextSize = 17.000
+
+blackburn.Name = "blackburn"
+blackburn.Parent = ScrollingFrame
+blackburn.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+blackburn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+blackburn.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+blackburn.Size = UDim2.new(0, 200, 0, 50)
+blackburn.Font = Enum.Font.SourceSansSemibold
+blackburn.Text = "Blackburn"
+blackburn.TextColor3 = Color3.fromRGB(255, 255, 255)
+blackburn.TextSize = 17.000
+
+tonk.Name = "tonk"
+tonk.Parent = ScrollingFrame
+tonk.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+tonk.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tonk.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+tonk.Size = UDim2.new(0, 200, 0, 50)
+tonk.Font = Enum.Font.SourceSansSemibold
+tonk.Text = "Tonk"
+tonk.TextColor3 = Color3.fromRGB(255, 255, 255)
+tonk.TextSize = 17.000
+
+flamethrower.Name = "flamethrower"
+flamethrower.Parent = ScrollingFrame
+flamethrower.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+flamethrower.BorderColor3 = Color3.fromRGB(0, 0, 0)
+flamethrower.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+flamethrower.Size = UDim2.new(0, 200, 0, 50)
+flamethrower.Font = Enum.Font.SourceSansSemibold
+flamethrower.Text = "FlameThrower"
+flamethrower.TextColor3 = Color3.fromRGB(255, 255, 255)
+flamethrower.TextSize = 17.000
+
+baguette.Name = "baguette"
+baguette.Parent = ScrollingFrame
+baguette.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+baguette.BorderColor3 = Color3.fromRGB(0, 0, 0)
+baguette.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+baguette.Size = UDim2.new(0, 200, 0, 50)
+baguette.Font = Enum.Font.SourceSansSemibold
+baguette.Text = "baguette"
+baguette.TextColor3 = Color3.fromRGB(255, 255, 255)
+baguette.TextSize = 17.000
+
+bigpp.Name = "bigpp"
+bigpp.Parent = ScrollingFrame
+bigpp.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+bigpp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bigpp.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+bigpp.Size = UDim2.new(0, 200, 0, 50)
+bigpp.Font = Enum.Font.SourceSansSemibold
+bigpp.Text = "BigPP"
+bigpp.TextColor3 = Color3.fromRGB(255, 255, 255)
+bigpp.TextSize = 17.000
+
+fireaura.Name = "fireaura"
+fireaura.Parent = ScrollingFrame
+fireaura.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+fireaura.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fireaura.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+fireaura.Size = UDim2.new(0, 200, 0, 50)
+fireaura.Font = Enum.Font.SourceSansSemibold
+fireaura.Text = "Fire Aura"
+fireaura.TextColor3 = Color3.fromRGB(255, 255, 255)
+fireaura.TextSize = 17.000
+
+pooping.Name = "pooping"
+pooping.Parent = ScrollingFrame
+pooping.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+pooping.BorderColor3 = Color3.fromRGB(0, 0, 0)
+pooping.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+pooping.Size = UDim2.new(0, 200, 0, 50)
+pooping.Font = Enum.Font.SourceSansSemibold
+pooping.Text = "Pooping"
+pooping.TextColor3 = Color3.fromRGB(255, 255, 255)
+pooping.TextSize = 17.000
+
+fferry.Name = "fferry"
+fferry.Parent = ScrollingFrame
+fferry.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+fferry.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fferry.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+fferry.Size = UDim2.new(0, 200, 0, 50)
+fferry.Font = Enum.Font.SourceSansSemibold
+fferry.Text = "FFerry"
+fferry.TextColor3 = Color3.fromRGB(255, 255, 255)
+fferry.TextSize = 17.000
+
+supercar.Name = "supercar"
+supercar.Parent = ScrollingFrame
+supercar.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+supercar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+supercar.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+supercar.Size = UDim2.new(0, 200, 0, 50)
+supercar.Font = Enum.Font.SourceSansSemibold
+supercar.Text = "SuperCar"
+supercar.TextColor3 = Color3.fromRGB(255, 255, 255)
+supercar.TextSize = 17.000
+
+jail.Name = "jail"
+jail.Parent = ScrollingFrame
+jail.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+jail.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jail.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+jail.Size = UDim2.new(0, 200, 0, 50)
+jail.Font = Enum.Font.SourceSansSemibold
+jail.Text = "jail"
+jail.TextColor3 = Color3.fromRGB(255, 255, 255)
+jail.TextSize = 17.000
+
+box.Name = "box"
+box.Parent = ScrollingFrame
+box.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+box.BorderColor3 = Color3.fromRGB(0, 0, 0)
+box.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+box.Size = UDim2.new(0, 200, 0, 50)
+box.Font = Enum.Font.SourceSansSemibold
+box.Text = "box"
+box.TextColor3 = Color3.fromRGB(255, 255, 255)
+box.TextSize = 17.000
+
+skate.Name = "skate"
+skate.Parent = ScrollingFrame
+skate.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+skate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+skate.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+skate.Size = UDim2.new(0, 200, 0, 50)
+skate.Font = Enum.Font.SourceSansSemibold
+skate.Text = "Skate"
+skate.TextColor3 = Color3.fromRGB(255, 255, 255)
+skate.TextSize = 17.000
+
+hero.Name = "hero"
+hero.Parent = ScrollingFrame
+hero.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+hero.BorderColor3 = Color3.fromRGB(0, 0, 0)
+hero.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+hero.Size = UDim2.new(0, 200, 0, 50)
+hero.Font = Enum.Font.SourceSansSemibold
+hero.Text = "Hero"
+hero.TextColor3 = Color3.fromRGB(255, 255, 255)
+hero.TextSize = 17.000
+
+infinite.Name = "infinite"
+infinite.Parent = ScrollingFrame
+infinite.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+infinite.BorderColor3 = Color3.fromRGB(0, 0, 0)
+infinite.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+infinite.Size = UDim2.new(0, 200, 0, 50)
+infinite.Font = Enum.Font.SourceSansSemibold
+infinite.Text = "Infinite"
+infinite.TextColor3 = Color3.fromRGB(255, 255, 255)
+infinite.TextSize = 17.000
+
+rickroll.Name = "rickroll"
+rickroll.Parent = ScrollingFrame
+rickroll.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+rickroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+rickroll.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+rickroll.Size = UDim2.new(0, 200, 0, 50)
+rickroll.Font = Enum.Font.SourceSansSemibold
+rickroll.Text = "RickRoll"
+rickroll.TextColor3 = Color3.fromRGB(255, 255, 255)
+rickroll.TextSize = 17.000
+
+lazy.Name = "lazy"
+lazy.Parent = ScrollingFrame
+lazy.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+lazy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+lazy.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+lazy.Size = UDim2.new(0, 200, 0, 50)
+lazy.Font = Enum.Font.SourceSansSemibold
+lazy.Text = "Lazy"
+lazy.TextColor3 = Color3.fromRGB(255, 255, 255)
+lazy.TextSize = 17.000
+
+rlshoulder.Name = "rlshoulder"
+rlshoulder.Parent = ScrollingFrame
+rlshoulder.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+rlshoulder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+rlshoulder.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+rlshoulder.Size = UDim2.new(0, 200, 0, 50)
+rlshoulder.Font = Enum.Font.SourceSansSemibold
+rlshoulder.Text = "RocketLauncherShoulder"
+rlshoulder.TextColor3 = Color3.fromRGB(255, 255, 255)
+rlshoulder.TextSize = 17.000
+
+vodoodoll.Name = "vodoodoll"
+vodoodoll.Parent = ScrollingFrame
+vodoodoll.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+vodoodoll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+vodoodoll.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+vodoodoll.Size = UDim2.new(0, 200, 0, 50)
+vodoodoll.Font = Enum.Font.SourceSansSemibold
+vodoodoll.Text = "Vodoo Doll"
+vodoodoll.TextColor3 = Color3.fromRGB(255, 255, 255)
+vodoodoll.TextSize = 17.000
+
+fallenangel.Name = "fallenangel"
+fallenangel.Parent = ScrollingFrame
+fallenangel.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+fallenangel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fallenangel.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+fallenangel.Size = UDim2.new(0, 200, 0, 50)
+fallenangel.Font = Enum.Font.SourceSansSemibold
+fallenangel.Text = "Fallen Angel"
+fallenangel.TextColor3 = Color3.fromRGB(255, 255, 255)
+fallenangel.TextSize = 17.000
+
+swordcaster.Name = "swordcaster"
+swordcaster.Parent = ScrollingFrame
+swordcaster.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+swordcaster.BorderColor3 = Color3.fromRGB(0, 0, 0)
+swordcaster.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+swordcaster.Size = UDim2.new(0, 200, 0, 50)
+swordcaster.Font = Enum.Font.SourceSansSemibold
+swordcaster.Text = "Sword Caster"
+swordcaster.TextColor3 = Color3.fromRGB(255, 255, 255)
+swordcaster.TextSize = 17.000
+
+tronbike.Name = "tronbike"
+tronbike.Parent = ScrollingFrame
+tronbike.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+tronbike.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tronbike.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+tronbike.Size = UDim2.new(0, 200, 0, 50)
+tronbike.Font = Enum.Font.SourceSansSemibold
+tronbike.Text = "Tron Bike"
+tronbike.TextColor3 = Color3.fromRGB(255, 255, 255)
+tronbike.TextSize = 17.000
+
+halosgod.Name = "halosgod"
+halosgod.Parent = ScrollingFrame
+halosgod.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+halosgod.BorderColor3 = Color3.fromRGB(0, 0, 0)
+halosgod.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+halosgod.Size = UDim2.new(0, 200, 0, 50)
+halosgod.Font = Enum.Font.SourceSansSemibold
+halosgod.Text = "Halos God"
+halosgod.TextColor3 = Color3.fromRGB(255, 255, 255)
+halosgod.TextSize = 17.000
+
+vampuroking.Name = "vampuroking"
+vampuroking.Parent = ScrollingFrame
+vampuroking.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+vampuroking.BorderColor3 = Color3.fromRGB(0, 0, 0)
+vampuroking.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+vampuroking.Size = UDim2.new(0, 200, 0, 50)
+vampuroking.Font = Enum.Font.SourceSansSemibold
+vampuroking.Text = "Vampuroking"
+vampuroking.TextColor3 = Color3.fromRGB(255, 255, 255)
+vampuroking.TextSize = 17.000
+
+Rainbow_4.Name = "Rainbow"
+Rainbow_4.Parent = hats
+Rainbow_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow_4.BorderSizePixel = 0
+Rainbow_4.Position = UDim2.new(0, 0, 1, 0)
+Rainbow_4.Size = UDim2.new(0, 195, 0, 2)
+
+Name_4.Name = "Name"
+Name_4.Parent = hats
+Name_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_4.BackgroundTransparency = 1.000
+Name_4.Position = UDim2.new(0.189225882, 0, 0, 0)
+Name_4.Size = UDim2.new(0, 120, 0, 30)
+Name_4.Font = Enum.Font.SourceSansSemibold
+Name_4.Text = "Scripts with hats"
+Name_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_4.TextScaled = true
+Name_4.TextSize = 14.000
+Name_4.TextWrapped = true
+
+CloseOpen_4.Name = "Close/Open"
+CloseOpen_4.Parent = hats
+CloseOpen_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen_4.BackgroundTransparency = 1.000
+CloseOpen_4.Position = UDim2.new(0.843177199, 0, 0, 0)
+CloseOpen_4.Size = UDim2.new(0, 30, 0, 30)
+CloseOpen_4.Font = Enum.Font.SourceSans
+CloseOpen_4.Text = "-"
+CloseOpen_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen_4.TextScaled = true
+CloseOpen_4.TextSize = 14.000
+CloseOpen_4.TextWrapped = true
+
+other.Name = "other"
+other.Parent = Pages
+other.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+other.Position = UDim2.new(9.21000004, 0, 0.0700000003, 0)
+other.Size = UDim2.new(0, 195, 0, 30)
+
+Hub_5.Name = "Hub"
+Hub_5.Parent = other
+Hub_5.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Hub_5.Position = UDim2.new(0, 0, 1.06666672, 0)
+Hub_5.Size = UDim2.new(0, 195, 0, 95)
+
+UIGridLayout_5.Parent = Hub_5
+UIGridLayout_5.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_5.CellSize = UDim2.new(0, 180, 0, 25)
+
+UIPadding_5.Parent = Hub_5
+UIPadding_5.PaddingBottom = UDim.new(0, 5)
+UIPadding_5.PaddingLeft = UDim.new(0, 5)
+UIPadding_5.PaddingRight = UDim.new(0, 5)
+UIPadding_5.PaddingTop = UDim.new(0, 5)
+
+IY.Name = "IY"
+IY.Parent = Hub_5
+IY.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+IY.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IY.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+IY.Size = UDim2.new(0, 200, 0, 50)
+IY.Font = Enum.Font.SourceSansSemibold
+IY.Text = "Infinite Yield"
+IY.TextColor3 = Color3.fromRGB(255, 255, 255)
+IY.TextSize = 17.000
+
+al.Name = "al"
+al.Parent = Hub_5
+al.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+al.BorderColor3 = Color3.fromRGB(0, 0, 0)
+al.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+al.Size = UDim2.new(0, 200, 0, 50)
+al.Font = Enum.Font.SourceSansSemibold
+al.Text = "Audio Logger"
+al.TextColor3 = Color3.fromRGB(255, 255, 255)
+al.TextSize = 17.000
+
+soon.Name = "soon"
+soon.Parent = Hub_5
+soon.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+soon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+soon.Size = UDim2.new(0, 200, 0, 50)
+soon.Font = Enum.Font.SourceSansSemibold
+soon.Text = "More things will be added soon."
+soon.TextColor3 = Color3.fromRGB(255, 0, 0)
+soon.TextScaled = true
+soon.TextSize = 17.000
+soon.TextWrapped = true
+
+Rainbow_5.Name = "Rainbow"
+Rainbow_5.Parent = other
+Rainbow_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow_5.BorderSizePixel = 0
+Rainbow_5.Position = UDim2.new(0, 0, 1, 0)
+Rainbow_5.Size = UDim2.new(0, 195, 0, 2)
+
+Name_5.Name = "Name"
+Name_5.Parent = other
+Name_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_5.BackgroundTransparency = 1.000
+Name_5.Position = UDim2.new(0.189225882, 0, 0, 0)
+Name_5.Size = UDim2.new(0, 120, 0, 30)
+Name_5.Font = Enum.Font.SourceSansSemibold
+Name_5.Text = "Other"
+Name_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_5.TextScaled = true
+Name_5.TextSize = 14.000
+Name_5.TextWrapped = true
+
+CloseOpen_5.Name = "Close/Open"
+CloseOpen_5.Parent = other
+CloseOpen_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen_5.BackgroundTransparency = 1.000
+CloseOpen_5.Position = UDim2.new(0.843177199, 0, 0, 0)
+CloseOpen_5.Size = UDim2.new(0, 30, 0, 30)
+CloseOpen_5.Font = Enum.Font.SourceSans
+CloseOpen_5.Text = "-"
+CloseOpen_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen_5.TextScaled = true
+CloseOpen_5.TextSize = 14.000
+CloseOpen_5.TextWrapped = true
+
+-- Scripts:
+
+local function TBIZGTH_fake_script() -- Pages.Toggle 
+	local script = Instance.new('LocalScript', Pages)
+
+	function PopupGui()
+	if script.Parent.Visible==true then script.Parent.Visible=false
+	else script.Parent.Visible=true
+	end
+	end
+	
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(key)
+	if key.KeyCode==Enum.KeyCode.LeftAlt then
+	PopupGui()
+	end
+	end)
+end
+coroutine.wrap(TBIZGTH_fake_script)()
+local function WRUYQZ_fake_script() -- R6.Script 
+	local script = Instance.new('Script', R6)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("reanimate")
+	end)
+end
+coroutine.wrap(WRUYQZ_fake_script)()
+local function XQPPDMG_fake_script() -- R15.Script 
+	local script = Instance.new('Script', R15)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("r15 reanimate ( R15 ONLY )")
+	end)
+end
+coroutine.wrap(XQPPDMG_fake_script)()
+local function NOUULI_fake_script() -- Rejoin.Script 
+	local script = Instance.new('Script', Rejoin)
+
+	local button = script.Parent
+	local TeleportService = game:GetService("TeleportService")
+	local plr = game.Players.LocalPlayer
+	
+	button.MouseButton1Click:Connect(function()
+		TeleportService:Teleport(game.PlaceId,plr)
+	end)
+end
+coroutine.wrap(NOUULI_fake_script)()
+local function FORSQST_fake_script() -- fps.Script 
+	local script = Instance.new('Script', fps)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		for L_98_forvar0, L_99_forvar1 in pairs(workspace:GetDescendants()) do
+			if L_99_forvar1.ClassName == "Part"
+				or L_99_forvar1.ClassName == "SpawnLocation"
+				or L_99_forvar1.ClassName == "WedgePart"
+				or L_99_forvar1.ClassName == "Terrain"
+				or L_99_forvar1.ClassName == "MeshPart" then
+				L_99_forvar1.Material = "Plastic"
+			end
+		end
+	end)
+end
+coroutine.wrap(FORSQST_fake_script)()
+local function ZKDHIAC_fake_script() -- fps.Message 
+	local script = Instance.new('LocalScript', fps)
+
+	local StarterGui = game:GetService("StarterGui")
+	local button = script.Parent
+	
+	local Notifications = {
+		"Notification Message 1",
+	}
+	
+	local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+	
+	button.MouseButton1Click:Connect(function()
+		for i = 1, #Notifications do
+			local Notification = Notifications[i]
+				
+			StarterGui:SetCore("SendNotification", {
+				Title = "Filterware";
+				Text = "Fps Booster activated!";
+				Duration = 5;
+			})
+				
+			wait(TimeBetweenNotifications)
+		end
+	end)
+end
+coroutine.wrap(ZKDHIAC_fake_script)()
+local function KGYNYH_fake_script() -- net.Script 
+	local script = Instance.new('Script', net)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('http://spiderscript.xyz/scripts/FilterNet.txt'), true))()
+	end)
+end
+coroutine.wrap(KGYNYH_fake_script)()
+local function ECEFLJ_fake_script() -- net.Message 
+	local script = Instance.new('LocalScript', net)
+
+	local StarterGui = game:GetService("StarterGui")
+	local button = script.Parent
+	
+	local Notifications = {
+		"Notification Message 1",
+	}
+	
+	local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+	
+	button.MouseButton1Click:Connect(function()
+		for i = 1, #Notifications do
+			local Notification = Notifications[i]
+				
+			StarterGui:SetCore("SendNotification", {
+				Title = "Filterware";
+				Text = "Optimized Network!";
+				Duration = 5;
+			})
+				
+			wait(TimeBetweenNotifications)
+		end
+	end)
+end
+coroutine.wrap(ECEFLJ_fake_script)()
+local function IYACTV_fake_script() -- res.Script 
+	local script = Instance.new('Script', res)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end)
+end
+coroutine.wrap(IYACTV_fake_script)()
+local function RYZFMF_fake_script() -- Rainbow.RainbowFunction 
+	local script = Instance.new('LocalScript', Rainbow)
+
+	while true do 
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(i, 0, n)
+	wait() 
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(n, i, 0)
+	wait()
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(0, n, i)
+	wait() 
+	end 
+	end
+end
+coroutine.wrap(RYZFMF_fake_script)()
+local function VRHNLY_fake_script() -- CloseOpen.Script 
+	local script = Instance.new('Script', CloseOpen)
+
+	local hub = script.Parent.Parent.Hub
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	if hub.Visible==true then button.Text="+" hub.Visible=false
+	else hub.Visible=true button.Text="-"
+	end
+	end)
+end
+coroutine.wrap(VRHNLY_fake_script)()
+local function SSDQHFY_fake_script() -- Reanim.Draggable 
+	local script = Instance.new('LocalScript', Reanim)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(SSDQHFY_fake_script)()
+local function WHEIZD_fake_script() -- memeus.Script 
+	local script = Instance.new('Script', memeus)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Memeus")
+	end)
+end
+coroutine.wrap(WHEIZD_fake_script)()
+local function KCKAI_fake_script() -- sonic.Script 
+	local script = Instance.new('Script', sonic)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Sonic")
+	end)
+end
+coroutine.wrap(KCKAI_fake_script)()
+local function VCHTWPB_fake_script() -- smoothmoves.Script 
+	local script = Instance.new('Script', smoothmoves)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("SmoothMoves")
+	end)
+end
+coroutine.wrap(VCHTWPB_fake_script)()
+local function GGTZQTQ_fake_script() -- billiejean.Script 
+	local script = Instance.new('Script', billiejean)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("BillieJean")
+	end)
+end
+coroutine.wrap(GGTZQTQ_fake_script)()
+local function KCMS_fake_script() -- cruisin.Script 
+	local script = Instance.new('Script', cruisin)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("cruisin")
+	end)
+end
+coroutine.wrap(KCMS_fake_script)()
+local function WJMFYB_fake_script() -- jive.Script 
+	local script = Instance.new('Script', jive)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Jive")
+	end)
+end
+coroutine.wrap(WJMFYB_fake_script)()
+local function QPFEYBT_fake_script() -- defaultdance.Script 
+	local script = Instance.new('Script', defaultdance)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("defaultdance")
+	end)
+end
+coroutine.wrap(QPFEYBT_fake_script)()
+local function VLRIMD_fake_script() -- helicopter.Script 
+	local script = Instance.new('Script', helicopter)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("helicopter")
+	end)
+end
+coroutine.wrap(VLRIMD_fake_script)()
+local function IUZWXA_fake_script() -- goopie.Script 
+	local script = Instance.new('Script', goopie)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("GoopieR6")
+	end)
+end
+coroutine.wrap(IUZWXA_fake_script)()
+local function YKMQTS_fake_script() -- carson.Script 
+	local script = Instance.new('Script', carson)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("carson")
+	end)
+end
+coroutine.wrap(YKMQTS_fake_script)()
+local function RIKWMPY_fake_script() -- springdance.Script 
+	local script = Instance.new('Script', springdance)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Spring Dance")
+	end)
+end
+coroutine.wrap(RIKWMPY_fake_script)()
+local function AGAIKS_fake_script() -- oj.Script 
+	local script = Instance.new('Script', oj)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Orange Justice")
+	end)
+end
+coroutine.wrap(AGAIKS_fake_script)()
+local function APUU_fake_script() -- bangfemale.Script 
+	local script = Instance.new('Script', bangfemale)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("BangFemale")
+	end)
+end
+coroutine.wrap(APUU_fake_script)()
+local function PORL_fake_script() -- upsidedown.Script 
+	local script = Instance.new('Script', upsidedown)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("UpsideDown")
+	end)
+end
+coroutine.wrap(PORL_fake_script)()
+local function NTNWIND_fake_script() -- stickbug.Script 
+	local script = Instance.new('Script', stickbug)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Stickbug")
+	end)
+end
+coroutine.wrap(NTNWIND_fake_script)()
+local function DYHVTUS_fake_script() -- bangmale.Script 
+	local script = Instance.new('Script', bangmale)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("BangMale")
+	end)
+end
+coroutine.wrap(DYHVTUS_fake_script)()
+local function NEDFXQ_fake_script() -- masturbate.Script 
+	local script = Instance.new('Script', masturbate)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("masturbate")
+	end)
+end
+coroutine.wrap(NEDFXQ_fake_script)()
+local function VMZHMK_fake_script() -- rolling.Script 
+	local script = Instance.new('Script', rolling)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Rolling")
+	end)
+end
+coroutine.wrap(VMZHMK_fake_script)()
+local function WRNZ_fake_script() -- suck.Script 
+	local script = Instance.new('Script', suck)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Suck")
+	end)
+end
+coroutine.wrap(WRNZ_fake_script)()
+local function FMDUPOG_fake_script() -- _69.Script 
+	local script = Instance.new('Script', _69)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("69")
+	end)
+end
+coroutine.wrap(FMDUPOG_fake_script)()
+local function GLVZQLU_fake_script() -- Rainbow_2.RainbowFunction 
+	local script = Instance.new('LocalScript', Rainbow_2)
+
+	while true do 
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(i, 0, n)
+	wait() 
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(n, i, 0)
+	wait()
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(0, n, i)
+	wait() 
+	end 
+	end
+end
+coroutine.wrap(GLVZQLU_fake_script)()
+local function NLFALQC_fake_script() -- CloseOpen_2.Script 
+	local script = Instance.new('Script', CloseOpen_2)
+
+	local hub = script.Parent.Parent.Hub
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	if hub.Visible==true then button.Text="+" hub.Visible=false
+	else hub.Visible=true button.Text="-"
+	end
+	end)
+end
+coroutine.wrap(NLFALQC_fake_script)()
+local function RLBCMKG_fake_script() -- Free.Draggable 
+	local script = Instance.new('LocalScript', Free)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(RLBCMKG_fake_script)()
+local function BZEDOB_fake_script() -- ttl.Script 
+	local script = Instance.new('Script', ttl)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("TakeTheL")
+	end)
+end
+coroutine.wrap(BZEDOB_fake_script)()
+local function PHUOGUE_fake_script() -- floss.Script 
+	local script = Instance.new('Script', floss)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Floss")
+	end)
+end
+coroutine.wrap(PHUOGUE_fake_script)()
+local function OKONKN_fake_script() -- oj_2.Script 
+	local script = Instance.new('Script', oj_2)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("OrangejusticeR15")
+	end)
+end
+coroutine.wrap(OKONKN_fake_script)()
+local function JMMDUU_fake_script() -- dancingfeets.Script 
+	local script = Instance.new('Script', dancingfeets)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("DancingFeets")
+	end)
+end
+coroutine.wrap(JMMDUU_fake_script)()
+local function LKNWSW_fake_script() -- shimshamII.Script 
+	local script = Instance.new('Script', shimshamII)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("ShimShamII")
+	end)
+end
+coroutine.wrap(LKNWSW_fake_script)()
+local function JYYA_fake_script() -- goopie_2.Script 
+	local script = Instance.new('Script', goopie_2)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Goopie")
+	end)
+end
+coroutine.wrap(JYYA_fake_script)()
+local function LTAOZJ_fake_script() -- brooklyn.Script 
+	local script = Instance.new('Script', brooklyn)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Brooklyn")
+	end)
+end
+coroutine.wrap(LTAOZJ_fake_script)()
+local function LEZE_fake_script() -- hiphop.Script 
+	local script = Instance.new('Script', hiphop)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Hip Hop")
+	end)
+end
+coroutine.wrap(LEZE_fake_script)()
+local function EGXPZLO_fake_script() -- macarena.Script 
+	local script = Instance.new('Script', macarena)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Macarena")
+	end)
+end
+coroutine.wrap(EGXPZLO_fake_script)()
+local function GLADUW_fake_script() -- jevil.Script 
+	local script = Instance.new('Script', jevil)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Jevil")
+	end)
+end
+coroutine.wrap(GLADUW_fake_script)()
+local function QJNZEKW_fake_script() -- soulfloorcombo.Script 
+	local script = Instance.new('Script', soulfloorcombo)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("SoulFloorCombo")
+	end)
+end
+coroutine.wrap(QJNZEKW_fake_script)()
+local function FQDTQM_fake_script() -- Rainbow_3.RainbowFunction 
+	local script = Instance.new('LocalScript', Rainbow_3)
+
+	while true do 
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(i, 0, n)
+	wait() 
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(n, i, 0)
+	wait()
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(0, n, i)
+	wait() 
+	end 
+	end
+end
+coroutine.wrap(FQDTQM_fake_script)()
+local function PAIOZ_fake_script() -- CloseOpen_3.Script 
+	local script = Instance.new('Script', CloseOpen_3)
+
+	local hub = script.Parent.Parent.Hub
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	if hub.Visible==true then button.Text="+" hub.Visible=false
+	else hub.Visible=true button.Text="-"
+	end
+	end)
+end
+coroutine.wrap(PAIOZ_fake_script)()
+local function AKMZO_fake_script() -- R15_2.Draggable 
+	local script = Instance.new('LocalScript', R15_2)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(AKMZO_fake_script)()
+local function EUUW_fake_script() -- trashcan.Script 
+	local script = Instance.new('Script', trashcan)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("trashcan")
+	end)
+end
+coroutine.wrap(EUUW_fake_script)()
+local function NQGJKUH_fake_script() -- mask.Script 
+	local script = Instance.new('Script', mask)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Mask")
+	end)
+end
+coroutine.wrap(NQGJKUH_fake_script)()
+local function PRYKWD_fake_script() -- gayburn.Script 
+	local script = Instance.new('Script', gayburn)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("GayBurn")
+	end)
+end
+coroutine.wrap(PRYKWD_fake_script)()
+local function NVMAD_fake_script() -- drone.Script 
+	local script = Instance.new('Script', drone)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Drone")
+	end)
+end
+coroutine.wrap(NVMAD_fake_script)()
+local function DUTUZK_fake_script() -- xester.Script 
+	local script = Instance.new('Script', xester)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Xester")
+	end)
+end
+coroutine.wrap(DUTUZK_fake_script)()
+local function VFJJVND_fake_script() -- minigunshoulder.Script 
+	local script = Instance.new('Script', minigunshoulder)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("MinigunShoulder")
+	end)
+end
+coroutine.wrap(VFJJVND_fake_script)()
+local function MYRCI_fake_script() -- bigppsword.Script 
+	local script = Instance.new('Script', bigppsword)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("BigPP Sword")
+	end)
+end
+coroutine.wrap(MYRCI_fake_script)()
+local function SAVML_fake_script() -- morphpp.Script 
+	local script = Instance.new('Script', morphpp)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("MorphPP")
+	end)
+end
+coroutine.wrap(SAVML_fake_script)()
+local function NWBUE_fake_script() -- halloween.Script 
+	local script = Instance.new('Script', halloween)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Halloween")
+	end)
+end
+coroutine.wrap(NWBUE_fake_script)()
+local function AZZW_fake_script() -- starglitcher.Script 
+	local script = Instance.new('Script', starglitcher)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("starglitcher")
+	end)
+end
+coroutine.wrap(AZZW_fake_script)()
+local function QNVD_fake_script() -- wings.Script 
+	local script = Instance.new('Script', wings)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Wings")
+	end)
+end
+coroutine.wrap(QNVD_fake_script)()
+local function XPWKPKS_fake_script() -- sniper.Script 
+	local script = Instance.new('Script', sniper)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("sniper")
+	end)
+end
+coroutine.wrap(XPWKPKS_fake_script)()
+local function QLCLUH_fake_script() -- tommygun.Script 
+	local script = Instance.new('Script', tommygun)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("tommygun")
+	end)
+end
+coroutine.wrap(QLCLUH_fake_script)()
+local function LOUOILO_fake_script() -- shotgun.Script 
+	local script = Instance.new('Script', shotgun)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Shotgun")
+	end)
+end
+coroutine.wrap(LOUOILO_fake_script)()
+local function YZSWUQ_fake_script() -- minigun.Script 
+	local script = Instance.new('Script', minigun)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("minigun")
+	end)
+end
+coroutine.wrap(YZSWUQ_fake_script)()
+local function ZWMIYG_fake_script() -- blackburn.Script 
+	local script = Instance.new('Script', blackburn)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Blackburn")
+	end)
+end
+coroutine.wrap(ZWMIYG_fake_script)()
+local function IWBUU_fake_script() -- tonk.Script 
+	local script = Instance.new('Script', tonk)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Tonk")
+	end)
+end
+coroutine.wrap(IWBUU_fake_script)()
+local function FNUFHM_fake_script() -- flamethrower.Script 
+	local script = Instance.new('Script', flamethrower)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("FlameThrower")
+	end)
+end
+coroutine.wrap(FNUFHM_fake_script)()
+local function NNMQGKY_fake_script() -- baguette.Script 
+	local script = Instance.new('Script', baguette)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("baguette")
+	end)
+end
+coroutine.wrap(NNMQGKY_fake_script)()
+local function NCDRZ_fake_script() -- bigpp.Script 
+	local script = Instance.new('Script', bigpp)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("BigPP")
+	end)
+end
+coroutine.wrap(NCDRZ_fake_script)()
+local function BIBUKBZ_fake_script() -- fireaura.Script 
+	local script = Instance.new('Script', fireaura)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Fire Aura")
+	end)
+end
+coroutine.wrap(BIBUKBZ_fake_script)()
+local function CCFZVV_fake_script() -- pooping.Script 
+	local script = Instance.new('Script', pooping)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Pooping")
+	end)
+end
+coroutine.wrap(CCFZVV_fake_script)()
+local function HTLZDL_fake_script() -- fferry.Script 
+	local script = Instance.new('Script', fferry)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("FFerry")
+	end)
+end
+coroutine.wrap(HTLZDL_fake_script)()
+local function PPTXCX_fake_script() -- supercar.Script 
+	local script = Instance.new('Script', supercar)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("SuperCar")
+	end)
+end
+coroutine.wrap(PPTXCX_fake_script)()
+local function GGOB_fake_script() -- jail.Script 
+	local script = Instance.new('Script', jail)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("jail")
+	end)
+end
+coroutine.wrap(GGOB_fake_script)()
+local function RCJOC_fake_script() -- box.Script 
+	local script = Instance.new('Script', box)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("box")
+	end)
+end
+coroutine.wrap(RCJOC_fake_script)()
+local function DXHYDS_fake_script() -- skate.Script 
+	local script = Instance.new('Script', skate)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Skate")
+	end)
+end
+coroutine.wrap(DXHYDS_fake_script)()
+local function RYVJ_fake_script() -- hero.Script 
+	local script = Instance.new('Script', hero)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Hero")
+	end)
+end
+coroutine.wrap(RYVJ_fake_script)()
+local function XIIHIG_fake_script() -- infinite.Script 
+	local script = Instance.new('Script', infinite)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Infinite")
+	end)
+end
+coroutine.wrap(XIIHIG_fake_script)()
+local function RODDEW_fake_script() -- rickroll.Script 
+	local script = Instance.new('Script', rickroll)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("RickRoll")
+	end)
+end
+coroutine.wrap(RODDEW_fake_script)()
+local function ECGU_fake_script() -- lazy.Script 
+	local script = Instance.new('Script', lazy)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Lazy")
+	end)
+end
+coroutine.wrap(ECGU_fake_script)()
+local function NMBQJEJ_fake_script() -- rlshoulder.Script 
+	local script = Instance.new('Script', rlshoulder)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("RocketLauncherShoulder")
+	end)
+end
+coroutine.wrap(NMBQJEJ_fake_script)()
+local function ABTQ_fake_script() -- vodoodoll.Script 
+	local script = Instance.new('Script', vodoodoll)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Vodoo Doll")
+	end)
+end
+coroutine.wrap(ABTQ_fake_script)()
+local function DKBJPF_fake_script() -- fallenangel.Script 
+	local script = Instance.new('Script', fallenangel)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("FallenAngel")
+	end)
+end
+coroutine.wrap(DKBJPF_fake_script)()
+local function GVJJQSB_fake_script() -- swordcaster.Script 
+	local script = Instance.new('Script', swordcaster)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("SwordCaster")
+	end)
+end
+coroutine.wrap(GVJJQSB_fake_script)()
+local function GFKTH_fake_script() -- tronbike.Script 
+	local script = Instance.new('Script', tronbike)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Bike")
+	end)
+end
+coroutine.wrap(GFKTH_fake_script)()
+local function RGWY_fake_script() -- halosgod.Script 
+	local script = Instance.new('Script', halosgod)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Halos")
+	end)
+end
+coroutine.wrap(RGWY_fake_script)()
+local function OFKO_fake_script() -- vampuroking.Script 
+	local script = Instance.new('Script', vampuroking)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		scripts("Vampuroking")
+	end)
+end
+coroutine.wrap(OFKO_fake_script)()
+local function VOETBPP_fake_script() -- Rainbow_4.RainbowFunction 
+	local script = Instance.new('LocalScript', Rainbow_4)
+
+	while true do 
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(i, 0, n)
+	wait() 
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(n, i, 0)
+	wait()
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(0, n, i)
+	wait() 
+	end 
+	end
+end
+coroutine.wrap(VOETBPP_fake_script)()
+local function BOYN_fake_script() -- CloseOpen_4.Script 
+	local script = Instance.new('Script', CloseOpen_4)
+
+	local hub = script.Parent.Parent.Hub
+	local button = script.Parent
+	local info = script.Parent.Parent.info
+	
+	button.MouseButton1Click:Connect(function()
+	if hub.Visible==true then button.Text="+" hub.Visible=false info.Visible=false
+	else hub.Visible=true button.Text="-" info.Visible=true
+	end
+	end)
+end
+coroutine.wrap(BOYN_fake_script)()
+local function MPBLVZF_fake_script() -- hats.Draggable 
+	local script = Instance.new('LocalScript', hats)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(MPBLVZF_fake_script)()
+local function UVAJL_fake_script() -- IY.Script 
+	local script = Instance.new('Script', IY)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	local args = {
+	    [1] = "PICKUP_ITEM",
+	    [2] = "Bandage",
+	}
+	
+	game:GetService("ReplicatedStorage").NetworkEvents.RemoteFunction:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(UVAJL_fake_script)()
+local function TRQH_fake_script() -- al.Script 
+	local script = Instance.new('Script', al)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	local args = {
+	    [1] = "PICKUP_ITEM",
+	    [2] = "Bandage",
+	}
+	
+	game:GetService("ReplicatedStorage").NetworkEvents.RemoteFunction:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(TRQH_fake_script)()
+local function RUGWHD_fake_script() -- Rainbow_5.RainbowFunction 
+	local script = Instance.new('LocalScript', Rainbow_5)
+
+	while true do 
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(i, 0, n)
+	wait() 
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(n, i, 0)
+	wait()
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(0, n, i)
+	wait() 
+	end 
+	end
+end
+coroutine.wrap(RUGWHD_fake_script)()
+local function TBNZWN_fake_script() -- CloseOpen_5.Script 
+	local script = Instance.new('Script', CloseOpen_5)
+
+	local hub = script.Parent.Parent.Hub
+	local button = script.Parent
+	local info = script.Parent.Parent.info
+	
+	button.MouseButton1Click:Connect(function()
+	if hub.Visible==true then button.Text="+" hub.Visible=false info.Visible=false
+	else hub.Visible=true button.Text="-" info.Visible=true
+	end
+	end)
+end
+coroutine.wrap(TBNZWN_fake_script)()
+local function LRWC_fake_script() -- other.Draggable 
+	local script = Instance.new('LocalScript', other)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(LRWC_fake_script)()
+local function AKJQR_fake_script() -- Filterware.Message 
+	local script = Instance.new('LocalScript', Filterware)
+
+	local StarterGui = game:GetService("StarterGui")
+	
+	local Notifications = {
+		"Notification Message 1",
+	}
+	
+	local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+	
+	for i = 1, #Notifications do
+		local Notification = Notifications[i]
+			
+		StarterGui:SetCore("SendNotification", {
+			Title = "Filterware";
+			Text = "Gui made by Nem&AtKn Sploits™";
+			Icon = "rbxassetid://4833960080";
+			Duration = 7;
+		})
+			
+		wait(TimeBetweenNotifications)
+	end
+end
+coroutine.wrap(AKJQR_fake_script)()
