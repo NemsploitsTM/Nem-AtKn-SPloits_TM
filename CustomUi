@@ -118,7 +118,7 @@ local CloseOpen_5 = Instance.new("TextButton")
 --Properties:
 
 Filterware.Name = "Filterware"
-Filterware.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Filterware.Parent = game.CoreGui
 Filterware.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Pages.Name = "Pages"
