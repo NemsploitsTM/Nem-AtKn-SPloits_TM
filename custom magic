@@ -1,0 +1,357 @@
+local Skill = Instance.new("ScreenGui")
+local Name = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local Skill1 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIGridLayout = Instance.new("UIGridLayout")
+local UIPadding = Instance.new("UIPadding")
+local Skill2 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local Skill3 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local Skill4 = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+
+Skill.Name = "Skill"
+Skill.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Skill.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Name.Name = "Name"
+Name.Parent = Skill
+Name.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Name.BorderColor3 = Color3.fromRGB(170, 85, 0)
+Name.BorderSizePixel = 3
+Name.Position = UDim2.new(0.760501146, 0, 0.429135174, 0)
+Name.Size = UDim2.new(0, 460, 0, 103)
+
+TextLabel.Parent = Name
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 459, 0, 103)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = _G.MagicName.." Magic"
+TextLabel.TextColor3 = Color3.fromRGB(170, 85, 0)
+TextLabel.TextSize = 70.000
+TextLabel.TextWrapped = true
+
+Frame.Parent = Skill
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderSizePixel = 3
+Frame.Position = UDim2.new(0.759980321, 0, 0.524593949, 0)
+Frame.Size = UDim2.new(0, 460, 0, 198)
+
+Skill1.Name = "Skill 1"
+Skill1.Parent = Frame
+Skill1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Skill1.BorderColor3 = Color3.fromRGB(170, 85, 0)
+Skill1.BorderSizePixel = 3
+Skill1.Position = UDim2.new(0.476151526, 0, 1.52215767, 0)
+Skill1.Size = UDim2.new(0, 328, 0, 69)
+
+TextLabel_2.Parent = Skill1
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(0, 328, 0, 69)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "[Z] ".._G.Skill1Name
+TextLabel_2.TextColor3 = Color3.fromRGB(170, 85, 0)
+TextLabel_2.TextSize = 50.000
+TextLabel_2.TextWrapped = true
+
+UIGridLayout.Parent = Frame
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Right
+UIGridLayout.CellPadding = UDim2.new(0, 10, 0, 10)
+UIGridLayout.CellSize = UDim2.new(0, 328, 0, 69)
+
+UIPadding.Parent = Frame
+UIPadding.PaddingTop = UDim.new(0, 10)
+
+Skill2.Name = "Skill 2"
+Skill2.Parent = Frame
+Skill2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Skill2.BorderColor3 = Color3.fromRGB(170, 85, 0)
+Skill2.BorderSizePixel = 3
+Skill2.Position = UDim2.new(0.476151526, 0, 1.52215767, 0)
+Skill2.Size = UDim2.new(0, 328, 0, 69)
+
+TextLabel_3.Parent = Skill2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Size = UDim2.new(0, 328, 0, 69)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "[X] ".._G.Skill2Name
+TextLabel_3.TextColor3 = Color3.fromRGB(170, 85, 0)
+TextLabel_3.TextSize = 50.000
+TextLabel_3.TextWrapped = true
+
+Skill3.Name = "Skill 3"
+Skill3.Parent = Frame
+Skill3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Skill3.BorderColor3 = Color3.fromRGB(170, 85, 0)
+Skill3.BorderSizePixel = 3
+Skill3.Position = UDim2.new(0.476151526, 0, 1.52215767, 0)
+Skill3.Size = UDim2.new(0, 328, 0, 69)
+
+TextLabel_4.Parent = Skill3
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Size = UDim2.new(0, 328, 0, 69)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "[C] ".._G.Skill3Name
+TextLabel_4.TextColor3 = Color3.fromRGB(170, 85, 0)
+TextLabel_4.TextSize = 50.000
+TextLabel_4.TextWrapped = true
+
+Skill4.Name = "Skill 4"
+Skill4.Parent = Frame
+Skill4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Skill4.BorderColor3 = Color3.fromRGB(170, 85, 0)
+Skill4.BorderSizePixel = 3
+Skill4.Position = UDim2.new(0.476151526, 0, 1.52215767, 0)
+Skill4.Size = UDim2.new(0, 328, 0, 69)
+
+TextLabel_5.Parent = Skill4
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Size = UDim2.new(0, 328, 0, 69)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "[V] ".._G.Skill4Name
+TextLabel_5.TextColor3 = Color3.fromRGB(170, 85, 0)
+TextLabel_5.TextSize = 50.000
+TextLabel_5.TextWrapped = true
+
+if game.Players.LocalPlayer.Backpack:WaitForChild("Kaos") then
+    game.Players.LocalPlayer.Backpack["Kaos"].Parent = game.Players.LocalPlayer.Character
+end
+
+if game.Players.LocalPlayer.Backpack:WaitForChild("Ates") then
+    game.Players.LocalPlayer.Backpack["Ates"].Parent = game.Players.LocalPlayer.Character
+end
+
+if game.Players.LocalPlayer.Backpack:WaitForChild("Kesiş") then
+    game.Players.LocalPlayer.Backpack["Kesiş"].Parent = game.Players.LocalPlayer.Character
+end
+
+if game.Players.LocalPlayer.Backpack:WaitForChild("Hız") then
+    game.Players.LocalPlayer.Backpack["Hız"].Parent = game.Players.LocalPlayer.Character
+end
+
+if game.Players.LocalPlayer.Backpack:WaitForChild("Diken") then
+    game.Players.LocalPlayer.Backpack["Diken"].Parent = game.Players.LocalPlayer.Character
+end
+
+wait(0.5)
+game:GetService("Players").LocalPlayer.PlayerGui["Skill_list"]:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui["Skill_list"]:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui["Skill_list"]:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui["Skill_list"]:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui["Skill_list"]:Destroy()
+
+game:GetService("UserInputService").InputBegan:Connect(function(key)
+if key.KeyCode==Enum.KeyCode.Insert then
+if game.Players.LocalPlayer.Backpack:WaitForChild("Kaos") then
+    game.Players.LocalPlayer.Backpack["Kaos"].Parent = game.Players.LocalPlayer.Character
+end
+
+if game.Players.LocalPlayer.Backpack:WaitForChild("Ates") then
+    game.Players.LocalPlayer.Backpack["Ates"].Parent = game.Players.LocalPlayer.Character
+end
+
+if game.Players.LocalPlayer.Backpack:WaitForChild("Kesiş") then
+    game.Players.LocalPlayer.Backpack["Kesiş"].Parent = game.Players.LocalPlayer.Character
+end
+
+if game.Players.LocalPlayer.Backpack:WaitForChild("Hız") then
+    game.Players.LocalPlayer.Backpack["Hız"].Parent = game.Players.LocalPlayer.Character
+end
+
+if game.Players.LocalPlayer.Backpack:WaitForChild("Diken") then
+    game.Players.LocalPlayer.Backpack["Diken"].Parent = game.Players.LocalPlayer.Character
+end
+
+wait(0.5)
+game:GetService("Players").LocalPlayer.PlayerGui["Skill_list"]:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui["Skill_list"]:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui["Skill_list"]:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui["Skill_list"]:Destroy()
+game:GetService("Players").LocalPlayer.PlayerGui["Skill_list"]:Destroy()
+
+end
+end)
+
+game:GetService("UserInputService").InputBegan:Connect(function(key)
+if key.KeyCode==Enum.KeyCode.V then
+local args = {
+    [1] = Vector3.new(88.3907318, 16.332653, 26.8457832),
+}
+
+game:GetService("Players").LocalPlayer.Character.Kaos.EquipTool.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character.Ates.Skill_1.Keybind.Fire:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character.Ates.Skill_2.Keybind.Fire:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character.Ates.Skill_3.Keybind.Fire:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character["Kesiş"]["Equip Put it in to  tool"].Skill1.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character["Kesiş"]["Equip Put it in to  tool"].Skill2.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character["Kesiş"]["Equip Put it in to  tool"].Skill3.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character["Kesiş"]["Equip Put it in to  tool"].Skill3.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character.Diken["Equip Put it in to  tool"].Skill2.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character.Diken["Equip Put it in to  tool"].Skill3.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = Vector3.new(88.3907318, 16.332653, 26.8457832),
+}
+
+game:GetService("Players").LocalPlayer.Character.Kaos.EquipTool.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character.Ates.Skill_1.Keybind.Fire:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character.Ates.Skill_2.Keybind.Fire:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character.Ates.Skill_3.Keybind.Fire:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character["Kesiş"]["Equip Put it in to  tool"].Skill1.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character["Kesiş"]["Equip Put it in to  tool"].Skill2.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character["Kesiş"]["Equip Put it in to  tool"].Skill3.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character["Kesiş"]["Equip Put it in to  tool"].Skill3.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character.Diken["Equip Put it in to  tool"].Skill2.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character.Diken["Equip Put it in to  tool"].Skill3.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = Vector3.new(88.3907318, 16.332653, 26.8457832),
+}
+
+game:GetService("Players").LocalPlayer.Character.Kaos.EquipTool.SkillZ.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character.Ates.Skill_1.Keybind.Fire:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character.Ates.Skill_2.Keybind.Fire:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character.Ates.Skill_3.Keybind.Fire:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character["Kesiş"]["Equip Put it in to  tool"].Skill1.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character["Kesiş"]["Equip Put it in to  tool"].Skill2.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character["Kesiş"]["Equip Put it in to  tool"].Skill3.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character["Kesiş"]["Equip Put it in to  tool"].Skill3.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character.Diken["Equip Put it in to  tool"].Skill2.RemoteEvent:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+}
+
+game:GetService("Players").LocalPlayer.Character.Diken["Equip Put it in to  tool"].Skill3.RemoteEvent:FireServer(unpack(args))
+end
+end)
+
+local StarterGui = game:GetService("StarterGui")
+
+local Notifications = {
+	"Notification Message 1",
+}
+
+local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+
+for i = 1, #Notifications do
+	local Notification = Notifications[i]
+		
+	StarterGui:SetCore("SendNotification", {
+		Title = "Made by Nemsploits#7409";
+		Text = "Press Insert to equip tool!";
+		Duration = 7;
+	})
+		
+	wait(TimeBetweenNotifications)
+end
