@@ -1,0 +1,758 @@
+local VoteBot = Instance.new("ScreenGui")
+local Pages = Instance.new("Frame")
+local VoteBot_2 = Instance.new("Frame")
+local Hub = Instance.new("Frame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local UIPadding = Instance.new("UIPadding")
+local Player1Button = Instance.new("TextButton")
+local Player2Button = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local zPlayer2Button = Instance.new("TextButton")
+local zPlayer1Button = Instance.new("TextButton")
+local Rainbow = Instance.new("Frame")
+local Name = Instance.new("TextLabel")
+local CloseOpen = Instance.new("TextButton")
+
+--Properties:
+
+VoteBot.Name = "VoteBot"
+VoteBot.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+VoteBot.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Pages.Name = "Pages"
+Pages.Parent = VoteBot
+Pages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pages.BackgroundTransparency = 1.000
+Pages.Size = UDim2.new(0, 100, 0, 100)
+Pages.ZIndex = 1000000000
+
+VoteBot_2.Name = "VoteBot"
+VoteBot_2.Parent = Pages
+VoteBot_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+VoteBot_2.Position = UDim2.new(2.18000007, 0, 0.140000001, 0)
+VoteBot_2.Size = UDim2.new(0, 195, 0, 30)
+
+Hub.Name = "Hub"
+Hub.Parent = VoteBot_2
+Hub.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Hub.Position = UDim2.new(0, 0, 1.06666672, 0)
+Hub.Size = UDim2.new(0, 195, 0, 186)
+
+UIGridLayout.Parent = Hub
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout.CellSize = UDim2.new(0, 180, 0, 25)
+
+UIPadding.Parent = Hub
+UIPadding.PaddingBottom = UDim.new(0, 5)
+UIPadding.PaddingLeft = UDim.new(0, 5)
+UIPadding.PaddingRight = UDim.new(0, 5)
+UIPadding.PaddingTop = UDim.new(0, 5)
+
+Player1Button.Name = "Player1Button"
+Player1Button.Parent = Hub
+Player1Button.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Player1Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Player1Button.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+Player1Button.Size = UDim2.new(0, 200, 0, 50)
+Player1Button.Font = Enum.Font.SourceSansSemibold
+Player1Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Player1Button.TextSize = 17.000
+
+Player2Button.Name = "Player2Button"
+Player2Button.Parent = Hub
+Player2Button.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Player2Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Player2Button.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+Player2Button.Size = UDim2.new(0, 200, 0, 50)
+Player2Button.Font = Enum.Font.SourceSansSemibold
+Player2Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Player2Button.TextSize = 17.000
+
+TextLabel.Name = "!"
+TextLabel.Parent = Hub
+TextLabel.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Normal Vote"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 17.000
+
+TextLabel_2.Parent = Hub
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "OP Vote"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 17.000
+
+zPlayer2Button.Name = "zPlayer2Button"
+zPlayer2Button.Parent = Hub
+zPlayer2Button.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+zPlayer2Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+zPlayer2Button.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+zPlayer2Button.Size = UDim2.new(0, 200, 0, 50)
+zPlayer2Button.Font = Enum.Font.SourceSansSemibold
+zPlayer2Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+zPlayer2Button.TextSize = 17.000
+
+zPlayer1Button.Name = "zPlayer1Button"
+zPlayer1Button.Parent = Hub
+zPlayer1Button.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+zPlayer1Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+zPlayer1Button.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+zPlayer1Button.Size = UDim2.new(0, 200, 0, 50)
+zPlayer1Button.Font = Enum.Font.SourceSansSemibold
+zPlayer1Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+zPlayer1Button.TextSize = 17.000
+
+Rainbow.Name = "Rainbow"
+Rainbow.Parent = VoteBot_2
+Rainbow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow.BorderSizePixel = 0
+Rainbow.Position = UDim2.new(0, 0, 1, 0)
+Rainbow.Size = UDim2.new(0, 195, 0, 2)
+
+Name.Name = "Name"
+Name.Parent = VoteBot_2
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0.189225882, 0, 0, 0)
+Name.Size = UDim2.new(0, 120, 0, 30)
+Name.Font = Enum.Font.SourceSansSemibold
+Name.Text = "Vote Bot"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+CloseOpen.Name = "Close/Open"
+CloseOpen.Parent = VoteBot_2
+CloseOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen.BackgroundTransparency = 1.000
+CloseOpen.Position = UDim2.new(0.843177199, 0, 0, 0)
+CloseOpen.Size = UDim2.new(0, 30, 0, 30)
+CloseOpen.Font = Enum.Font.SourceSans
+CloseOpen.Text = "-"
+CloseOpen.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen.TextScaled = true
+CloseOpen.TextSize = 14.000
+CloseOpen.TextWrapped = true
+
+-- Scripts:
+
+local function OWYE_fake_script() -- Pages.Toggle 
+	local script = Instance.new('LocalScript', Pages)
+
+	function PopupGui()
+	if script.Parent.Visible==true then script.Parent.Visible=false
+	else script.Parent.Visible=true
+	end
+	end
+	
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(key)
+	if key.KeyCode==Enum.KeyCode.RightControl then
+	PopupGui()
+	end
+	end)
+end
+coroutine.wrap(OWYE_fake_script)()
+local function MAQPYKG_fake_script() -- Player1Button.Script 
+	local script = Instance.new('Script', Player1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(MAQPYKG_fake_script)()
+local function BTXCMN_fake_script() -- Player2Button.Script 
+	local script = Instance.new('Script', Player2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(BTXCMN_fake_script)()
+local function XNDTXB_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(XNDTXB_fake_script)()
+local function OXOAQFG_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(OXOAQFG_fake_script)()
+local function IIKJG_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(IIKJG_fake_script)()
+local function UXTJ_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(UXTJ_fake_script)()
+local function VEVPS_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(VEVPS_fake_script)()
+local function YBLI_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(YBLI_fake_script)()
+local function CPODKGZ_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(CPODKGZ_fake_script)()
+local function ARYAKF_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(ARYAKF_fake_script)()
+local function CIADYB_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(CIADYB_fake_script)()
+local function CXJATV_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(CXJATV_fake_script)()
+local function APAYYM_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(APAYYM_fake_script)()
+local function QUZC_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(QUZC_fake_script)()
+local function IMJAV_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(IMJAV_fake_script)()
+local function AZPT_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(AZPT_fake_script)()
+local function KXIEN_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(KXIEN_fake_script)()
+local function IKMLZIK_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(IKMLZIK_fake_script)()
+local function ATMBQH_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(ATMBQH_fake_script)()
+local function QYDUDEO_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(QYDUDEO_fake_script)()
+local function SYEA_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(SYEA_fake_script)()
+local function UUOTLJ_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(UUOTLJ_fake_script)()
+local function YZYK_fake_script() -- zPlayer2Button.Script 
+	local script = Instance.new('Script', zPlayer2Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p2")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(YZYK_fake_script)()
+local function LZSMTH_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(LZSMTH_fake_script)()
+local function EZYTW_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(EZYTW_fake_script)()
+local function XJIKQRR_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(XJIKQRR_fake_script)()
+local function JLLCGI_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(JLLCGI_fake_script)()
+local function NQWDW_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(NQWDW_fake_script)()
+local function TCBP_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(TCBP_fake_script)()
+local function FYMOB_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(FYMOB_fake_script)()
+local function JASXFHL_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(JASXFHL_fake_script)()
+local function ZMUDJA_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(ZMUDJA_fake_script)()
+local function LLZWSA_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(LLZWSA_fake_script)()
+local function DLXRK_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(DLXRK_fake_script)()
+local function BLTDE_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(BLTDE_fake_script)()
+local function RNLULI_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(RNLULI_fake_script)()
+local function BXYLC_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(BXYLC_fake_script)()
+local function JDPPO_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(JDPPO_fake_script)()
+local function SEINUI_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(SEINUI_fake_script)()
+local function WHEXGTY_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(WHEXGTY_fake_script)()
+local function YDXR_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(YDXR_fake_script)()
+local function GBMQV_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(GBMQV_fake_script)()
+local function IBIFPVR_fake_script() -- zPlayer1Button.Script 
+	local script = Instance.new('Script', zPlayer1Button)
+
+	script.Parent.MouseButton1Down:connect(function()
+		for i = 0,1 do 
+			game.Workspace.Votes:FireServer(false,"p1")
+			game:GetService("RunService").Heartbeat:Wait()
+		end
+	end)
+end
+coroutine.wrap(IBIFPVR_fake_script)()
+local function WDSJ_fake_script() -- Hub.Script 
+	local script = Instance.new('Script', Hub)
+
+	local Player1Button = script.Parent.Player1Button
+	local Player2Button = script.Parent.Player2Button
+	local zPlayer1Button = script.Parent.zPlayer1Button
+	local zPlayer2Button = script.Parent.zPlayer2Button
+	
+	while true do
+		Player2Button.Text = game.Workspace.RapBattles.Rappers.player2.Value
+		Player1Button.Text = game.Workspace.RapBattles.Rappers.player1.Value
+		zPlayer2Button.Text = game.Workspace.RapBattles.Rappers.player2.Value
+		zPlayer1Button.Text = game.Workspace.RapBattles.Rappers.player1.Value
+		wait(0.1)
+	end
+end
+coroutine.wrap(WDSJ_fake_script)()
+local function VMMALRV_fake_script() -- Rainbow.RainbowFunction 
+	local script = Instance.new('LocalScript', Rainbow)
+
+	while true do 
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(i, 0, n)
+	wait() 
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(n, i, 0)
+	wait()
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(0, n, i)
+	wait() 
+	end 
+	end
+end
+coroutine.wrap(VMMALRV_fake_script)()
+local function PVYEKEI_fake_script() -- CloseOpen.Script 
+	local script = Instance.new('Script', CloseOpen)
+
+	local hub = script.Parent.Parent.Hub
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	if hub.Visible==true then button.Text="+" hub.Visible=false
+	else hub.Visible=true button.Text="-"
+	end
+	end)
+end
+coroutine.wrap(PVYEKEI_fake_script)()
+local function JUUZT_fake_script() -- VoteBot_2.Dragify 
+	local script = Instance.new('LocalScript', VoteBot_2)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(JUUZT_fake_script)()
+local function CITQLG_fake_script() -- VoteBot.Message 
+	local script = Instance.new('LocalScript', VoteBot)
+
+	local StarterGui = game:GetService("StarterGui")
+	
+	local Notifications = {
+		"Notification Message 1",
+	}
+	
+	local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+	
+	for i = 1, #Notifications do
+		local Notification = Notifications[i]
+			
+		StarterGui:SetCore("SendNotification", {
+			Title = "Gui made by Nemsploits";
+			Text = "Press Right CTRL to toggle gui!";
+			Duration = 7;
+		})
+			
+		wait(TimeBetweenNotifications)
+	end
+end
+coroutine.wrap(CITQLG_fake_script)()
